@@ -51,7 +51,7 @@ a, a:visited {
 }
 
 .my_photo {
-    paddin width: 200px;
+    width: 200px;
     height: 200px;
     border: 1px solid #8f8f8f;
 }
