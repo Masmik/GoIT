@@ -31,7 +31,8 @@ p {
     line-height: 20px;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #0056d3;
 }
 
