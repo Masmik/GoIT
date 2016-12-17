@@ -21,7 +21,6 @@ a {
     height: 100%;
     margin: 0 auto;
     width: 1000px;
-    /*background-color: coral;*/
     background-color: #ffffff;
     box-shadow: 0 3px 9px #222222;
     font-family: Tahoma, sans-serif;
@@ -153,6 +152,7 @@ nav ul:after {
 .submenu a {
     display: block;
     color: white;
+    padding-top: 2px;
     line-height: 22px;
 }
 
@@ -219,6 +219,7 @@ h2 {
 footer {
     flex: 0 0 auto;
     height: 31px;
+    font-family: Tahoma, sans-serif;
     background-color: transparent;
     color: #dee7ee;
     font-size: 12px;
