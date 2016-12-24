@@ -25,38 +25,222 @@ header {
     color: #60b5ed;
 }
 
-.registration{
-    height: 34px;
+.registration {
+    box-sizing: border-box;
+    height: 36px;
     border-bottom: 1px solid #4299d2;
     border-top: 1px solid #51b1dc;
     border-right: 1px solid #54a0db;
     border-left: 1px solid #54a0db;
-    margin-right: 22px;
+    margin-right: 20px;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4faedb+20,2e7ac4+98 */
     background: #4faedb; /* Old browsers */
-    background: -moz-linear-gradient(top,  #4faedb 20%, #2e7ac4 98%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #4faedb 20%,#2e7ac4 98%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #4faedb 20%,#2e7ac4 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4faedb', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4faedb 20%, #2e7ac4 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4faedb', endColorstr='#2e7ac4', GradientType=0); /* IE6-9 */
 
 }
 
-.registration a{
-    text-decoration: underline;
-    color: #ffffff;
-}
-.text{
+.registration a {
     text-decoration: none;
+    color: #ffffff;
+    padding-left: 14px;
 }
 
+.registration span {
+    text-decoration: underline;
+}
+
+.offers {
+    position: relative;
+    margin-left: 12px;
+}
+
+.offers a:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    border-left: 1px solid #56a2dc;
+    top: 2px;
+    bottom: 3px;
+    left: -1px;
+}
+
+.offers a {
+    color: #fff;
+    padding-left: 19px;
+    padding-right: 16px;
+}
+
+.offers a:before {
+    content: '';
+    display: block;
+    height: 23px;
+    width: 21px;
+    background-image: url("../img/flag-icon.png");
+    float: left;
+    margin: -4px 10px 0 0;
+}
+
+.active {
+    background-color: #4eabda;
+}
+
+.active a {
+    color: #fff;
+}
+
+.nav a:focus {
+    background-color: #4eabda;
+    color: #fff;
+}
 
 /*CONTENT*/
 
 .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
     background-image: url("../img/bg.jpg");
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
     display: block;
-    height: 1028px;
+    width: 561px;
+    height: 614px;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 62px;
+    border-bottom: 2px solid #c1ccbc;
+    margin-left: -10px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.separator {
+    position: relative;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.separator:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 123px;
+    background-color: #666666;
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    border-bottom: 1px solid #000000;
+}
+
+.separator:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 123px;
+    background-color: #666666;
+    position: absolute;
+    right: 17px;
+    top: 6px;
+    border-bottom: 1px solid #000000;
+}
+
+form {
+    margin-top: 29px;
+}
+/*PLACEHOLDER*/
+::-webkit-input-placeholder {color:#c3c3c3;}
+::-moz-placeholder          {color:#c3c3c3;}/* Firefox 19+ */
+:-ms-input-placeholder      {color:#c3c3c3;}
+
+input:focus::-webkit-input-placeholder {
+    color: #f5f3f5;
+}
+input {
+    box-sizing: border-box;
+    height: 35px;
+    min-width: 276px;
+    border: 0;
+    border-bottom: 1px solid #484948;
+    background-color: #0e0e0e;
+    color: #c3c3c3;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 14px;
+    padding-left: 18px;
+}
+
+.first-name {
+    margin-bottom: 10px;
+}
+
+.updates {
+    margin-top: 6px;
+}
+
+.updates input {
+    height: 13px;
+}
+
+.selected {
+    color: #fffcfc;
+    background-image: url(../img/button_selected.png);
+    background-position: center center;
+    border-bottom: 1px solid #689bcc;
+}
+
+input:focus{
+    color: #fffcfc;
+    background-image: url(../img/button_selected.png);
+    background-position: center center;
+    border-bottom: 1px solid #689bcc;
+}
+
+label {
+    color: #cccccc;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.submit input {
+    margin-top: 10px;
+    background: url(../img/submit-button.png) no-repeat center;
+    color: #ffffff;
+    border: 0;
+    padding-left: 13px;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    color: #cccccc;
+    width: 310px;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 2px;
 }
