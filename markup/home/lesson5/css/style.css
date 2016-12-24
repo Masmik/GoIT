@@ -1,10 +1,21 @@
+body{
+    min-width: 736px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 /*NAV*/
 
 header {
+    position: relative;
     height: 36px;
     background: url("../img/nav-bg.png") repeat-x;
     font-family: Tahoma, sans-serif;
     font-size: 14px;
+    z-index: 1;
 }
 
 .nav {
@@ -26,31 +37,33 @@ header {
 }
 
 .registration {
+    margin-right: 20px;
+}
+
+.registration a {
     box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
     height: 36px;
+    padding-left: 14px;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.registration span {
+    text-decoration: underline;
+}
+
+.registration a:hover {
     border-bottom: 1px solid #4299d2;
-    border-top: 1px solid #51b1dc;
     border-right: 1px solid #54a0db;
     border-left: 1px solid #54a0db;
-    margin-right: 20px;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4faedb+20,2e7ac4+98 */
     background: #4faedb; /* Old browsers */
     background: -moz-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #4faedb 20%, #2e7ac4 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4faedb', endColorstr='#2e7ac4', GradientType=0); /* IE6-9 */
-
-}
-
-.registration a {
-    text-decoration: none;
-    color: #ffffff;
-    padding-left: 14px;
-}
-
-.registration span {
-    text-decoration: underline;
 }
 
 .offers {
@@ -84,15 +97,26 @@ header {
     margin: -4px 10px 0 0;
 }
 
-.active {
-    background-color: #4eabda;
+.offers a:hover {
+    box-sizing: border-box;
+    height: 36px;
+    border-bottom: 1px solid #4299d2;
+    background: #4faedb; /* Old browsers */
+    background: -moz-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4faedb 20%, #2e7ac4 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4faedb 20%, #2e7ac4 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4faedb', endColorstr='#2e7ac4', GradientType=0); /* IE6-9 */
 }
 
-.active a {
-    color: #fff;
-}
+/*.active {*/
+    /*background-color: #4eabda;*/
+/*}*/
 
-.nav a:focus {
+/*.active a {*/
+    /*color: #fff;*/
+/*}*/
+
+.nav a:hover {
     background-color: #4eabda;
     color: #fff;
 }
@@ -105,13 +129,13 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
     background-image: url("../img/bg.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 686px;
 }
 
 .content {
@@ -168,17 +192,37 @@ h1 {
     border-bottom: 1px solid #000000;
 }
 
+.fb {
+    opacity: 0.75;
+}
+
+.fb:hover {
+    opacity: 1;
+}
+
 form {
     margin-top: 29px;
 }
+
 /*PLACEHOLDER*/
-::-webkit-input-placeholder {color:#c3c3c3;}
-::-moz-placeholder          {color:#c3c3c3;}/* Firefox 19+ */
-:-ms-input-placeholder      {color:#c3c3c3;}
+
+::-webkit-input-placeholder {
+    color: #c3c3c3;
+}
+
+::-moz-placeholder {
+    color: #c3c3c3;
+}
+
+/* Firefox 19+ */
+:-ms-input-placeholder {
+    color: #c3c3c3;
+}
 
 input:focus::-webkit-input-placeholder {
     color: #f5f3f5;
 }
+
 input {
     box-sizing: border-box;
     height: 35px;
@@ -205,14 +249,14 @@ input {
     height: 13px;
 }
 
-.selected {
-    color: #fffcfc;
-    background-image: url(../img/button_selected.png);
-    background-position: center center;
-    border-bottom: 1px solid #689bcc;
-}
+/*.selected {*/
+/*color: #fffcfc;*/
+/*background-image: url(../img/button_selected.png);*/
+/*background-position: center center;*/
+/*border-bottom: 1px solid #689bcc;*/
+/*}*/
 
-input:focus{
+input:focus {
     color: #fffcfc;
     background-image: url(../img/button_selected.png);
     background-position: center center;
@@ -233,6 +277,11 @@ label {
     padding-left: 13px;
     outline: none;
     cursor: pointer;
+    opacity: 0.75;
+}
+
+.submit input:focus {
+    opacity: 1;
 }
 
 p {
