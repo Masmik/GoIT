@@ -1,0 +1,28 @@
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+    margin: 0 auto;
+    border: 0;
+
+}
+td {
+    width: 60px;
+    border: 10px solid #000;
+}
+
+tr {
+    height: 65px;
+}
+.yellow{
+    background-image: url("../img/yellow.png");
+}
+.red{
+    background-image: url('../img/red.png');
+}
+.blue{
+    background-image: url("../img/blue.png");
+}
+.black{
+    background-image: url("../img/black.png");
+}
