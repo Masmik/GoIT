@@ -108,14 +108,6 @@ header {
   height: 36px;
 }
 
-/*.active {*/
-/*background-color: #4eabda;*/
-/*}*/
-
-/*.active a {*/
-/*color: #fff;*/
-/*}*/
-
 .nav a:hover {
   background-color: #4eabda;
   color: #fff;
@@ -192,15 +184,79 @@ h1 {
   width: 123px;
 }
 
-.fb {
-  opacity: .75;
+.facebook-a {
+  background: -moz-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -o-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -webkit-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -webkit-gradient(to bottom, #405896, #374c8d, #304272);
+  background: linear-gradient(to bottom, #405896, #374c8d, #304272);
+  border-radius: 4px;
+  border-top: 1px solid #758ab5;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fbffff;
+  display: block;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 276px;
+}
+.facebook-a::before {
+  background-image: url('../img/border.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: 'f';
+  display: inline-block;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: 35px;
+  left: 0;
+  line-height: 35px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  vertical-align: middle;
+  width: 39px;
+}
+.facebook-a-bold {
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
-.fb:hover {
-  opacity: 1;
+.facebook-a::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '\203a';
+  display: inline-block;
+  font-size: 33px;
+  height: 35px;
+  line-height: 30px;
+  position: absolute;
+  right: 26px;
+  vertical-align: middle;
+  width: 10px;
 }
+/*.fb {*/
+  /*opacity: .75;*/
+/*}*/
+
+/*.fb:hover {*/
+  /*opacity: 1;*/
+/*}*/
 
 form {
+  position: relative;
   margin-top: 29px;
   max-width: 276px;
   text-align: center;
@@ -234,7 +290,7 @@ form {
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   height: 35px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
   min-width: 276px;
   padding-left: 18px;
 }
@@ -243,20 +299,17 @@ form {
   margin-bottom: 10px;
 }
 
-.updates {
+.updates{
+  position: absolute;
+  left: -2px;
   margin-top: 6px;
-}
-
-.updates input {
   height: 13px;
 }
-
-/*.selected {*/
-/*color: #fffcfc;*/
-/*background-image: url('../img/button_selected.png');*/
-/*background-position: center center;*/
-/*border-bottom: 1px solid #689bcc;*/
-/*}*/
+.l-updates{
+  position: absolute;
+  left: 22px;
+  line-height: 22px;
+}
 
 input:focus {
   background-image: url('../img/button_selected.png');
@@ -264,6 +317,7 @@ input:focus {
   border-bottom: 1px solid #689bcc;
   color: #fffcfc;
 }
+
 
 label {
   color: #ccc;
@@ -276,10 +330,10 @@ label {
   border: 0;
   color: #fff;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 40px;
   opacity: .75;
   outline: none;
-  padding-left: 13px;
+  padding-left: 0px;
 }
 
 .submit input:focus {
@@ -291,7 +345,6 @@ p {
   font-family: Tahoma, sans-serif;
   font-size: 11px;
   line-height: 16px;
-  margin-top: 2px;
   text-align: center;
   width: 310px;
 }
