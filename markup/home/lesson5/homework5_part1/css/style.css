@@ -143,7 +143,6 @@ h1 {
   font-family: Tahoma, sans-serif;
   font-size: 24px;
   line-height: 62px;
-  margin-left: -10px;
   text-align: center;
 }
 
@@ -188,7 +187,6 @@ h1 {
   background: -moz-linear-gradient(to bottom, #405896, #374c8d, #304272);
   background: -o-linear-gradient(to bottom, #405896, #374c8d, #304272);
   background: -webkit-linear-gradient(to bottom, #405896, #374c8d, #304272);
-  background: -webkit-gradient(to bottom, #405896, #374c8d, #304272);
   background: linear-gradient(to bottom, #405896, #374c8d, #304272);
   border-radius: 4px;
   border-top: 1px solid #758ab5;
@@ -199,7 +197,7 @@ h1 {
   display: block;
   font-size: 16px;
   height: 35px;
-  line-height: 35px;
+  line-height: 30px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -229,8 +227,8 @@ h1 {
   width: 39px;
 }
 .facebook-a-bold {
-  font-weight: bold;
-  letter-spacing: .5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .facebook-a::after {
@@ -297,18 +295,6 @@ form {
 
 .first-name {
   margin-bottom: 10px;
-}
-
-.updates{
-  position: absolute;
-  left: -2px;
-  margin-top: 6px;
-  height: 13px;
-}
-.l-updates{
-  position: absolute;
-  left: 22px;
-  line-height: 22px;
 }
 
 input:focus {
