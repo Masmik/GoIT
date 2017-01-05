@@ -10,17 +10,18 @@
 <div class="wrapper">
     <div class="content-wrapper">
         <header>
-            <div class="pnone">
-                <p>(044)123-45-67 (044)567-89-10</p>
+            <div class="phone">
+                <p>(044)123-45-67</p>
+                <p class="second-number">(044)567-89-10</p>
             </div>
             <div class="registration">
-                <form action="#">
+                <form class="user-icon" action="#">
                     <input type="text" placeholder="логин">
                     <input type="password" placeholder="пароль">
                 </form>
-                <a href="#">Вход</a>
-                <a href="#">Регистрация</a>
-                <a href="#">забыли пароль?</a>
+                <a class="reg" href="#">Вход</a>
+                <a class="reg" href="#">Регистрация</a>
+                <a class="forget-pass" href="#">забыли пароль?</a>
             </div>
             <div class="navi">
                 <a href="#"><img src="img/home-icon.png" alt="home-icon"></a>
@@ -32,32 +33,30 @@
             <img src="img/header-img.jpg" alt="header-img">
         </div>
         <div class="nav">
-            <ul>
+            <ul class="navigation">
                 <li><a href="#">О КОМПАНИ</a></li>
                 <li><a href="#">ОПЛАТА</a></li>
                 <li><a href="#">ДОСТАВКА</a></li>
                 <li><a href="#">СТАТЬИ</a></li>
                 <li><a href="#">КОНТАКТЫ</a></li>
+                <li class="basket"><span>товаров:<span class="blue-text">0</span></span>
+                    <span>на суму<span class="blue-text">0,00 грн.</span></span></li>
             </ul>
-            <div class="basket">
-                <span>товаров:<span>0</span></span>
-                <span>на суму<span>0,00 грн.</span></span>
-            </div>
         </div>
         <div class="filters">
-            <section class="auto">
+            <section class="general auto">
                 <h2>Поиск по автомобилю</h2>
                 <span class="left">Диски:</span>
                 <form action="#">
-                    <label for="car-brand">Марка авто:</label>
+                    <label for="car-brand">Марка <span class="grey-text">авто:</span></label>
                     <select name="car-brand" id="car-brand">
                         <option value=""></option>
                     </select>
-                    <label for="car-model">Модель автомобиля:</label>
+                    <label for="car-model">Модель <span class="grey-text">автомобиля:</span></label>
                     <select name="car-model" id="car-model">
                         <option value=""></option>
                     </select>
-                    <label for="year">Год выпуска автомобиля:</label>
+                    <label for="year">Год выпуска <span class="grey-text">автомобиля:</span></label>
                     <select name="year" id="year">
                         <option value=""></option>
                     </select>
@@ -70,7 +69,7 @@
                 <span class="right">Шины:</span>
                 <a class="search" href="#">поиск...</a>
             </section>
-            <section class="tire">
+            <section class="general tire">
                 <h2>поиск шин</h2>
                 <form action="#">
                     <label for="size">Размер:</label>
@@ -89,7 +88,7 @@
                     <label><input type="checkbox" name="all-season">всесез</label>
                 </form>
             </section>
-            <section class="wheels">
+            <section class="general wheels">
                 <h2>поиск дисков</h2>
                 <form action="#">
                     <label for="disc-diametr">Диаметр диска:</label>
@@ -151,11 +150,11 @@
                 <li>Бренд 2</li>
                 <li>Бренд 3</li>
                 </li>
+                <li><button>ВЫБРАТЬ</button></li>
             </ul>
-            <button>ВЫБРАТЬ</button>
         </aside>
         <main>
-            <ul>
+            <ul class="content">
                 <li>
                     <figure>
                         <figcaption><span class="mark">Goodyear</span> Ultra Grip Extreme</figcaption>
@@ -233,10 +232,10 @@
         </div>
         <footer>
             <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="footer-menu"><a href="#">О компании</a></li>
+                <li class="footer-menu"><a href="#">Доставка</a></li>
+                <li class="footer-menu"><a href="#">Статьи</a></li>
+                <li class="footer-menu"><a href="#">Контакты</a></li>
             </ul>
             <p>Создание сайта &copy; Global Vision</p>
         </footer>
