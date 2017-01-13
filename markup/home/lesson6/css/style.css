@@ -477,6 +477,7 @@ header {
 }
 
 .tire h2 {
+    position: relative;
   margin-left: -99px;
   margin-top: 1px;
 }
@@ -568,6 +569,15 @@ header {
   display: inline-block;
   width: 50px;
 }
+.tire h2::before{
+    background-image: url('../img/slash.png');
+    content: '';
+    height: 10px;
+    right: 72px;
+    position: absolute;
+    top:25px;
+    width: 5px;
+}
 
 .wheels {
   position: relative;
@@ -611,6 +621,7 @@ header {
 
 .wheels .left-column .grey-text {
   font-size: 9px;
+    line-height: 7px;
 }
 
 .wheels .select-wrapper-inner select {
