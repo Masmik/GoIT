@@ -324,8 +324,9 @@ header {
   font-size: 14px;
   font-style: italic;
   position: absolute;
-  right: 20px;
+  right: 18px;
   text-decoration: none;
+  letter-spacing: 0.2px;
 }
 
 .search::after {
@@ -466,12 +467,13 @@ header {
 .filters label {
   color: #000;
   font-size: 10px;
-  letter-spacing:0.3px;
+  letter-spacing: 0.3px;
 }
 
 .grey-text {
   color: #77858b;
   font-size: 9px;
+  letter-spacing: 0.32px;
 }
 
 .tire {
@@ -603,10 +605,13 @@ header {
 }
 
 .wheels .left-column .label-wrapper {
-  left: -1px;
   position: absolute;
   top: 10px;
   width: 87px;
+}
+
+.wheels .right-column .select-wrapper {
+  width: 64px;
 }
 
 .wheels .select-wrapper {
@@ -626,7 +631,7 @@ header {
 
 .wheels .left-column .grey-text {
   font-size: 9px;
-  line-height: 7px;
+  letter-spacing: 1px;
 }
 
 .wheels .select-wrapper-inner select {
@@ -637,8 +642,18 @@ header {
   padding-bottom: 7px;
 }
 
+.wheels-disc .grey-text {
+  padding-left: 3px;
+}
+
 .wheels-location {
   padding-top: 4px;
+}
+
+.wheels-location label .grey-text {
+  display: inline-block;
+  padding-top: 6px;
+  line-height: 9px;
 }
 
 .mounting-holes {
@@ -649,13 +664,17 @@ header {
   width: 51px;
 }
 
+.wheels .left-column label {
+  letter-spacing: 1px;
+}
+
 .wheels .right-column .g-correction11::after {
   background: url('../img/arrow.png') #fff center no-repeat;
   border: 1px solid #d0d0d0;
   content: '';
   height: 14px;
   position: absolute;
-  right: -3px;
+  right: 4px;
   top: 39px;
   width: 15px;
 }
@@ -666,7 +685,7 @@ header {
   content: '';
   height: 14px;
   position: absolute;
-  right: -2px;
+  right: 4px;
   top: 23px;
   width: 15px;
 }
@@ -724,7 +743,7 @@ aside {
   content: '';
   height: 21px;
   left: 2px;
-  top:1px;
+  top: 1px;
   position: absolute;
   width: 22px;
 }
@@ -793,7 +812,8 @@ aside {
   text-decoration: underline;
   letter-spacing: 0.1px;
 }
-.category-sub.active::before{
+
+.category-sub.active::before {
   top: 2px;
 }
 
@@ -923,8 +943,9 @@ main {
   margin-bottom: -1px;
   margin-left: -4px;
 }
-.nokian{
-  margin-left:-1px;
+
+.nokian {
+  margin-left: -1px;
   letter-spacing: 0.1px;
 }
 
@@ -969,20 +990,24 @@ figure {
   padding-left: 6px;
   padding-top: 5px;
 }
-.nokian-price{
-  padding-top:6px;
+
+.nokian-price {
+  padding-top: 6px;
   padding-left: 7px;
   letter-spacing: 0.2px;
 }
-.hankook-price{
+
+.hankook-price {
   letter-spacing: 0.2px;
 }
+
 .uah {
   font-size: 12px;
   margin-left: 2px;
 }
-.last-product-line{
-  margin-top:2px;
+
+.last-product-line {
+  margin-top: 2px;
 }
 
 /*LOGO PARTNERS*/
@@ -1060,15 +1085,22 @@ footer p {
   margin-left: 5px;
 }
 
-/*.g-correction6{*/
-/*margin-left: 1px;*/
-/*}*/
-.g-correction6::after {
-  right: -5px;
+.g-correction5.footer-menu-item::after {
+  right: -1px;
 }
 
-.g-correction7 {
-  margin-left: 2px;
+.footer-menu a.g-correction6 {
+  padding-left: 10px;
+  padding-right: 12px;
+}
+
+.g-correction6.footer-menu-item::after {
+  right: -2px;
+}
+
+.footer-menu a.g-correction7 {
+  padding-left: 14px;
+  padding-right: 2px;
 }
 
 .dm-left3::before {
