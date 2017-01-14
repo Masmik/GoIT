@@ -33,7 +33,7 @@ header {
   background-image: url('../img/phone-icon.png');
   content: '';
   height: 21px;
-  left: 6px;
+  left: 8px;
   position: absolute;
   top: -2px;
   width: 22px;
@@ -41,7 +41,7 @@ header {
 
 .phone p {
   display: inline-block;
-  letter-spacing: .3px;
+  letter-spacing: .4px;
 }
 
 .second-number {
@@ -62,8 +62,8 @@ header {
   -webkit-box-shadow: 4px 4px 5px 0 rgba(150, 150, 150, 1);
   box-shadow: 4px 4px 5px 0 rgba(150, 150, 150, 1);
   display: block;
-  height: 27px;
-  left: 313px;
+  height: 25px;
+  left: 315px;
   position: absolute;
   top: 17px;
 }
@@ -83,8 +83,7 @@ header {
 }
 
 ::-webkit-input-placeholder {
-  padding-left: 4px;
-  padding-top: 1px;
+  padding-left: 3px;
 }
 
 .login {
@@ -109,7 +108,7 @@ header {
 }
 
 .enter {
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 .regis::before {
@@ -159,21 +158,21 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 3px 1px rgba(220, 224, 225, 1);
   display: block;
-  height: 18px;
+  height: 19px;
   position: absolute;
-  right: 9px;
+  right: 8px;
   text-align: center;
-  top: 20px;
+  top: 19px;
   width: 75px;
 }
 
 .header-img {
   margin-bottom: 3px;
+  margin-left: 1px;
 }
 
 .navi-icon {
   position: absolute;
-  top: -1px;
 }
 
 .home-ic {
@@ -190,15 +189,15 @@ header {
 
 /*NAV*/
 .nav {
-  background: #576068; /* Old browsers */
-  background: -moz-linear-gradient(top, #576068 0%, #000 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #576068 0%, #000 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #576068 0%, #000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #4c4c4c; /* Old browsers */
+  background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 0%, #505860 12%, #2e3236 23%, #2e3236 35%, #2e3236 37%, #2e3236 37%, #131313 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 0%, #505860 12%, #2e3236 23%, #2e3236 35%, #2e3236 37%, #2e3236 37%, #131313 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4c4c4c 0%, #595959 0%, #505860 12%, #2e3236 23%, #2e3236 35%, #2e3236 37%, #2e3236 37%, #131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border: 1px solid #0a1030;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .75);
   display: block;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#576068', endColorstr='#000', GradientType=0); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0); /* IE6-9 */
   height: 32px;
   line-height: 32px;
   position: relative;
@@ -221,9 +220,10 @@ header {
   font-size: 14px;
   height: 26px;
   line-height: 26px;
-  padding-left: 22px;
+  padding-left: 23px;
   padding-right: 18px;
   text-decoration: none;
+  letter-spacing: -0.1px;
 }
 
 .navigation a:hover {
@@ -251,7 +251,7 @@ header {
 }
 
 .contact {
-  margin-left: -20px;
+  margin-left: -21px;
 }
 
 .basket {
@@ -259,7 +259,7 @@ header {
   float: right;
   font-family: Arial, sans-serif;
   font-size: 11px;
-  letter-spacing: .2px;
+  letter-spacing: .4px;
   line-height: 30px;
   margin-right: 12px;
   position: relative;
@@ -271,7 +271,7 @@ header {
   height: 17px;
   left: -28px;
   position: absolute;
-  top: 6px;
+  top: 7px;
   width: 21px;
 }
 
@@ -279,6 +279,9 @@ header {
   color: #0d5a8f;
   font-size: 12px;
   padding-left: 3px;
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
 }
 
 .basket-product {
@@ -287,12 +290,12 @@ header {
 
 .sum {
   display: inline-block;
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .basket-price {
   letter-spacing: .6px;
-  padding-left: 15px;
+  padding-left: 6px;
 }
 
 /*FILTERS*/
@@ -308,7 +311,7 @@ header {
   -webkit-appearance: button;
   border-bottom: 0;
   -webkit-border-radius: 2px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 11px;
   height: 18px;
   padding-left: 3px;
@@ -736,7 +739,7 @@ aside {
   margin-top: 13px;
   padding-left: 28px;
   position: relative;
-  width: 119px;
+  width: 120px;
 }
 
 .category-name::before {
@@ -824,7 +827,7 @@ aside {
   width: 104px;
 }
 
-.right-side .category-name::before {
+.category-name::before {
   left: 2px;
   top: 1px;
 }
@@ -1047,4 +1050,12 @@ footer p {
 
 .g-correction7 {
   margin-left: 2px;
+}
+
+.dm-left3::before {
+  left: 3px;
+}
+
+.dm-left4::before {
+  left: 4px;
 }
