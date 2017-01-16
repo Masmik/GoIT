@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"),
+  url("../fonts/OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LeagueGothicRegular";
+  src: url("../fonts/LeagueGothic/LeagueGothicRegular/LeagueGothicRegular.eot");
+  src: url("../fonts/LeagueGothic/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/LeagueGothic/LeagueGothicRegular/LeagueGothicRegular.woff") format("woff"),
+  url("../fonts/LeagueGothic/LeagueGothicRegular/LeagueGothicRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.wrapper {
+  background-image: url("../img/bg1.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  width: 100%;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+.header__nav{
+  vertical-align: top;
+  font-family: LeagueGothicRegular, sans-serif;
+  font-size: 24px;
+}
+.nav {
+  display: inline-block;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__href {
+
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.logo {
+  display: inline-block;
+  background: url("../img/logo.png") no-repeat;
+  width: 152px;
+  height: 58px;
+}
+
+.header {
+  padding-top: 48px;
+  padding-bottom: 163px;
+}
+
+.product__information {
+  width: 500px;
+}
+.information{
+  display: inline-block;
+}
+.information__header{
+  font-family: LeagueGothicRegular, sans-serif;
+  color: #ffffff;
+}
+.information__description{
+color: #ffffff;
+  font-family: OpenSansLight, sans-serif;
+}
+
+.phone {
+  display: inline-block;
+}
+.wrapper_product-block{
+  background-image: url("../img/bg-opacity.png");
+}
+.article{
+  background: #745083; /* Old browsers */
+  background: -moz-linear-gradient(top,  #745083 0%, #322539 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #745083 0%,#322539 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #745083 0%,#322539 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539',GradientType=0 ); /* IE6-9 */
+}
+.article__information{
+  display: inline-block;
+  width: 223px;
+}
+
+.information__header_article-block{
+  font-size: 30px;
+}
+.information__description_article-block{
+
+}
