@@ -218,11 +218,11 @@ header {
   font-family: 'Lucida Sans Unicode', Arial, sans-serif;
   font-size: 14px;
   height: 26px;
+  letter-spacing: -.1px;
   line-height: 26px;
   padding-left: 23px;
   padding-right: 18px;
   text-decoration: none;
-  letter-spacing: -0.1px;
 }
 
 .navigation a:hover {
@@ -276,10 +276,10 @@ header {
 
 .blue-text {
   color: #0d5a8f;
-  font-size: 12px;
-  padding-left: 3px;
   display: inline-block;
+  font-size: 12px;
   height: 30px;
+  padding-left: 3px;
   vertical-align: middle;
 }
 
@@ -322,10 +322,10 @@ header {
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-style: italic;
+  letter-spacing: .2px;
   position: absolute;
   right: 18px;
   text-decoration: none;
-  letter-spacing: 0.2px;
 }
 
 .search::after {
@@ -353,8 +353,8 @@ header {
   color: #154468;
   font-family: 'Arial Black', sans-serif;
   font-size: 10px;
-  padding-bottom: 4px;
   margin-left: -1px;
+  padding-bottom: 4px;
 }
 
 .left-column {
@@ -372,9 +372,9 @@ header {
 }
 
 .right-column h3 {
+  letter-spacing: .7px;
   margin-right: 3px;
   text-align: right;
-  letter-spacing: 0.7px;
 }
 
 .general {
@@ -467,13 +467,13 @@ header {
 .filters label {
   color: #000;
   font-size: 10px;
-  letter-spacing: 0.3px;
+  letter-spacing: .3px;
 }
 
 .grey-text {
   color: #77858b;
   font-size: 9px;
-  letter-spacing: 0.32px;
+  letter-spacing: .32px;
 }
 
 .tire {
@@ -588,8 +588,8 @@ header {
 
 .g-correction14 {
   display: inherit;
-  margin-top: 4px;
   margin-left: 1px;
+  margin-top: 4px;
 }
 
 .wheels .g-correction15 {
@@ -662,17 +662,17 @@ header {
 
 .whells-first-left {
   display: inline-block;
-  margin-left: -1px;
-  padding-top: 4px;
   line-height: 9px;
   margin-bottom: -2px;
+  margin-left: -1px;
+  padding-top: 4px;
 }
 
 .wheels-location label .grey-text {
   display: inline-block;
-  padding-top: 4px;
   line-height: 10px;
   margin-left: -1px;
+  padding-top: 4px;
 }
 
 .g-correction12 {
@@ -722,10 +722,10 @@ header {
 }
 
 .wheels .right-column .grey-text {
-  font-size: 8px;
-  line-height: 8px;
   display: inline-block;
+  font-size: 8px;
   letter-spacing: 1px;
+  line-height: 8px;
 }
 
 .g-correction13 {
@@ -743,9 +743,9 @@ header {
 }
 
 .wheels .g-correction8 .grey-text {
-  padding-top: 4px;
-  letter-spacing: 0.74px;
+  letter-spacing: .74px;
   margin-bottom: -3px;
+  padding-top: 4px;
 }
 
 .g-correction9 {
@@ -780,8 +780,8 @@ aside {
   content: '';
   height: 21px;
   left: 2px;
-  top: 1px;
   position: absolute;
+  top: 1px;
   width: 22px;
 }
 
@@ -851,8 +851,8 @@ aside {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
+  letter-spacing: .1px;
   text-decoration: underline;
-  letter-spacing: 0.1px;
 }
 
 .category-sub.active::before {
@@ -988,15 +988,15 @@ main {
 }
 
 .nokian {
+  letter-spacing: .1px;
   margin-left: -1px;
-  letter-spacing: 0.1px;
 }
 
 figcaption {
   color: #1f2528;
   font-size: 13px;
   margin-left: 4px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -1016,9 +1016,9 @@ figure {
 }
 
 .product-description {
-  letter-spacing: .4px;
   font-family: 'Lucida Sans Unicode', sans-serif;
   font-size: 12px;
+  letter-spacing: .4px;
 }
 
 .g-correction4 {
@@ -1037,13 +1037,13 @@ figure {
 }
 
 .nokian-price {
-  padding-top: 6px;
+  letter-spacing: .2px;
   padding-left: 7px;
-  letter-spacing: 0.2px;
+  padding-top: 6px;
 }
 
 .hankook-price {
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
 }
 
 .uah {
