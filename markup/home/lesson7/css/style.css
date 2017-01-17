@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: normal;
 }
-
+/*GENERAL*/
 .wrapper {
   background-image: url("../img/bg1.jpg");
   width: 100%;
@@ -32,12 +32,10 @@
   width: 960px;
   margin: 0 auto;
 }
-.header__nav{
-  vertical-align: top;
-  font-family: LeagueGothicRegular, sans-serif;
-  font-size: 24px;
-}
 .nav {
+  display: inline-block;
+}
+.nav__list{
   display: inline-block;
 }
 
@@ -46,11 +44,9 @@
 }
 
 .nav__href {
-
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
 }
 
 .logo {
@@ -59,15 +55,6 @@
   width: 152px;
   height: 58px;
 }
-
-.header {
-  padding-top: 48px;
-  padding-bottom: 163px;
-}
-
-.product__information {
-  width: 500px;
-}
 .information{
   display: inline-block;
 }
@@ -75,14 +62,90 @@
   font-family: LeagueGothicRegular, sans-serif;
   color: #ffffff;
 }
+.information__tagline{
+  font-family: LeagueGothicRegular, sans-serif;
+}
 .information__description{
-color: #ffffff;
+  color: #ffffff;
   font-family: OpenSansLight, sans-serif;
 }
-
 .phone {
   display: inline-block;
+  position: relative;
 }
+
+/*HEADER*/
+.header {
+  display: table;
+  padding-top: 51px;
+  padding-bottom: 169px;
+  width: 100%;
+}
+.header__logo{
+  display: table-cell;
+}
+.header__nav{
+  display: table-cell;
+  text-align: right;
+  font-family: LeagueGothicRegular, sans-serif;
+  font-size: 24px;
+  vertical-align: top;
+  padding-top: 23px;
+}
+.nav__item_header-block{
+    margin-right: 48px;
+  }
+.nav__list_header-block{
+  margin-right:1px;
+}
+.nav__item_header-block:last-child{
+  margin-right: 0px;
+}
+.nav__href_header-block{
+  position: relative;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.25px;
+}
+.nav__href_header-block::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #edbfff;
+  bottom: -2px;
+  left: -5px;
+  right: -5px;
+}
+
+
+/*PRODUCT*/
+.product{
+  position: relative;
+}
+.product__information {
+  width: 507px;
+  padding-top: 79px;
+  margin-bottom: 104px;
+}
+.information__header_product-block{
+  font-size: 60px;
+  letter-spacing: -0.9px;
+  word-spacing: -1px;
+}
+.information__tagline_product-block{
+  color: #edbfff;
+  font-size: 32px;
+  word-spacing: -2px;
+}
+.information__description_product-block{
+  font-size: 18px;
+  padding-top: 4px;
+  line-height: 24px;
+}
+.phone__img{
+  position: absolute;
+  top: -17px;
+}
+
 .wrapper_product-block{
   background-image: url("../img/bg-opacity.png");
 }

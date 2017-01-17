@@ -307,6 +307,7 @@ header {
 }
 
 .filters select {
+  position: relative;
   -webkit-appearance: button;
   border-bottom: 0;
   -webkit-border-radius: 2px;
@@ -314,8 +315,10 @@ header {
   font-size: 11px;
   height: 18px;
   padding-left: 3px;
+  background-image: url("../img/arrow.png");
+  background-position: right center;
+  background-repeat: no-repeat;
 }
-
 .search {
   bottom: 10px;
   color: #154467;
@@ -425,38 +428,25 @@ header {
 }
 
 .auto select {
-  width: 100px;
+  width: 102px;
 }
 
-.select-wrapper-inner::after {
-  background: url('../img/arrow.png') #fff center no-repeat;
-  border: 1px solid #d0d0d0;
-  content: '';
-  height: 14px;
-  position: absolute;
-  right: -2px;
-  top: 2px;
-  width: 15px;
-}
+/*.select-wrapper-inner::after {*/
+  /*background: url('../img/arrow.png') #fff center no-repeat;*/
+  /*border: 1px solid #d0d0d0;*/
+  /*content: '';*/
+  /*height: 14px;*/
+  /*position: absolute;*/
+  /*right: -2px;*/
+  /*top: 2px;*/
+  /*width: 15px;*/
+/*}*/
 
 .select-year select {
   position: relative;
-  width: 56px;
+  width: 58px;
 }
 
-.select-year::after {
-  background: url('../img/arrow.png') center center no-repeat rgb(255, 255, 255);
-  border-color: rgb(208, 208, 208);
-  border-image: initial;
-  border-style: solid;
-  border-width: 1px;
-  content: '';
-  height: 14px;
-  position: absolute;
-  right: 42px;
-  top: 2px;
-  width: 15px;
-}
 
 .auto {
   margin-left: 5px;
@@ -519,23 +509,13 @@ header {
 }
 
 .tire-size-select {
-  width: 51px;
+  width: 52px;
 }
 
 .tire-r select {
   width: 46px;
 }
 
-.tire-r::after {
-  background: url('../img/arrow.png') #fff center no-repeat;
-  border: 1px solid #d0d0d0;
-  content: '';
-  height: 14px;
-  position: absolute;
-  right: 4px;
-  top: 1px;
-  width: 15px;
-}
 
 .tire-checkbox {
   font-family: 'Lucida Sans Unicode', sans-serif;
@@ -573,7 +553,7 @@ header {
 
 .tire-right-select {
   display: inline-block;
-  width: 50px;
+  width: 53px;
 }
 
 .tire h2::before {
@@ -645,7 +625,7 @@ header {
 }
 
 .wheels .select-wrapper-inner select {
-  width: 56px;
+  width: 60px;
 }
 
 .wheels-disc {
@@ -684,33 +664,11 @@ header {
 }
 
 .wheels .mounting-holes select {
-  width: 51px;
+  width: 52px;
 }
 
 .wheels .left-column label {
   letter-spacing: 1px;
-}
-
-.wheels .right-column .g-correction11::after {
-  background: url('../img/arrow.png') #fff center no-repeat;
-  border: 1px solid #d0d0d0;
-  content: '';
-  height: 14px;
-  position: absolute;
-  right: 9px;
-  top: 39px;
-  width: 15px;
-}
-
-.wheels .right-column .g-correction8::after {
-  background: url('../img/arrow.png') #fff center no-repeat;
-  border: 1px solid #d0d0d0;
-  content: '';
-  height: 14px;
-  position: absolute;
-  right: 9px;
-  top: 23px;
-  width: 15px;
 }
 
 .wheels .left-column .select-wrapper-inner {
@@ -829,6 +787,7 @@ aside {
   line-height: 25px;
   margin-left: 47px;
   position: relative;
+  text-decoration: none;
 }
 
 .category-sub::before {
@@ -844,6 +803,15 @@ aside {
 .g-correction17::before {
   top: 7px;
 }
+.category-sub:hover{
+  color: #0c3256;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: .1px;
+  text-decoration: underline;
+}
 
 .category-sub.active {
   color: #0c3256;
@@ -857,9 +825,10 @@ aside {
 
 .category-sub.active::before {
   top: 2px;
+  background-image: url('../img/marker-active.png');
 }
 
-.category-sub:focus::before {
+.category-sub:hover::before {
   background-image: url('../img/marker-active.png');
 }
 
@@ -905,7 +874,6 @@ aside {
 
 .brand input {
   background-image: url('../img/checkbox.png');
-  height: 11px;
   width: 11px;
 }
 
@@ -936,7 +904,7 @@ button {
   background: -webkit-linear-gradient(top, #206988 0%, #114165 59%, #0c3256 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border: 1px solid #a7abae;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 2px 4px 0 rgba(167, 171, 174, 1);
   color: #e5e9ea;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#206988', endColorstr='#0c3256', GradientType=0); /* IE6-9 */
