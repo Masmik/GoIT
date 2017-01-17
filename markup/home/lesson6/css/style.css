@@ -370,13 +370,13 @@ header {
   display: inline-block;
   margin-left: 29px;
   position: absolute;
-  right: 14px;
+  right: 12px;
   top: 2px;
 }
 
 .right-column h3 {
   letter-spacing: .7px;
-  margin-right: 3px;
+  margin-right: 5px;
   text-align: right;
 }
 
@@ -625,7 +625,7 @@ header {
 }
 
 .wheels .select-wrapper-inner select {
-  width: 60px;
+  width: 59px;
 }
 
 .wheels-disc {
@@ -692,7 +692,7 @@ header {
 }
 
 .wheels .right-column {
-  margin-right: 91px;
+  margin-right: 93px;
   margin-top: -11px;
 }
 
@@ -904,19 +904,19 @@ button {
   background: -webkit-linear-gradient(top, #206988 0%, #114165 59%, #0c3256 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border: 1px solid #a7abae;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 2px 4px 0 rgba(167, 171, 174, 1);
   color: #e5e9ea;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#206988', endColorstr='#0c3256', GradientType=0); /* IE6-9 */
   font-family: Arial, sans-serif;
   font-size: 11px;
-  height: 26px;
+  height: 27px;
   letter-spacing: .5px;
   line-height: 19px;
-  margin-left: 33px;
-  margin-top: 20px;
+  margin-left: 31px;
+  margin-top: 19px;
   opacity: .75;
-  width: 80px;
+  width: 82px;
 }
 
 button:focus {
