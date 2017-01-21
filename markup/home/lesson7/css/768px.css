@@ -1,0 +1,174 @@
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+  .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  /*HEADER*/
+  .logo {
+    background-image: url("../img/768px/logo.png");
+    width: 155px;
+    height: 39px;
+  }
+
+  .header {
+    padding-top: 9.6%;
+    padding-bottom: 10.7%;
+  }
+
+  .header__logo {
+    display: table-row;
+  }
+
+  .header__nav {
+    display: table-row;
+    text-align: left;
+  }
+
+  .nav__list_header-block {
+    padding-top: 4.5%;
+  }
+
+  /*PRODUCT*/
+  .product {
+    padding-bottom: 3%;
+  }
+
+  .product__information {
+    padding-left: 3.1%;
+    padding-top: 13.5%;
+    width: 39%;
+    padding-bottom: 1.4%;
+  }
+
+  .phone__img {
+    top: -23px;
+  }
+
+  .information__header_product-block {
+    font-size: 48px;
+    letter-spacing: -0.016em;
+  }
+
+  .information__tagline_product-block {
+    font-size: 24px;
+    padding-top: 1.5%;
+    height: 30px;
+    overflow: hidden;
+    letter-spacing: -0.3px;
+  }
+
+  .information__description_product-block {
+    font-size: 16px;
+    height: 101px;
+    overflow: hidden;
+    hyphens: auto;
+    line-height: 24px;
+  }
+
+  .product__phone {
+    margin-left: 15.7%;
+  }
+
+  .slider_slider-block {
+    margin-top: 5.1%;
+    margin-right: 17%;
+    margin-bottom: 13.3%;
+  }
+
+  /*ARTICLE*/
+  .article {
+    margin-top: 10.4%;
+  }
+
+  .information__header_article-block {
+    font-size: 24px;
+    padding-left: 0px;
+    letter-spacing: -0.22px;
+  }
+
+  .bad__content {
+    width: 100%;
+  }
+
+  .article__information {
+    width: 23.2%;
+  }
+
+  .information__header_article-block::before {
+    top: 6%;
+    left: -35.5%;
+  }
+
+  .information__description_article-block {
+    padding-top: 2px;
+    height: 142px;
+  }
+
+  .information__read-more-article-block {
+    padding-top: 11px;
+    padding-right: 6px;
+    letter-spacing: -0.2px;
+    margin-bottom: 67px;
+  }
+
+  .information__divide {
+    width: 4.2%;
+  }
+
+  .divide_ppc {
+    width: 5.2%;
+  }
+
+  /*REVIEWS*/
+  .information__header_rewiews-block {
+    font-size: 24px;
+  }
+
+  .information__header_other_color {
+    display: block;
+  }
+
+  .information_rewiews-block {
+    margin-top: 98px;
+    padding-bottom: 43px;
+  }
+
+  .information_rewiews-block::before {
+    display: none;
+  }
+
+  .reviews {
+    margin-left: 23px;
+    width: 48.6%;
+  }
+
+  .information__description_rewiews-block {
+    height: 144px;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  .information__header_rewiews-block::before {
+    top: 19px;
+  }
+
+  .slider_reviews-block {
+    width: 89%;
+  }
+
+  .blogs_block {
+    margin-left: 12px;
+    width: 46%;
+  }
+
+  .information__description_blogs_block {
+    height: 30px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+}
+
