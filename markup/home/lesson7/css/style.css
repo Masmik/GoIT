@@ -101,6 +101,9 @@
   text-transform: uppercase;
   text-align: right;
 }
+.information__read-more-link{
+  text-decoration: none;
+}
 
 /*HEADER*/
 .header {
@@ -214,6 +217,7 @@
   border-radius: 100%;
   margin-right: 1px;
   background-color: #3b3842;
+  cursor: pointer;
 }
 
 .slider__item:hover::before{
@@ -301,16 +305,18 @@ position: absolute;
 }
 
 .information__read-more-article-block {
-  color: #fff;
   padding-top: 27px;
   margin-bottom: 66px;
   padding-right: 8px;
   letter-spacing: -0.15px;
 }
+.information__read-more-link{
+  color: #fff;
+}
 .information__read-more_less-padding-right{
   padding-right: 12px;
 }
-.information__read-more-article-block:hover {
+.information__read-more-link:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
@@ -403,16 +409,18 @@ position: absolute;
   color: #454545;
   padding-left: 66px;
   line-height: 30px;
-  letter-spacing:-0.03px;
+  letter-spacing:-0.12px;
 }
 
 .information__read-more_blogs-block {
   letter-spacing: -0.2px;
   padding-right: 11px;
   padding-top: 22px;
+}
+.information__read-more-link_blogs-block{
   color: #454545;
 }
-.information__read-more_blogs-block:hover{
+.information__read-more-link_blogs-block:hover{
   text-shadow: 1px 1px 1px #fff;
 }
 
@@ -428,6 +436,7 @@ position: absolute;
   height: 15px;
   border: 1px solid #e8e8e8;
   background-color: #fff;
+  cursor: pointer;
 }
 .slider__item_reviews-block:hover::before{
   position: absolute;
@@ -480,19 +489,26 @@ position: absolute;
   border-top: 1px solid #d8d8d8;
   background-color: #ececec;
 }
+.content_info-block{
+  display:table;
+  padding-bottom:90px;
+}
 .information_info-block {
+  display: table-cell;
   position: relative;
-  width: 277px;
-  margin-right: 58px;
+  width: 282px;
   vertical-align: top;
   padding-top: 98px;
   height: 205px;
   overflow: hidden;
-  margin-bottom: 94px;
   hyphens: auto;
 }
-.information_info-block:last-child{
-  margin-right: 0;
+
+.divide_info-block{
+  width: 56px;
+}
+.divide_info-block_ppc{
+  width: 58px;
 }
 .information__header_info-block {
   color: #454545;
@@ -503,17 +519,16 @@ position: absolute;
   font-size: 48px;
   color: #454545;
   padding-bottom: 9px;
-  margin-top: -54px;
   letter-spacing: -0.5px;
+  margin-top: -53px;
 }
 .header_info-block_other_color{
   color: #b9b9b9;
 }
-
 .information__description_info-block {
   color: #787878;
-  /*height: 168px;*/
-  /*overflow: hidden;*/
+  height: 168px;
+  overflow: hidden;
   line-height: 24px;
   padding-top: 7px;
   /*-webkit-hyphens: auto;*/
@@ -521,8 +536,11 @@ position: absolute;
   /*-ms-hyphens: auto;*/
   hyphens: auto;
   letter-spacing: -0.1px;
+  text-shadow: 1px 1px 0 #fff;
 }
-
+.information__description_info-block_plus-targline{
+  height: 124px;
+}
 .information__tagline_info-block {
   font-family: Georgia, sans-serif;
   font-size: 16px;
