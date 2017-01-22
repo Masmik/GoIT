@@ -30,9 +30,9 @@
 
 /*GENERAL*/
 .wrapper {
+  background-position: top center;
   background-image: url("../img/bg1.jpg");
-  width: 100%;
-  height: 100%;
+  background-size: cover;
 }
 
 .block {
@@ -202,7 +202,7 @@
 .slider_slider-block {
   margin-top: 93px;
   margin-right: 165px;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
 }
 
 .slider__menu {
@@ -511,10 +511,15 @@ position: absolute;
   background-color: #f9f9f9;
 }
 .partners-logo{
-  margin-top: 24px;
   text-align: center;
-  margin-left: 3px;
-  margin-bottom: 26px;
+  margin-top: 23px;
+  margin-bottom:26px;
+}
+.partners-logo__img:last-child{
+  padding-right: 0px;
+}
+.partners-logo__img{
+  padding-right: 30px;
 }
 
 /*INFO*/
@@ -586,6 +591,8 @@ position: absolute;
 /*FOOTER*/
 .block_footer {
   background-image: url("../img/bg-footer.jpg");
+  -webkit-background-size:;
+  background-size: cover;
 }
 .nav_footer{
   margin-top: 47px;
