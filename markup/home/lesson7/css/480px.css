@@ -1,44 +1,279 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .content {
+    box-sizing: border-box;
     width: 100%;
     padding-left: 4.2px;
     padding-right: 4.2px;
   }
 
+  .content__header {
+    position: relative;
+    padding-bottom: 72px;
+  }
+
+  /*HEADER*/
   .header {
-    padding-left: 16.3%;
-    padding-top: 6.8%;
+    padding-left: 34%;
+    padding-top: 14.8%;
   }
 
   .logo {
     background-image: url("../img/480/logo.png");
     width: 152px;
     height: 39px;
+
   }
 
   .header__logo {
-    padding-bottom: 2.5%;
+    padding-bottom: 4.8%;
   }
 
   .header__nav {
     display: table-row;
+    /*display: none;*/
   }
 
   .nav__list_header-block {
     display: table;
-    width: 25.3%;
-    margin-left: -4.6%;
-    background-image: url("../img/480/menu-bg.png");
-    /*border-radius: 8px;*/
-    /*border: 1px solid #36293e;*/
-    /*box-shadow: 0 0 3px rgba(0,0,0, 0.2);*/
-    /*background-color: #483b4e;*/
+    position: absolute;
+    left: 17.7%;
+    border-radius: 8px;
+    width: 38.9%;
+    border: 1px solid #051116;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(54, 41, 62, 0.75);
+    z-index: 1;
   }
 
   .nav__item_header-block {
     display: table-row;
     text-align: center;
-    line-height: 180%;
   }
 
+  .nav__href_header-block {
+    border-top: 1px solid #5f486a;
+    border-bottom: 1px solid #36283e;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .nav__href_header-block:hover {
+    background-color: rgba(43, 34, 49, 0.75);
+  }
+
+  .nav__href_header-block_first-element {
+    height: 45px;
+    line-height: 48px;
+  }
+
+  .nav__href_header-block_last-element {
+    border-bottom: 0;
+  }
+
+  /*PRODUCT*/
+  .product {
+    padding-bottom: 11px;
+  }
+
+  .information__header_product-block {
+    font-size: 36px;
+    letter-spacing: -0.2px;
+  }
+
+  .information__tagline_product-block {
+    font-size: 18px;
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+  }
+
+  .information__description_product-block {
+    display: none;
+  }
+
+  .product__information {
+    padding-top: 0;
+    width: 42%;
+    margin-left: 7.6%;
+    margin-top: 94px;
+  }
+
+  .product__phone {
+    margin-left: 15px;
+  }
+
+  .phone__img {
+    background-image: url("../img/480/phone.png");
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 304px;
+    top: -9px;
+  }
+
+  /*SLIDER*/
+  .slider_slider-block {
+    margin-top: 23px;
+    margin-right: 40%;
+    padding-bottom: 56px;
+  }
+
+  /*ARTICLE*/
+  .bad__content {
+    width: 100%;
+  }
+
+  .article {
+    margin-left: 16.8%;
+    margin-top: 76px;
+    margin-right: 1%;
+    padding-bottom: 51px;
+  }
+
+  .article__information {
+    display: table-row;
+  }
+
+  .information__header_article-block {
+    font-size: 24px;
+    padding-left: 0;
+    letter-spacing: -0.25px;
+  }
+
+  .information__description_article-block {
+    padding-top: 2px;
+    height: 70px;
+  }
+
+  .information__header_article-block::before {
+    top: 2px;
+  }
+
+  .information__read-more-article-block {
+    padding-top: 19px;
+    padding-right: 17px;
+    margin-bottom: 22px;
+  }
+
+  /*REVIEWS*/
+  .block_reviews-block {
+    padding-bottom: 87px;
+  }
+
+  .reviews {
+    width: 97%;
+    margin-left: 8.5%;
+  }
+
+  .information_rewiews-block {
+    margin-top: 69px;
+  }
+
+  .information__header_rewiews-block {
+    padding-top: 28px;
+    letter-spacing: -0.1px;
+    padding-left: 38px;
+  }
+
+  .information__header_rewiews-block::before {
+    left: -24px;
+  }
+
+  .information__description_rewiews-block {
+    padding-top: 13px;
+    padding-right: 29px;
+    padding-left: 38px;
+    margin-bottom: -3px;
+  }
+
+  .information_rewiews-block::before {
+    display: none;
+  }
+
+  .slider_reviews-block {
+    margin-left: 35.1%;
+    text-align: left;
+  }
+
+  .blogs_block {
+    margin-top: 46px;
+    margin-left: 16.5%;
+  }
+
+  .information_blogs-block {
+    width: 74%;
+  }
+
+  .information__tagline_blogs_block {
+    padding-top: 19px;
+  }
+
+  .information__description_blogs_block {
+    height: 32px;
+    overflow: hidden;
+    padding-left: 67px;
+  }
+
+  .information__read-more_blogs-block {
+    padding-right: 0;
+    padding-top: 15px;
+  }
+
+  .information__tagline_icon::before {
+    left: 2px;
+  }
+
+  /*PARTNERS*/
+  .partners-logo {
+    margin-top: 15px;
+    margin-bottom: 37px;
+  }
+
+  .partners-logo__img {
+    padding-right: 12px;
+    padding-top: 20px;
+  }
+
+  .partners-logo__img:nth-child(3) {
+    padding-right: 0;
+  }
+
+  /*INFO*/
+  .information_info-block {
+    display: table-row;
+  }
+
+  .content_info-block {
+    margin-left: 3%;
+    padding-bottom: 18px;
+  }
+
+  .divide_info-block {
+    height: 34px;
+  }
+
+  .information__header_info-block {
+    font-size: 24px;
+  }
+
+  .information__description_info-block {
+    padding-top: 9px;
+    height: 100px;
+  }
+
+  /*FOOTER*/
+  .nav_footer {
+    margin-left: 3.8%;
+    margin-bottom: 33px;
+  }
+
+  .nav__item_footer {
+    margin-right: 21px;
+  }
+  .copywrite_footer{
+float: none;
+    margin-top: 0;
+    margin-left: 35.3%;
+    padding-bottom: 87px;
+  }
 }

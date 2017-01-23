@@ -191,6 +191,9 @@
 }
 
 .phone__img {
+  background-image: url("../img/phone.png");
+  width: 274px;
+  height: 434px;
   position: absolute;
   top: -17px;
 }
@@ -260,6 +263,7 @@
 }
 
 .article {
+  display: table;
   margin-top: 79px;
 }
 
