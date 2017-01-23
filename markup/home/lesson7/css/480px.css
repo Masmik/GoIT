@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .content {
+    width: 100%;
+    padding-left: 4.2px;
+    padding-right: 4.2px;
+  }
+
+  .header {
+    padding-left: 16.3%;
+    padding-top: 6.8%;
+  }
+
+  .logo {
+    background-image: url("../img/480/logo.png");
+    width: 152px;
+    height: 39px;
+  }
+
+  .header__logo {
+    padding-bottom: 2.5%;
+  }
+
+  .header__nav {
+    display: table-row;
+  }
+
+  .nav__list_header-block {
+    display: table;
+    width: 25.3%;
+    margin-left: -4.6%;
+    background-image: url("../img/480/menu-bg.png");
+    /*border-radius: 8px;*/
+    /*border: 1px solid #36293e;*/
+    /*box-shadow: 0 0 3px rgba(0,0,0, 0.2);*/
+    /*background-color: #483b4e;*/
+  }
+
+  .nav__item_header-block {
+    display: table-row;
+    text-align: center;
+    line-height: 180%;
+  }
+
+}
