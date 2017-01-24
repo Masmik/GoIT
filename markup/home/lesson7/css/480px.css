@@ -2,8 +2,8 @@
   .content {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 4.2px;
-    padding-right: 4.2px;
+    padding-left: 0.875%;
+    padding-right: 0.875%;
   }
 
   .content__header {
@@ -21,7 +21,6 @@
     background-image: url("../img/480/logo.png");
     width: 152px;
     height: 39px;
-
   }
 
   .header__logo {
@@ -43,6 +42,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: rgba(54, 41, 62, 0.75);
     z-index: 1;
+    overflow: hidden;
   }
 
   .nav__item_header-block {
@@ -67,8 +67,10 @@
     line-height: 48px;
   }
 
-  .nav__href_header-block_last-element {
-    border-bottom: 0;
+  .nav__href_header-block:hover::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   /*PRODUCT*/
@@ -113,9 +115,9 @@
 
   /*SLIDER*/
   .slider_slider-block {
-    margin-top: 23px;
+    margin-top: 22px;
     margin-right: 40%;
-    padding-bottom: 56px;
+    padding-bottom: 57px;
   }
 
   /*ARTICLE*/
@@ -143,6 +145,7 @@
   .information__description_article-block {
     padding-top: 2px;
     height: 70px;
+    letter-spacing: -0.05px;
   }
 
   .information__header_article-block::before {
@@ -212,6 +215,7 @@
     height: 32px;
     overflow: hidden;
     padding-left: 67px;
+    letter-spacing: -0.05px;
   }
 
   .information__read-more_blogs-block {
@@ -239,17 +243,30 @@
   }
 
   /*INFO*/
+  .block_info-block {
+    width: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
   .information_info-block {
     display: table-row;
+    height: auto;
+  }
+
+  .header_info-block {
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .content_info-block {
-    margin-left: 3%;
-    padding-bottom: 18px;
+    padding-top: 66px;
+    padding-bottom: 47px;
   }
 
   .divide_info-block {
-    height: 34px;
+    height: 50px;
   }
 
   .information__header_info-block {
@@ -267,13 +284,22 @@
     margin-bottom: 33px;
   }
 
+  .nav__item_footer:last-child {
+    margin-right: 0;
+  }
+
   .nav__item_footer {
     margin-right: 21px;
   }
-  .copywrite_footer{
-float: none;
+
+  .copywrite_footer {
+    float: none;
     margin-top: 0;
     margin-left: 35.3%;
     padding-bottom: 87px;
+  }
+
+  .nav__href_footer {
+    letter-spacing: -0.14px;
   }
 }
