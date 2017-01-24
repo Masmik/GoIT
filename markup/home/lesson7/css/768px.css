@@ -2,21 +2,21 @@
 
   .content {
     box-sizing: border-box;
-    width: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    width: 100%;
   }
 
   /*HEADER*/
   .logo {
-    background-image: url("../img/768px/logo.png");
-    width: 155px;
+    background-image: url('../img/768px/logo.png');
     height: 39px;
+    width: 155px;
   }
 
   .header {
-    padding-top: 9.6%;
     padding-bottom: 10.7%;
+    padding-top: 9.6%;
   }
 
   .header__logo {
@@ -38,10 +38,10 @@
   }
 
   .product__information {
+    padding-bottom: 1.4%;
     padding-left: 3.1%;
     padding-top: 13.5%;
     width: 39%;
-    padding-bottom: 1.4%;
   }
 
   .phone__img {
@@ -50,23 +50,23 @@
 
   .information__header_product-block {
     font-size: 48px;
-    letter-spacing: -0.016em;
+    letter-spacing: -.016em;
   }
 
   .information__tagline_product-block {
     font-size: 24px;
-    padding-top: 1.5%;
     height: 30px;
+    letter-spacing: -.3px;
     overflow: hidden;
-    letter-spacing: -0.3px;
+    padding-top: 1.5%;
   }
 
   .information__description_product-block {
     font-size: 16px;
     height: 101px;
-    overflow: hidden;
     hyphens: auto;
     line-height: 24px;
+    overflow: hidden;
   }
 
   .product__phone {
@@ -74,8 +74,8 @@
   }
 
   .slider_slider-block {
-    margin-top: 5.1%;
     margin-right: 17%;
+    margin-top: 5.1%;
     padding-bottom: 13.3%;
   }
 
@@ -86,8 +86,8 @@
 
   .information__header_article-block {
     font-size: 24px;
+    letter-spacing: -.22px;
     padding-left: 0;
-    letter-spacing: -0.22px;
   }
 
   .bad__content {
@@ -99,20 +99,20 @@
   }
 
   .information__header_article-block::before {
-    top: 6%;
     left: -35.5%;
+    top: 6%;
   }
 
   .information__description_article-block {
-    padding-top: 2px;
     height: 142px;
+    padding-top: 2px;
   }
 
   .information__read-more-article-block {
-    padding-top: 11px;
-    padding-right: 6px;
-    letter-spacing: -0.2px;
+    letter-spacing: -.2px;
     margin-bottom: 67px;
+    padding-right: 6px;
+    padding-top: 11px;
   }
 
   .information__divide {
@@ -152,12 +152,10 @@
     text-overflow: clip;
   }
 
-
   /*PARTNERS*/
-  .partners-logo__img{
+  .partners-logo__img {
     padding-right: 1.8%;
   }
-
 
   .information__header_rewiews-block::before {
     top: 19px;
@@ -174,31 +172,34 @@
 
   .information__description_blogs_block {
     height: 30px;
-    text-overflow: clip;
     overflow: hidden;
+    text-overflow: clip;
   }
 
   /*INFO*/
-
-  .information__header_info-block{
+  .information__header_info-block {
     font-size: 24px;
   }
-  .information_info-block{
+
+  .information_info-block {
     padding-top: 101px;
     width: 30.4%;
   }
-  .divide_info-block{
+
+  .divide_info-block {
     width: 6%;
   }
-  .divide_info-block_ppc{
+
+  .divide_info-block_ppc {
     width: 5.5%;
   }
 
   /*FOOTER*/
-  .nav_footer{
+  .nav_footer {
     margin-bottom: 134px;
   }
-  .copywrite_footer{
+
+  .copywrite_footer {
     display: block;
     margin-right: 4px;
     margin-top: 103px;

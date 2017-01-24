@@ -1,14 +1,14 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .content {
     box-sizing: border-box;
+    padding-left: .875%;
+    padding-right: .875%;
     width: 100%;
-    padding-left: 0.875%;
-    padding-right: 0.875%;
   }
 
   .content__header {
-    position: relative;
     padding-bottom: 72px;
+    position: relative;
   }
 
   /*HEADER*/
@@ -18,9 +18,9 @@
   }
 
   .logo {
-    background-image: url("../img/480/logo.png");
-    width: 152px;
+    background-image: url('../img/480/logo.png');
     height: 39px;
+    width: 152px;
   }
 
   .header__logo {
@@ -33,16 +33,16 @@
   }
 
   .nav__list_header-block {
-    display: table;
-    position: absolute;
-    left: 17.7%;
-    border-radius: 8px;
-    width: 38.9%;
+    background-color: rgba(54, 41, 62, .75);
     border: 1px solid #051116;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    background-color: rgba(54, 41, 62, 0.75);
-    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    display: table;
+    left: 17.7%;
     overflow: hidden;
+    position: absolute;
+    width: 38.9%;
+    z-index: 1;
   }
 
   .nav__item_header-block {
@@ -51,15 +51,15 @@
   }
 
   .nav__href_header-block {
-    border-top: 1px solid #5f486a;
     border-bottom: 1px solid #36283e;
+    border-top: 1px solid #5f486a;
     display: block;
     height: 40px;
     line-height: 40px;
   }
 
   .nav__href_header-block:hover {
-    background-color: rgba(43, 34, 49, 0.75);
+    background-color: rgba(43, 34, 49, .75);
   }
 
   .nav__href_header-block_first-element {
@@ -68,9 +68,9 @@
   }
 
   .nav__href_header-block:hover::after {
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
   }
 
   /*PRODUCT*/
@@ -80,14 +80,14 @@
 
   .information__header_product-block {
     font-size: 36px;
-    letter-spacing: -0.2px;
+    letter-spacing: -.2px;
   }
 
   .information__tagline_product-block {
     font-size: 18px;
     height: 24px;
-    overflow: hidden;
     line-height: 24px;
+    overflow: hidden;
   }
 
   .information__description_product-block {
@@ -95,10 +95,10 @@
   }
 
   .product__information {
-    padding-top: 0;
-    width: 42%;
     margin-left: 7.6%;
     margin-top: 94px;
+    padding-top: 0;
+    width: 42%;
   }
 
   .product__phone {
@@ -106,17 +106,17 @@
   }
 
   .phone__img {
-    background-image: url("../img/480/phone.png");
+    background-image: url('../img/480/phone.png');
     background-repeat: no-repeat;
-    width: 192px;
     height: 304px;
     top: -9px;
+    width: 192px;
   }
 
   /*SLIDER*/
   .slider_slider-block {
-    margin-top: 22px;
     margin-right: 40%;
+    margin-top: 22px;
     padding-bottom: 57px;
   }
 
@@ -127,8 +127,8 @@
 
   .article {
     margin-left: 16.8%;
-    margin-top: 76px;
     margin-right: 1%;
+    margin-top: 76px;
     padding-bottom: 51px;
   }
 
@@ -138,14 +138,14 @@
 
   .information__header_article-block {
     font-size: 24px;
+    letter-spacing: -.25px;
     padding-left: 0;
-    letter-spacing: -0.25px;
   }
 
   .information__description_article-block {
-    padding-top: 2px;
     height: 70px;
-    letter-spacing: -0.05px;
+    letter-spacing: -.05px;
+    padding-top: 2px;
   }
 
   .information__header_article-block::before {
@@ -153,9 +153,9 @@
   }
 
   .information__read-more-article-block {
-    padding-top: 19px;
-    padding-right: 17px;
     margin-bottom: 22px;
+    padding-right: 17px;
+    padding-top: 19px;
   }
 
   /*REVIEWS*/
@@ -164,8 +164,8 @@
   }
 
   .reviews {
-    width: 97%;
     margin-left: 8.5%;
+    width: 97%;
   }
 
   .information_rewiews-block {
@@ -173,9 +173,9 @@
   }
 
   .information__header_rewiews-block {
-    padding-top: 28px;
-    letter-spacing: -0.1px;
+    letter-spacing: -.1px;
     padding-left: 38px;
+    padding-top: 28px;
   }
 
   .information__header_rewiews-block::before {
@@ -183,10 +183,10 @@
   }
 
   .information__description_rewiews-block {
-    padding-top: 13px;
-    padding-right: 29px;
-    padding-left: 38px;
     margin-bottom: -3px;
+    padding-left: 38px;
+    padding-right: 29px;
+    padding-top: 13px;
   }
 
   .information_rewiews-block::before {
@@ -199,8 +199,8 @@
   }
 
   .blogs_block {
-    margin-top: 46px;
     margin-left: 16.5%;
+    margin-top: 46px;
   }
 
   .information_blogs-block {
@@ -213,9 +213,9 @@
 
   .information__description_blogs_block {
     height: 32px;
+    letter-spacing: -.05px;
     overflow: hidden;
     padding-left: 67px;
-    letter-spacing: -0.05px;
   }
 
   .information__read-more_blogs-block {
@@ -229,8 +229,8 @@
 
   /*PARTNERS*/
   .partners-logo {
-    margin-top: 15px;
     margin-bottom: 37px;
+    margin-top: 15px;
   }
 
   .partners-logo__img {
@@ -244,9 +244,9 @@
 
   /*INFO*/
   .block_info-block {
-    width: auto;
     padding-left: 3%;
     padding-right: 3%;
+    width: auto;
   }
 
   .information_info-block {
@@ -255,14 +255,14 @@
   }
 
   .header_info-block {
+    margin-top: 0;
     padding-left: 0;
     padding-top: 0;
-    margin-top: 0;
   }
 
   .content_info-block {
-    padding-top: 66px;
     padding-bottom: 47px;
+    padding-top: 66px;
   }
 
   .divide_info-block {
@@ -274,14 +274,14 @@
   }
 
   .information__description_info-block {
-    padding-top: 9px;
     height: 100px;
+    padding-top: 9px;
   }
 
   /*FOOTER*/
   .nav_footer {
-    margin-left: 3.8%;
     margin-bottom: 33px;
+    margin-left: 3.8%;
   }
 
   .nav__item_footer:last-child {
@@ -294,12 +294,12 @@
 
   .copywrite_footer {
     float: none;
-    margin-top: 0;
     margin-left: 35.3%;
+    margin-top: 0;
     padding-bottom: 87px;
   }
 
   .nav__href_footer {
-    letter-spacing: -0.14px;
+    letter-spacing: -.14px;
   }
 }
