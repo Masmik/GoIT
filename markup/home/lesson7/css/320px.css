@@ -2,8 +2,8 @@
   .content {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
+    padding-left: 5.25%;
+    padding-right: 5.25%;
   }
 
   /*HEADER*/
@@ -56,7 +56,7 @@
 
   .information__header_product-block {
     font-size: 36px;
-    letter-spacing: -.5px
+    letter-spacing: -.4px
   }
 
   .information__tagline_product-block {
@@ -78,7 +78,7 @@
   /*SLIDER*/
   .slider_slider-block {
     margin-top: 71px;
-    margin-right: 33%;
+    margin-right: 33.5%;
     padding-bottom: 65px;
   }
 
@@ -119,14 +119,14 @@
 
   .information__read-more-article-block {
     padding-top: 18px;
-    padding-right: 2%;
+    padding-right: 4%;
     margin-bottom: 22px;
   }
 
   /*REVIEWS*/
   .reviews {
     margin-left: 9.2%;
-    width: 91.5%;
+    width: 89.6%;
   }
 
   .information_rewiews-block {
@@ -170,17 +170,19 @@
   /*BLOGS*/
   .blogs_block {
     margin-top: 46px;
-    margin-left: 0;
+    margin-left: 0.8%;
     width: 100%;
     overflow: hidden;
   }
 
+  .information__item{
+    display: block;
+  }
   .information__tagline_blogs_block {
-    white-space: nowrap;
+    width: 70%;
   }
 
   .information_blogs-block {
-    white-space: nowrap;
     width: 100%;
   }
 
@@ -190,11 +192,15 @@
 
   .information__tagline_blogs_block {
     padding-top: 19px;
+    height: 17px;
+    overflow: hidden;
   }
 
   .information__description_blogs_block {
-    padding-left: 24%;
+    padding-left: 23%;
     letter-spacing: -.07px;
+    height: 30px;
+    overflow: hidden;
   }
 
   .information__tagline_icon::before {
@@ -202,11 +208,12 @@
   }
 
   .information__read-more_blogs-block {
-    padding-right: 2%;
+    padding-right: 4%;
+    padding-top:21px;
   }
 
   .block_reviews-block {
-    padding-bottom: 86px;
+    padding-bottom: 87px;
   }
 
   /*PARTNERS*/
@@ -238,7 +245,7 @@
     float: none;
     margin-top: 42px;
     margin-left: 26%;
-    padding-bottom: 120px;
+    padding-bottom: 147px;
   }
 
 }

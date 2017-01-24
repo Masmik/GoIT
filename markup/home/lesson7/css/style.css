@@ -448,7 +448,7 @@
   font-size: 16px;
   line-height: 17px;
   padding-left: 67px;
-  padding-top: 20px;
+  padding-top: 19px;
   position: relative;
 }
 
@@ -456,13 +456,13 @@
   color: #454545;
   letter-spacing: -.12px;
   line-height: 30px;
-  padding-left: 66px;
+  padding-left: 67px;
 }
 
 .information__read-more_blogs-block {
   letter-spacing: -.2px;
-  padding-right: 7px;
-  padding-top: 22px;
+  padding-right: 22px;
+  padding-top: 23px;
 }
 
 .information__read-more-link_blogs-block {
@@ -501,16 +501,27 @@
 .information__tagline_icon-third {
   padding-top: 16px;
 }
-
-.information__tagline_icon::before {
-  background-image: url('../img/updates-icon1.png');
-  content: '';
-  height: 49px;
-  left: 1px;
+.information__item{
+  position: relative;
+  display: inline-block;
+}
+.information__img{
+  display:inline-block;
   position: absolute;
   top: 15px;
-  width: 49px;
+  left: 1px;
+
 }
+
+/*.information__tagline_icon::before {*/
+  /*background-image: url('../img/updates-icon1.png');*/
+  /*content: '';*/
+  /*height: 49px;*/
+  /*left: 1px;*/
+  /*position: absolute;*/
+  /*top: 15px;*/
+  /*width: 49px;*/
+/*}*/
 
 .information__tagline_icon-second::before {
   background-image: url('../img/updates-icon2.png');
