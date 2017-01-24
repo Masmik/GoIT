@@ -193,9 +193,10 @@
   .divide_info-block_ppc {
     width: 5.5%;
   }
-  .information__read-more_blogs-block{
-    padding-top: 15px;
+
+  .information__read-more_blogs-block {
     padding-right: 8px;
+    padding-top: 15px;
   }
 
   /*FOOTER*/

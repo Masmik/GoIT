@@ -1,22 +1,22 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .content {
     box-sizing: border-box;
-    width: 100%;
     padding-left: 5.25%;
     padding-right: 5.25%;
+    width: 100%;
   }
 
   /*HEADER*/
   .logo {
     background-image: url('../img/320/logo.png');
-    width: 152px;
     height: 39px;
+    width: 152px;
   }
 
   .header {
-    padding-top: 70px;
-    padding-left: 24%;
     padding-bottom: 49px;
+    padding-left: 24%;
+    padding-top: 70px;
   }
 
   .header__logo {
@@ -25,9 +25,9 @@
 
   .header__nav {
     display: block;
-    text-align: left;
-    padding-top: 36px;
     padding-left: 20.4%;
+    padding-top: 36px;
+    text-align: left;
     /*display: none;*/
   }
 
@@ -49,21 +49,21 @@
   }
 
   .product__information {
+    margin-bottom: 0;
     padding-left: 47px;
     width: 73%;
-    margin-bottom: 0;
   }
 
   .information__header_product-block {
     font-size: 36px;
-    letter-spacing: -.4px
+    letter-spacing: -.4px;
   }
 
   .information__tagline_product-block {
     font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -.2px;
     height: 24px;
+    letter-spacing: -.2px;
+    line-height: 24px;
     overflow: hidden;
   }
 
@@ -77,8 +77,8 @@
 
   /*SLIDER*/
   .slider_slider-block {
-    margin-top: 71px;
     margin-right: 33.5%;
+    margin-top: 71px;
     padding-bottom: 65px;
   }
 
@@ -94,8 +94,8 @@
   }
 
   .article {
-    margin-top: 69px;
     margin-left: 23%;
+    margin-top: 69px;
   }
 
   .bad__content {
@@ -111,16 +111,16 @@
   }
 
   .information__description_article-block {
-    padding-top: 2px;
-    letter-spacing: -.06px;
-    hyphens: none;
     height: 71px;
+    hyphens: none;
+    letter-spacing: -.06px;
+    padding-top: 2px;
   }
 
   .information__read-more-article-block {
-    padding-top: 18px;
-    padding-right: 4%;
     margin-bottom: 22px;
+    padding-right: 4%;
+    padding-top: 18px;
   }
 
   /*REVIEWS*/
@@ -130,15 +130,15 @@
   }
 
   .information_rewiews-block {
-    margin-top: 69px;
     margin-right: 0;
+    margin-top: 69px;
   }
 
   .information__header_rewiews-block {
     font-size: 24px;
-    padding-top: 25px;
-    padding-left: 13.8%;
     letter-spacing: -.1px;
+    padding-left: 13.8%;
+    padding-top: 25px;
   }
 
   .information__header_other_color {
@@ -150,12 +150,12 @@
   }
 
   .information__description_rewiews-block {
-    padding-top: 4px;
-    overflow: hidden;
     height: 164px;
-    padding-left: 15%;
     letter-spacing: -.03px;
     margin-bottom: -5px;
+    overflow: hidden;
+    padding-left: 15%;
+    padding-top: 4px;
   }
 
   .information_rewiews-block::before {
@@ -163,21 +163,22 @@
   }
 
   .slider_reviews-block {
-    width: auto;
     margin-left: 9%;
+    width: auto;
   }
 
   /*BLOGS*/
   .blogs_block {
+    margin-left: .8%;
     margin-top: 46px;
-    margin-left: 0.8%;
-    width: 100%;
     overflow: hidden;
+    width: 100%;
   }
 
-  .information__item{
+  .information__item {
     display: block;
   }
+
   .information__tagline_blogs_block {
     width: 70%;
   }
@@ -191,16 +192,16 @@
   }
 
   .information__tagline_blogs_block {
-    padding-top: 19px;
     height: 17px;
     overflow: hidden;
+    padding-top: 19px;
   }
 
   .information__description_blogs_block {
-    padding-left: 23%;
-    letter-spacing: -.07px;
     height: 30px;
+    letter-spacing: -.07px;
     overflow: hidden;
+    padding-left: 23%;
   }
 
   .information__tagline_icon::before {
@@ -209,7 +210,7 @@
 
   .information__read-more_blogs-block {
     padding-right: 4%;
-    padding-top:21px;
+    padding-top: 21px;
   }
 
   .block_reviews-block {
@@ -218,13 +219,13 @@
 
   /*PARTNERS*/
   .partners-logo {
-    margin-top: 50px;
     margin-bottom: -5px;
+    margin-top: 50px;
   }
 
   .partners-logo__img {
-    padding-right: 2.5%;
     padding-bottom: 56px;
+    padding-right: 2.5%;
   }
 
   .partners-logo__img:nth-child(even) {
@@ -243,8 +244,8 @@
 
   .copywrite_footer {
     float: none;
-    margin-top: 42px;
     margin-left: 26%;
+    margin-top: 42px;
     padding-bottom: 147px;
   }
 

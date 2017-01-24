@@ -501,26 +501,28 @@
 .information__tagline_icon-third {
   padding-top: 16px;
 }
-.information__item{
-  position: relative;
+
+.information__item {
   display: inline-block;
+  position: relative;
 }
-.information__img{
-  display:inline-block;
+
+.information__img {
+  display: inline-block;
+  left: 1px;
   position: absolute;
   top: 15px;
-  left: 1px;
 
 }
 
 /*.information__tagline_icon::before {*/
-  /*background-image: url('../img/updates-icon1.png');*/
-  /*content: '';*/
-  /*height: 49px;*/
-  /*left: 1px;*/
-  /*position: absolute;*/
-  /*top: 15px;*/
-  /*width: 49px;*/
+/*background-image: url('../img/updates-icon1.png');*/
+/*content: '';*/
+/*height: 49px;*/
+/*left: 1px;*/
+/*position: absolute;*/
+/*top: 15px;*/
+/*width: 49px;*/
 /*}*/
 
 .information__tagline_icon-second::before {
