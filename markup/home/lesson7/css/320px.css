@@ -37,6 +37,7 @@
   }
   .nav__list_header-block{
     display: block;
+    border-top: 1px solid transparent;
   }
 
   .nav__list_header-block:hover {
@@ -45,7 +46,7 @@
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     display: table;
-    left: 11.5%;
+    left: 11.3%;
     overflow: hidden;
     position: absolute;
     width: 76.5%;
