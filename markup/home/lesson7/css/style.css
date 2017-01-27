@@ -294,6 +294,7 @@
 
 .article__information:last-child {
   margin-right: 0;
+  /*width: 225px;*/
 }
 
 .information__divide {
