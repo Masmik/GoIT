@@ -109,9 +109,10 @@
 /*HEADER*/
 .header {
   display: table;
+  table-layout: fixed;
   padding-bottom: 169px;
   padding-top: 51px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .header__logo {
@@ -124,6 +125,7 @@
   padding-top: 23px;
   text-align: right;
   vertical-align: top;
+  padding-left: 175px;
 }
 
 .nav__item_header-block {
@@ -264,6 +266,7 @@
 
 .article {
   display: table;
+  table-layout: fixed;
   margin-top: 79px;
 }
 
@@ -563,6 +566,7 @@
 
 .content_info-block {
   display: table;
+  table-layout: fixed;
   padding-bottom: 90px;
 }
 
