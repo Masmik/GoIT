@@ -19,6 +19,7 @@
     padding-top: 70px;
     text-align: center;
   }
+
   .content_header-block {
     overflow: visible;
   }
@@ -34,7 +35,8 @@
     height: 40px;
     overflow: hidden;
   }
-  .nav__list_header-block{
+
+  .nav__list_header-block {
     display: block;
     border-top: 1px solid transparent;
   }
@@ -51,7 +53,8 @@
     width: 246px;
     z-index: 1;
   }
-  .nav__href_header-block_first-element{
+
+  .nav__href_header-block_first-element {
     position: relative;
   }
 

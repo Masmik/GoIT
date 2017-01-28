@@ -117,6 +117,7 @@
 
 .content_header-block {
   overflow: hidden;
+  clear: both;
 }
 
 .header__logo {
@@ -129,7 +130,6 @@
   padding-top: 23px;
   text-align: right;
   vertical-align: top;
-  /*padding-left: 175px;*/
 }
 
 .nav__item_header-block {
