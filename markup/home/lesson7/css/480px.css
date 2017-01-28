@@ -28,6 +28,9 @@
     /*padding-bottom: 14.7%;*/
     display: block;
   }
+  .content_header-block {
+    overflow: visible;
+  }
 
   .header__nav {
     display: block;

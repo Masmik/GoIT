@@ -20,6 +20,10 @@
     padding-top: 70px;
   }
 
+  .content_header-block {
+    overflow: visible;
+  }
+
   .header__logo {
     display: block;
   }
@@ -35,7 +39,8 @@
     height: 40px;
     overflow: hidden;
   }
-  .nav__list_header-block{
+
+  .nav__list_header-block {
     display: block;
     border-top: 1px solid transparent;
   }
@@ -52,18 +57,10 @@
     width: 76.5%;
     z-index: 1;
   }
-  .nav__href_header-block_first-element{
+
+  .nav__href_header-block_first-element {
     position: relative;
   }
-  /*.nav__href_header-block_first-element::before{*/
-    /*background-color: #edbfff;*/
-    /*bottom: 2px;*/
-    /*content: '';*/
-    /*height: 2px;*/
-    /*left: 10px;*/
-    /*position: absolute;*/
-    /*right: 0;*/
-  /*}*/
 
   .nav__item_header-block:first-child {
     border-top: 1px solid transparent;

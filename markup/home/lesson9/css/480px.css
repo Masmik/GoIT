@@ -23,9 +23,11 @@
     height: 39px;
     width: 152px;
   }
+  .content_header-block {
+    overflow: visible;
+  }
 
   .header__logo {
-    /*padding-bottom: 14.7%;*/
     display: block;
   }
 
