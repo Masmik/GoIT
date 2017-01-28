@@ -112,6 +112,7 @@
   table-layout: fixed;
   padding-bottom: 169px;
   padding-top: 51px;
+  width: 100%;
 }
 
 .content_header-block {
@@ -128,7 +129,7 @@
   padding-top: 23px;
   text-align: right;
   vertical-align: top;
-  padding-left: 175px;
+  /*padding-left: 175px;*/
 }
 
 .nav__item_header-block {

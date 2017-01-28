@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/480px.css">
     <link rel="stylesheet" href="css/320px.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--[if gte IE 8]>
+    <link rel="stylesheet" href="css/ie8gte.css">
+    <![endif]-->
+
 </head>
 <body>
 <div class="wrapper">
@@ -36,7 +40,7 @@
                         <li class="nav__item nav__item_header-block"><a href="#"
                                                                         class="nav__href nav__href_header-block">Lorem
                             Ipsum</a></li>
-                        <li class="nav__item nav__item_header-block"><a href="#"
+                        <li class="nav__item nav__item_header-block nav__item_header-block_ie8-gfix"><a href="#"
                                                                         class="nav__href nav__href_header-block nav__href_header-block_last-element">Dolor
                             Sit Amet</a></li>
                     </ul>
@@ -66,10 +70,10 @@
             <div class="content">
                 <div class="slider slider_slider-block">
                     <ul class="slider__menu">
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
-                        <li class="slider__item"></li>
+                        <li class="slider__item"><span class="slider__active"></span></li>
+                        <li class="slider__item"><span class="slider__active"></span></li>
+                        <li class="slider__item"><span class="slider__active"></span></li>
+                        <li class="slider__item"><span class="slider__active"></span></li>
                     </ul>
                 </div>
             </div>
