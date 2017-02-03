@@ -26,9 +26,6 @@ if (parseInt(x) != x) {
 }
 else if (parseInt(n) != n) {
     alert("n не целое число, введите целое число");
-} else if (x == null || n == null) {
-    alert("Отмена")
-}
-else {
+} else {
     alert(pow(x, n));
 }
