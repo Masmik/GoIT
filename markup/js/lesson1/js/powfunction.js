@@ -1,22 +1,27 @@
 "use strict";
 
 function pow(x, n) {
-    var result = 1;
+    if (x == "" || n == "" || x == null || n == null) {
+        return false;
+    }
+    var result = x;
     if (n < 0) {
         n = n * -1;
-        for (var i = 1; i <= n; i++) {
+        for (var i = 1; i < n; i++) {
             result *= x;
         }
         return 1 / result;
     } else if (n == 0) {
         return 1;
     } else {
-        for (i = 1; i <= n; i++) {
+        for (i = 1; i < n; i++) {
             result *= x;
         }
         return result;
     }
 }
+
+// action
 
 var x = prompt("Введите число");
 var n = prompt("Введите степень");
