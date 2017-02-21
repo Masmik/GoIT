@@ -2,13 +2,19 @@
  * Created by tetiana.maslivets on 2/13/17.
  */
 
-var XBuilder = function (parentElement) {
+var XBuilder = function (parentElement, currentElement) {
 
     return {
 
         parentElement: parentElement,
 
+        currentElement: currentElement,
+
         elements: [],
+
+        inside: function () {
+            return new XBuilder(currentElement);
+        },
 
         createHeaderCenter: function (text) {
             var headerElem = document.createElement('h1');
@@ -23,8 +29,9 @@ var XBuilder = function (parentElement) {
             return this._add(formElem);
         },
 
-        createBlock: function () {
+        createBlock: function (className) {
             var blockElem = document.createElement('div');
+            blockElem.className = className;
             return this._add(blockElem);
         },
 
@@ -66,7 +73,7 @@ var XBuilder = function (parentElement) {
                 return new XBuilder(elem);
             } else {
                 this.parentElement.appendChild(elem);
-                return new XBuilder(this.parentElement);
+                return new XBuilder(this.parentElement, elem);
             }
         },
 
