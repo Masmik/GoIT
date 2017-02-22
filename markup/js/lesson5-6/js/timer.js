@@ -39,12 +39,13 @@ var stopwatch = setInterval(function () {
 }, period);
 
 function update() {
-    var outMs = milliseconds > 99 ? (milliseconds > 9 ? milliseconds : '0' + milliseconds) : '0' + milliseconds;
+    var outMs = milliseconds > 99 ? (milliseconds > 9 ? milliseconds : '00' + milliseconds) : '0' + milliseconds;
+        outMs = milliseconds === 0 ? "000" : outMs;
     var outSec = seconds > 9 ? seconds : '0' + seconds;
     var outMin = minutes > 9 ? minutes : '0' + minutes;
     var outHour = hour > 9 ? hour : '0' + hour;
 
-    timer.innerHTML = outHour + ":" + outMin + ":" + outSec + ":" + outMs;
+    timer.innerHTML = outHour + ":" + outMin + ":" + outSec + "." + outMs;
 }
 
 buttonStart.addEventListener('click', function(){
