@@ -8,7 +8,7 @@ var hour = 0,
     seconds = 0,
     milliseconds = 0,
     play = false,
-    period = 10;
+    period = 5;
 
 var stopwatch = setInterval(function () {
 
@@ -39,7 +39,7 @@ var stopwatch = setInterval(function () {
 }, period);
 
 function update() {
-    var outMs = milliseconds > 99 ? (milliseconds > 9 ? milliseconds : '0' + milliseconds) : '00' + milliseconds;
+    var outMs = milliseconds > 99 ? (milliseconds > 9 ? milliseconds : '0' + milliseconds) : '0' + milliseconds;
     var outSec = seconds > 9 ? seconds : '0' + seconds;
     var outMin = minutes > 9 ? minutes : '0' + minutes;
     var outHour = hour > 9 ? hour : '0' + hour;
