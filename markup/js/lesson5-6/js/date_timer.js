@@ -34,12 +34,12 @@ function start() {
         firstStart = new Date().getTime();
     }
 
-    timerStart = new Date().getTime();
+    timerStart = new Date(new Date() - firstStart).getTime();
 
     console.log("timerStart",timerStart);
     //
     if (timerPause != null) {
-        timePauseDuration += new Date(timerStart - firstStart - timerPause).getTime();
+        timePauseDuration += new Date(timerStart - timerPause).getTime();
     }
     console.log("timePauseDuration",timePauseDuration);
 
