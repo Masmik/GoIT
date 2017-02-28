@@ -2,9 +2,9 @@
 
 $(document).ready(function(){
 
-    $('.tabs').click(function (e) {
+    $('.nav-item').click(function (e) {
         e.preventDefault();
-        $('.tabs').removeClass('active');
+        $('.nav-item').removeClass('active');
         $(this).addClass('active');
         $('.content').hide();
         var id = $(this).data('id');

@@ -5,3 +5,21 @@
   padding: 50px;
   background-color: #e8e8e8;
 }
+
+.tooltip{
+  display:none; /* ADDED */
+  padding:5px 10px;
+  background-color:#e5f4fe;
+  border:#5a5959 1px solid;
+  position:absolute;
+  z-index:9999;
+  color:#0c0c0c;
+  font-size:0.688em;
+  min-width:100px;
+  min-height:50px;
+}
+
+.tipBody {
+  background-color:#e5f4fe;
+  padding:2px;
+}
