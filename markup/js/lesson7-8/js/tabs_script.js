@@ -8,6 +8,7 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('.content').hide();
         var id = $(this).data('id');
+        console.log(id);
         $('div.content#' + id).show();
     });
 
