@@ -1,0 +1,7 @@
+.inner-wrapper {
+  border: 1px solid darkgrey;
+  width: 500px;
+  margin: 250px auto;
+  padding: 50px;
+  background-color: #e8e8e8;
+}

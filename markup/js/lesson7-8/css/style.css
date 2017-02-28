@@ -1,0 +1,15 @@
+
+.menu-item{
+  display: inline-block;
+  margin-right: 50px;
+}
+
+
+.active{
+  background-color: red;
+  border: 2px solid black;
+}
+
+.content {
+  display: none;
+}
