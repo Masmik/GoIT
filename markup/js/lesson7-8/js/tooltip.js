@@ -23,15 +23,9 @@ $(function () {
 
         //Создание уникального индификатора
         var uniqId = Math.floor(Math.random() * 100000) + 1;
-        console.log(uniqId);
-
         $(this).data('id', uniqId);
 
-        //$(this).attr('id', 'special-' + uniqId);
-
-
         var tip = $(this).attr('title');
-        console.log(tip);
 
         addTooltip(uniqId, tip);
     });
@@ -58,14 +52,14 @@ $(function () {
         var elementCoordinates = $(el).offset();
 
         //Определить размеры элемента/
-        var elementWidth = $(el).width();
-        var elementHeight = $(el).height();
+        var elementWidth = $(el).outerWidth();
+        var elementHeight = $(el).outerHeight();
         //Определить высоту tooltip/
 
-        var tooltipHeight = $('.tooltip').height();
+        var tooltipHeight = $('.tooltip').outerHeight();
         //Обсчет координат для позиционирования tooltip
 
-        var horizontalCoordinate = elementCoordinates.left + elementWidth + 25;
+        var horizontalCoordinate = elementCoordinates.left + elementWidth + 5;
         var verticalCoordinate = elementCoordinates.top + (elementHeight / 2) - (tooltipHeight / 2);
         var uniqId = $(el).data('id');
 
