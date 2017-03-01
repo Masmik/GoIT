@@ -6,20 +6,15 @@
   background-color: #e8e8e8;
 }
 
-.tooltip{
-  display:none; /* ADDED */
-  padding:5px 10px;
-  background-color:#e5f4fe;
-  border:#5a5959 1px solid;
+
+.tooltip {
   position:absolute;
-  z-index:9999;
-  color:#0c0c0c;
-  font-size:0.688em;
-  min-width:100px;
-  min-height:50px;
+  border:1px solid #333;
+  background-color:#161616;
+  border-radius:5px;
+  padding:10px;
+  color:#fff;
+  font-size:12px Arial;
+  max-width: 400px;
 }
 
-.tipBody {
-  background-color:#e5f4fe;
-  padding:2px;
-}
