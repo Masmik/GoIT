@@ -56,22 +56,26 @@ $(function () {
         //Обсчет координат для позиционирования tooltip
 
         var horizontalCoordinate = elementCoordinates.left + elementWidth + 25;
-        console.log(horizontalCoordinate);
+        console.log('horizontalCoordinate',horizontalCoordinate);
 
         var verticalCoordinate = elementCoordinates.top + (elementHeight/2) - (tooltipHeight/2);
-        console.log(verticalCoordinate);
+        console.log('verticalCoordinate',verticalCoordinate);
 
         //Спозиционировать tooitip
         $('tooltip').css({
             'top': verticalCoordinate,
             'left': horizontalCoordinate
-
         });
+        $('tooltip').fadeIn('slow');
 
-
-
-
+    }).mouseout(function(e) {
+        $('.tooltip').fadeOut('fast');
     });
+
+    //
+    //$( '.btn' ).on( "click", function() {
+    //    tooltips.tooltip( "open" );
+    //})
 
 
 });
