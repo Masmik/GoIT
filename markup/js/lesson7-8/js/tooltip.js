@@ -14,9 +14,10 @@ $(function () {
         }
     );
 
-    function addTooltip(uniqId, tip){
-        $('.tooltip-collection').append('<div class="tooltip" id="special-' + uniqId + '">'+tip+'</div>');
+    function addTooltip(uniqId, tip) {
+        $('.tooltip-collection').append('<div class="tooltip" id="special-' + uniqId + '">' + tip + '</div>');
     }
+
     //Для всех элементов с класом hint создать свой tip с текстом с атрибута и уникальным классом для связи
     $('.hint').each(function () {
 
@@ -24,7 +25,9 @@ $(function () {
         var uniqId = Math.floor(Math.random() * 100000) + 1;
         console.log(uniqId);
 
-        $(this).attr('id', 'special-' + uniqId);
+        $(this).data('id', uniqId);
+
+        //$(this).attr('id', 'special-' + uniqId);
 
 
         var tip = $(this).attr('title');
@@ -35,48 +38,48 @@ $(function () {
 
     //Добавить ивент листнер
 
-    $('.hint').mouseover(function(e) {
+    $('.hint').mouseover(function (e) {
+        showToolTip(this);
+    }).mouseout(function (e) {
+        hideToolTip(this);
+    });
+
+
+    $('.btn').on('click', function (e) {
+        e.preventDefault();
+        $('.hint').each(function () {
+            showToolTip(this);
+        });
+    });
+
+    function showToolTip(el) {
 
         //Определить координаты элемента//
-            var elementCoordinates = $(this).offset();
-            console.log(elementCoordinates);
+        var elementCoordinates = $(el).offset();
 
         //Определить размеры элемента/
-
-        var elementWidth = $(this).width();
-        console.log(elementWidth);
-
-        var elementHeight = $(this).height();
-        console.log('elh',elementHeight);
-
+        var elementWidth = $(el).width();
+        var elementHeight = $(el).height();
         //Определить высоту tooltip/
-        var tooltipHeight = $('.tooltip').height();
-        console.log(tooltipHeight);
 
+        var tooltipHeight = $('.tooltip').height();
         //Обсчет координат для позиционирования tooltip
 
         var horizontalCoordinate = elementCoordinates.left + elementWidth + 25;
-        console.log('horizontalCoordinate',horizontalCoordinate);
-
-        var verticalCoordinate = elementCoordinates.top + (elementHeight/2) - (tooltipHeight/2);
-        console.log('verticalCoordinate',verticalCoordinate);
+        var verticalCoordinate = elementCoordinates.top + (elementHeight / 2) - (tooltipHeight / 2);
+        var uniqId = $(el).data('id');
 
         //Спозиционировать tooitip
-        $('tooltip').css({
-            'top': verticalCoordinate,
-            'left': horizontalCoordinate
-        });
-        $('tooltip').fadeIn('slow');
+        $('.tooltip#special-' + uniqId).css({
+            top: verticalCoordinate,
+            left: horizontalCoordinate
+        }).removeClass('hide-tooltip').addClass('show-tooltip');
+    }
 
-    }).mouseout(function(e) {
-        $('.tooltip').fadeOut('fast');
-    });
-
-    //
-    //$( '.btn' ).on( "click", function() {
-    //    tooltips.tooltip( "open" );
-    //})
-
+    function hideToolTip(el) {
+        var uniqId = $(el).data('id');
+        $('.tooltip#special-' + uniqId).removeClass('show-tooltip').addClass('hide-tooltip');
+    }
 
 });
 

@@ -1,3 +1,30 @@
+@keyframes show {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
 .inner-wrapper {
   border: 1px solid darkgrey;
   width: 500px;
@@ -6,15 +33,26 @@
   background-color: #e8e8e8;
 }
 
-
 .tooltip {
-  position:absolute;
-  border:1px solid #333;
-  background-color:#161616;
-  border-radius:5px;
-  padding:10px;
-  color:#fff;
-  font-size:12px Arial;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
   max-width: 400px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
 }
 
+.tooltip.show-tooltip {
+  animation: show 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.tooltip.hide-tooltip {
+  animation: hide 0.3s linear;
+  animation-fill-mode: forwards;
+}
