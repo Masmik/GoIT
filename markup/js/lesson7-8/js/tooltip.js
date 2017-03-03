@@ -25,7 +25,7 @@ $(function () {
         var uniqId = Math.floor(Math.random() * 100000) + 1;
         $(this).data('id', uniqId);
 
-        var tip = $(this).attr('title');
+        var tip = $(this).data('title');
 
         addTooltip(uniqId, tip);
     });
