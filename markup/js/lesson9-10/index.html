@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">-->
+    <link rel="stylesheet" href="css/karusel/jcarousel.connected-carousels.css">
+    <link rel="stylesheet" href="css/custom-select/selectric.css">
+    <link rel="stylesheet" href="css/checkbox/jquery-labelauty.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/karusel/jquery.jcarousel.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.jcarousel-swipe.js"></script>-->
+    <!--<script type="text/javascript" src="js/jcarousel.basic.js"></script>-->
+    <script type="text/javascript" src="js/karusel/jcarousel.connected-carousels.js"></script>
+
+    <script src="js/custom-select/jquery.selectric.js"></script>
+
+    <script src="js/checkbox/jquery-labelauty.js"></script>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="connected-carousels">
+        <div class="stage">
+            <div class="carousel carousel-stage">
+                <ul class="carousel_menu">
+                    <li class="carousel_img"><img src="img/karusel/img_1.jpg" alt="img"></li>
+                    <li class="carousel_img"><img src="img/karusel/img_2.jpg" alt="img"></li>
+                    <li class="carousel_img"><img src="img/karusel/img_3.jpg" alt="img"></li>
+                    <li class="carousel_img"><img src="img/karusel/img_4.jpg" alt="img"></li>
+                </ul>
+            </div>
+            <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+            <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+        </div>
+
+        <div class="navigation">
+            <a href="#" class="prev prev-navigation">&lsaquo;</a>
+            <a href="#" class="next next-navigation">&rsaquo;</a>
+            <div class="carousel carousel-navigation">
+                <ul>
+                    <li><img class="carousel_navigation" src="img/karusel/img_1.jpg" alt="img"></li>
+                    <li><img class="carousel_navigation" src="img/karusel/img_2.jpg" alt="img"></li>
+                    <li><img class="carousel_navigation" src="img/karusel/img_3.jpg" alt="img"></li>
+                    <li><img class="carousel_navigation" src="img/karusel/img_4.jpg" alt="img"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="view">
+        <select id="basic">
+            <option value="">Long item, lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consectetur, repellat animi nam veniam tempora hic</option>
+            <option value="strawberries">Strawberries</option>
+            <option value="mango">Mango</option>
+            <option value="bananas">Bananas</option>
+            <option value="watermelon">Watermelon</option>
+            <option value="apples">Apples</option>
+            <option value="grapes">Grapes</option>
+            <option value="oranges">Oranges</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="peaches">Peaches</option>
+            <option value="cherries">Cherries</option>
+        </select>
+    </div>
+</div>
+
+<form class="js-custom">
+    <input checked type="checkbox" aria-label="Should this synchronize your files?"
+           data-labelauty="Don't synchronize files|Synchronize my files"/>
+    <input type="checkbox" data-labelauty="Don't delete my files|Delete my files"/>
+    <input checked type="checkbox"/>
+</form>
+
+
+<form class="css-custom">
+    <input type="checkbox" id="test-check1">
+    <label for="test-check1">Чекбокс 1:</label>
+
+
+
+</form>
+
+
+</body>
+</html>
+
+
