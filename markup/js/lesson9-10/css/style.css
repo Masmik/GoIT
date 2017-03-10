@@ -212,12 +212,16 @@ h1 {
   border: 2px dotted blue;
 }
 
+.css-custom p{
+  margin-bottom: 15px;
+}
+
 /*Multilevel menu*/
 
 .menu {
   display: block;
   background-color: dodgerblue;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 }
 
 .menu-item {
@@ -225,21 +229,14 @@ h1 {
   position: relative;
 }
 
-/*.menu .submenu{*/
-/*display: none;*/
-/*}*/
-/*.menu .submenu1{*/
-/*display: none;*/
-/*}*/
-
 .menu-link {
   display: block;
   position: relative;
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   line-height: 40px;
 }
 
@@ -254,16 +251,6 @@ h1 {
   border-width: 10px 5px 0 5px;
   border-color: #ffffff transparent transparent transparent;
 }
-
-/*.dropdown:hover > .submenu {*/
-/*display: block;*/
-/*}*/
-/*.menu-item .dropdown:hover > .submenu:last-child {*/
-/*display: block;*/
-/*left: 200px;*/
-/*top: 0;*/
-
-/*}*/
 
 .submenu {
   margin: 0;

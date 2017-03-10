@@ -9,20 +9,22 @@ $(function () {
 
     $('select').selectric();
 
-    $(":checkbox").labelauty();
+    $(".js-custom :checkbox").labelauty();
+
 
 
     ////Multilevel Menu
 
     $('.menu li ul').hide ();
-    $('li').hover (
+    $('.dropdown').hover (
         function () {
-            $('ul:first', this).fadeIn ('slow')},
+            $('ul:first', this).fadeIn ('slow',function(){
+                $(this).css( "background-color", "#7abbff" );
+            })},
         function () {
-            $('ul:first', this).fadeOut ('fast');
+            $('ul:first', this).fadeOut ('slow');
         }
     );
-
 });
 
 
