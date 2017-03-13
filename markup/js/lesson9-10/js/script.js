@@ -3,26 +3,24 @@
 
 
 $(function () {
-    $('.jcarousel').jcarousel({
-        // Configuration goes here
-    });
+    $('.jcarousel').jcarousel({});
 
     $('select').selectric();
 
     $(".js-custom :checkbox").labelauty();
 
 
-
     ////Multilevel Menu
 
-    $('.menu li ul').hide ();
-    $('.dropdown').hover (
+    $('.menu li ul').hide();
+    $('.dropdown').hover(
         function () {
-            $('ul:first', this).fadeIn ('slow',function(){
-                $(this).css( "background-color", "#7abbff" );
-            })},
+            $('ul:first', this).stop().fadeIn('slow', function () {
+                $(this).css("background-color", "#7abbff");
+            })
+        },
         function () {
-            $('ul:first', this).fadeOut ('slow');
+            $('ul:first', this).stop().fadeOut({duration: 'slow', queue: false});
         }
     );
 });
