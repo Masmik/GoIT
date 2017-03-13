@@ -20,7 +20,7 @@ $(function () {
             })
         },
         function () {
-            $('ul:first', this).stop().fadeOut({duration: 'slow', queue: false});
+            $('ul:first', this).stop().fadeOut('fast');
         }
     );
 });
