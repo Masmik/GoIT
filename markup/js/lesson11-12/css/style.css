@@ -1,0 +1,52 @@
+.carousel-list {
+  list-style: none;
+  width: 10000px;
+  padding: 0;
+  position: relative;
+}
+
+.carousel-element {
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+
+.carousel-element img {
+  width: 100px;
+  height: 170px;
+}
+
+.carousel-hider {
+  width: 600px;
+  overflow: hidden;
+  float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+  float: left;
+  display: block;
+  background-color: green;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  margin-top: 100px;
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+  background-color: yellow;
+}
+
+.carousel-arrow-left {
+  margin-right: 25px;
+}
+
+.carousel-arrow-right {
+  margin-left: 25px;
+}
