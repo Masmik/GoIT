@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/tmpl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<script type="text/template" id="test">
+    <div class="<%= className[0] %>">
+        <div class="<%= className[1] %>">
+            <h1><%= name %></h1>
+            <img class="<%=className[2] %>" src="<%= url %>">
+            <p><%= position %></p>
+        </div>
+        <div class="<%= className[3] %>">
+            <h2><%= goal %></h2>
+            <ul>
+                <% for ( var i = 0; i < items.length; i++ ) { %>
+                    <li><%= items[i].content %></li>
+                <% } %>
+            </ul>
+        </div>
+        <div class="<%= className[4] %>">
+            <h2><%= phone %></h2>
+            <p class="<%= className[5] %>"><%= number%></p>
+            <h2 class="<%= className[6] %>"><%= fb %></h2>
+            <p class="<%= className[7] %>"><a href="<%= fbLink %>"><%= fbText%></a></p>
+        </div>
+        <div class="<%= className[9] %>">
+            <h2><%= feedback %></h2>
+            <p><%= feedbacText %></p>
+        </div>
+    </div>
+</script>
+
+</body>
+</html>

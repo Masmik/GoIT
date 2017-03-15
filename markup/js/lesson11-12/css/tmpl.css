@@ -1,0 +1,106 @@
+body {
+  min-width: 1024px;
+  font-family: 'Myriad Pro', serif;
+  margin: 0;
+  text-align: center;
+  background-color: #f5f3f6;
+}
+
+.content {
+  width: 500px;
+  text-align: left;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+p {
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+}
+
+a,
+a:visited {
+  color: #0056d3;
+}
+
+.personal_info {
+  border-bottom: 1px solid #c5c2c3;
+  padding-top: 23px;
+  padding-bottom: 4px;
+  text-align: center;
+  font-family: Arial, serif;
+}
+
+.personal_info p {
+  font-family: Arial, serif;
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.my_photo {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #8f8f8f;
+}
+
+.study_goals {
+  border-bottom: 1px solid #c5c2c3;
+  padding-bottom: 1px;
+}
+
+ul {
+  padding-left: 30px;
+  padding-top: 3px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 6px;
+}
+
+.contact_info {
+  margin-top: 15px;
+  border-bottom: 1px solid #c5c2c3;
+  padding-bottom: 2px;
+}
+
+.contact_info p {
+  padding-left: 35px;
+}
+
+.tel_number {
+  padding-left: 35px;
+  line-height: 21px;
+}
+
+.fb {
+  line-height: 13px;
+}
+
+.fb_profile {
+  padding-top: 8px;
+}
+
+.feedback {
+  margin-top: 15px;
+}
+
+.feedback p {
+  padding-left: 35px;
+  padding-top: 1px;
+}
