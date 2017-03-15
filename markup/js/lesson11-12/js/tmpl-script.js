@@ -2,8 +2,6 @@
 
 $(function(){
 
-//$('body').carousel();
-
     var html = $('#test').html();
 
     var data = {
