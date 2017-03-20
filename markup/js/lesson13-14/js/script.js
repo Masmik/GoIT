@@ -39,7 +39,7 @@ $(function () {
             }
         });
 
-        if(hasWrongAnswer){
+        if (hasWrongAnswer) {
             showModal('You have wrong answer. Try again!');
         }
         else {
@@ -56,7 +56,7 @@ $(function () {
         modalText.innerHTML = text;
     }
 
-    function hideModal(){
+    function hideModal() {
         modal.style.display = "none";
 
     }
