@@ -13,6 +13,47 @@ $(function () {
         rightAnswerIndex: [2, 2, 1]
     };
 
+    var data2 = {
+        title: 'Тест по программированию',
+        question:[
+
+        {
+            titleQuestion: 'Вопрос №1',
+            answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+            rightAnswersIndex: [2]
+        },
+        {
+            titleQuestion: 'Вопрос №2',
+            answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+            rightAnswersIndex: [2]
+        },
+        {
+            titleQuestion: 'Вопрос №3',
+            answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+            rightAnswersIndex: [1, 0]
+        }
+        ]
+    };
+
+
+    class Test{
+
+        constructor(titleQuestion, answers,rightAnswersIndex){
+            this.question = question;
+            this.answers = answers;
+            this.rightAnswersIndex = rightAnswersIndex;
+        }
+    }
+
+    class TestRadio extends Test{
+        constructor(question, answers, rightAnswersIndex){
+            super(question, answers);
+        }
+
+    };
+
+
+
     localStorage.setItem('date', JSON.stringify(data));
     var data_obj = localStorage.getItem('date');
 
