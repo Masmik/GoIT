@@ -14,17 +14,17 @@
     <div class="wrapper">
         <ul>
             <form>
-            <% for ( var i = 0; i < question.length; i++ ) { %>
-            <li class="question"><%= i + 1 %>. <%= question[i]%></li>
-            <ul>
-                <% for ( var k = 0; k < answer[i].length; k++ ) { %>
-                <li id="d<%=i%><%=k%>" class="answer"><label for="t<%=i%><%=k%>"><input id="t<%=i%><%=k%>" name="question-<%=i%>" type="radio" value="<%=k%>"> <%=answer[i][k]%></label></li>
+                <% for ( var i = 0; i < question.length; i++ ) { %>
+                <li class="question"><%= i + 1 %>. <%= question[i]%></li>
+                <ul>
+                    <% for ( var k = 0; k < answer[i].length; k++ ) { %>
+                    <li id="d<%=i%><%=k%>" class="answer"><label for="t<%=i%><%=k%>"><input id="t<%=i%><%=k%>" name="question-<%=i%>" type="radio" value="<%=k%>"> <%=answer[i][k]%></label></li>
+
+                    <% } %>
+
+                </ul>
 
                 <% } %>
-
-            </ul>
-
-            <% } %>
                 <button class="submit">Проверить мои результаты</button>
             </form>
         </ul>

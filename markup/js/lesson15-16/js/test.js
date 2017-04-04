@@ -1,21 +1,127 @@
 'use strict';
 
-class Test{
+$(function () {
+    var template = $('#result').html();
 
-    constructor(question, answers,rightAnswers){
-        this.question = question;
-        this.answers = answers;
-        this.rightAnswers = rightAnswers;
+    var data = {
+        title: 'Тест по программированию',
+        question: ['Вопрос №1', 'Вопрос №2', 'Вопрос №3'],
+        answer: [['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+            ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'],
+            ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3']
+        ],
+        rightAnswerIndex: [2, 2, 1]
+    };
+
+    renderHtml(data);
+
+    class Test {
+
+        constructor(questionTitle, answers, rightAnswersIndex) {
+
+            if (rightAnswersIndex.length == 0) {
+                throw Error("No right answer selected");
+            }
+
+            this.question = questionTitle;
+            this.answers = answers;
+            this.rightAnswersIndex = rightAnswersIndex;
+        }
     }
-}
 
-var question = prompt('enter your question?');
-var answers = +prompt('enter your answer');
-var rightAnswers = +prompt('enter right answers');
+    class TestRadio extends Test {
 
-class TestRadio extends Test{
-    constructor(question, answers, rightAnswer){
-        super(question, answers);
+        constructor(questionTitle, answers, rightAnswersIndex) {
+            if (rightAnswersIndex.length != 1) {
+                throw Error("Wrong Class");
+            }
+
+            super(questionTitle, answers, rightAnswersIndex)
+        }
     }
 
-};
+    class TestCheckbox extends Test {
+
+        constructor(questionTitle, answers, rightAnswersIndex) {
+
+            super(questionTitle, answers, rightAnswersIndex)
+        }
+    }
+
+    function handleInput() {
+
+        // collect data
+
+        var questuonTitel = $('.question').val();
+        var answers = [];
+        var rightAnswersIndex = [];
+        var inputAnswers = $('.answers');
+
+
+        $.each(inputAnswers, function (i, answer) {
+            var $answer = $(answer);
+
+            if ($answer.val().length == 0) {
+                return;
+            }
+            answers.push($answer.val());
+
+            if ($('#t' + i + '.rightAnswers:checked').length > 0) {
+                rightAnswersIndex.push(i);
+            }
+        });
+
+        // make object
+        var myTest = new Test(questuonTitel, answers, rightAnswersIndex);
+
+        console.log(myTest);
+
+        // save data
+        var myTest_arr = localStorage.getItem('myTest');
+        myTest_arr = JSON.parse(myTest_arr);
+
+        if (myTest_arr == null) {
+            myTest_arr = [];
+        }
+
+        myTest_arr.push(myTest);
+
+        localStorage.setItem('myTest', JSON.stringify(myTest_arr));
+
+        resetFormState();
+    }
+
+    function resetFormState() {
+        $('input').val('');
+        $(':checkbox').each(function(i,item){
+            this.checked = item.defaultChecked;
+        });
+
+        var myTest_arr = localStorage.getItem('myTest');
+        myTest_arr = JSON.parse(myTest_arr);
+        console.log(myTest_arr);
+    }
+
+
+    var myTest = new Test('Вопрос №1', ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'], [2]);
+
+
+    function renderHtml(data) {
+        localStorage.setItem('date', JSON.stringify(data));
+        var data_obj = localStorage.getItem('date');
+
+        data_obj = JSON.parse(data_obj);
+
+
+        var content = tmpl(template, data_obj);
+        $('body').append(content);
+
+
+        $('button.submit').click(function (e) {
+            e.preventDefault();
+            handleInput();
+        });
+
+
+    }
+});

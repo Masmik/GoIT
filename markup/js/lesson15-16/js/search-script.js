@@ -49,7 +49,7 @@ function GoogleCallback(result) {
     var ul = document.createElement("ul");
     $.each(result.items, function (i, item) {
         var li = document.createElement("li");
-        li.innerHTML = '<a href="' + item.link +'" title="' + item.link + '" target="_blank">' + item.title + "</a>" + "<br/><span>" + item.link + "</span><br/>" + item.snippet;
+        li.innerHTML = '<a href="' + item.link +'" class="article__refer" title="' + item.link + '" target="_blank">' + item.title  + "</a>" + "<br/><span class='article__url'>" + item.link + "</span><br/><span class='article__text'>" + item.snippet + "</span>";
         ul.appendChild(li);
     });
     $('.results').html(ul);
