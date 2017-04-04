@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -10,13 +10,24 @@ module.exports = function(grunt) {
             },
             js: {
                 src: ['css/src/*.css'],
-                dest: 'css/dist/style.main.css'
+                dest: 'css/dist/style_main.css'
             }
         },
         uglify: {
             build: {
                 src: 'js/dist/main.js',
                 dest: 'js/dist/main.min.js'
+            }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'css/dist',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css/dist',
+                    ext: '.min.css'
+                }]
             }
         },
         watch: {
@@ -32,8 +43,9 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['concat', 'uglify','watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'watch']);
 
 };
