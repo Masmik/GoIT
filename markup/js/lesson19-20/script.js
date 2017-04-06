@@ -278,11 +278,22 @@ var str = JSON.stringify(data);
 var obj = JSON.parse(str);
 console.log(obj);
 
+//Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту
 
-var array_skills = _.map(obj, 'skills');
-var a_s1 = _.flatMap(array_skills);
-var a_s2 = _.uniq(a_s1);
-var a_s3 = _.sortBy(a_s2, [function(i) { return i.toLowerCase(); }]);
-console.log(a_s3);
+var array_skills = _.sortBy(_.uniq(_.flatMap(_.map(obj, 'skills'))), function(i) { return i.toLowerCase(); });
+console.log(array_skills);
+
+
+//Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends)
+
+var array_name_friends_count = _.map(_.sortBy(obj, function(i) { return i.friends.length;}), 'name');
+console.log(array_name_friends_count);
+
+//Массив всех друзей всех пользователей, не должно быть повторяющихся людей
+
+var array_friends_uniq = _.uniq(_.map(_.flattenDeep(_.map(obj, "friends")), 'name'));
+console.log(array_friends_uniq);
+
+
 
 
