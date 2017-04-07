@@ -19,17 +19,17 @@ module.exports = function (grunt) {
                 dest: 'js/dist/main.min.js'
             }
         },
-        cssmin: {
-            target: {
-                files: [{
-                    expand: true,
-                    cwd: 'css/dist',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'css/dist',
-                    ext: '.min.css'
-                }]
-            }
-        },
+        //cssmin: {
+        //    target: {
+        //        files: [{
+        //            expand: true,
+        //            cwd: 'css/dist',
+        //            src: ['*.css', '!*.min.css'],
+        //            dest: 'css/dist',
+        //            ext: '.min.css'
+        //        }]
+        //    }
+        //},
         watch: {
             scripts: {
                 files: ['js/src/*.js'],
@@ -43,9 +43,9 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    //grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch']);
 
 };

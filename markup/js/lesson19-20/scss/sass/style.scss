@@ -1,0 +1,82 @@
+//@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 1162px;
+  margin: 0 auto;
+  background-color: sandybrown;
+}
+
+header {
+  margin-left: 4px;
+
+  .header_logo {
+    padding-top: 35px;
+    float: left;
+    margin-bottom: 33px;
+  }
+  .header_social-network {
+    padding-top: 47px;
+    float: right;
+    margin-right: 2px;
+
+    a {
+      padding-left: 15px;
+    }
+  }
+}
+
+nav {
+  clear: both;
+  height: 56px;
+  background-color: #2a2d32;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  .nav_menu {
+    float: left;
+    font-size: 0;
+
+    .menu_item {
+      display: inline-block;
+      height: 36px;
+      border-left: 1px solid #181a1d;
+      padding-top: 20px;
+      font-size: 14px;
+    }
+    .menu_item__last-element {
+      border-right: 1px solid #181a1d;
+    }
+
+    .nav_link {
+      text-decoration: none;
+      color: #fff;
+      padding-left: 37px;
+      padding-right: 41px;
+    }
+
+    .nav_link:hover {
+      color: #f4b60d;
+    }
+
+    .active {
+      background-color: #248cec;
+    }
+  }
+  .nav_search {
+    float: right;
+
+    .search_field {
+      width: 241px;
+      height: 40px;
+      border: 1px solid #181a1d;
+      background-color: #35383c;
+    }
+  }
+}

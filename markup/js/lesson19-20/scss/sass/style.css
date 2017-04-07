@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+* {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  width: 1162px;
+  margin: 0 auto;
+  background-color: sandybrown; }
+
+header {
+  margin-left: 4px; }
+  header .header_logo {
+    padding-top: 35px;
+    float: left;
+    margin-bottom: 33px; }
+  header .header_social-network {
+    padding-top: 47px;
+    float: right;
+    margin-right: 2px; }
+    header .header_social-network a {
+      padding-left: 15px; }
+
+nav {
+  clear: both;
+  height: 56px;
+  background-color: #2a2d32;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+  nav .nav_menu {
+    float: left;
+    font-size: 0; }
+    nav .nav_menu .menu_item {
+      display: inline-block;
+      height: 36px;
+      border-left: 1px solid #181a1d;
+      padding-top: 20px;
+      font-size: 14px; }
+    nav .nav_menu .menu_item__last-element {
+      border-right: 1px solid #181a1d; }
+    nav .nav_menu .nav_link {
+      text-decoration: none;
+      color: #fff;
+      padding-left: 37px;
+      padding-right: 41px; }
+    nav .nav_menu .nav_link:hover {
+      color: #f4b60d; }
+    nav .nav_menu .active {
+      background-color: #248cec; }
+  nav .nav_search {
+    float: right; }
+    nav .nav_search .search_field {
+      width: 241px;
+      height: 40px;
+      border: 1px solid #181a1d;
+      background-color: #35383c; }
+
+/*# sourceMappingURL=style.css.map */
