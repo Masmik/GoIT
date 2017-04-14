@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet"');
 * {
   margin: 0;
   padding: 0; }
@@ -44,16 +45,96 @@ nav {
       color: #fff;
       padding-left: 37px;
       padding-right: 41px; }
-    nav .nav_menu .nav_link:hover {
+    nav .nav_menu:hover {
       color: #f4b60d; }
     nav .nav_menu .active {
       background-color: #248cec; }
   nav .nav_search {
     float: right; }
     nav .nav_search .search_field {
-      width: 241px;
-      height: 40px;
+      width: 239px;
+      height: 38px;
       border: 1px solid #181a1d;
-      background-color: #35383c; }
+      background-color: #35383c;
+      margin-top: 8px;
+      margin-right: 10px; }
+
+.slider {
+  margin-top: 39px;
+  position: relative; }
+  .slider .slider_switch {
+    position: absolute;
+    content: '';
+    height: 49px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer; }
+    .slider .slider_switch .switch_button {
+      margin-top: 13px;
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      background-color: #fff;
+      margin-right: 7px;
+      position: relative; }
+      .slider .slider_switch .switch_button:hover:after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #001d1d;
+        position: absolute;
+        top: 3px;
+        left: 3px; }
+
+.company-advantage {
+  padding-top: 70px; }
+  .company-advantage .company-advantage_advantage__first {
+    background: url("../img/advantage-namber1.png") no-repeat 1px 0; }
+  .company-advantage .company-advantage_advantage__second {
+    background: url("../img/advantage-number2.png") no-repeat; }
+  .company-advantage .company-advantage_advantage__third {
+    background: url("../img/advantage-number3.png") no-repeat; }
+  .company-advantage .company-advantage_advantage {
+    display: inline-block; }
+    .company-advantage .company-advantage_advantage:last-child .advantage_content {
+      margin-right: 0; }
+    .company-advantage .company-advantage_advantage .advantage_content {
+      width: 240px;
+      margin-left: 123px;
+      margin-right: 32px; }
+      .company-advantage .company-advantage_advantage .advantage_content h2 {
+        font-family: 'Ubuntu', sans-serif;
+        color: #2a2b2e;
+        font-size: 20px;
+        padding-top: 8px; }
+      .company-advantage .company-advantage_advantage .advantage_content p {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #8a8a8a;
+        margin-top: 18px;
+        line-height: 20px;
+        margin-left: -3px;
+        height: 60px;
+        overflow: hidden;
+        margin-bottom: 15px; }
+      .company-advantage .company-advantage_advantage .advantage_content a {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 13px;
+        color: #2a2b2e;
+        text-decoration: none;
+        margin-left: -3px; }
+        .company-advantage .company-advantage_advantage .advantage_content a:hover:after {
+          background-image: url("../img/advantage-arrow_hover.png"); }
+        .company-advantage .company-advantage_advantage .advantage_content a::after {
+          content: '';
+          background-image: url("../img/advanrage-arrow.png");
+          position: absolute;
+          width: 10px;
+          height: 9px;
+          right: -19px;
+          top: 4px; }
 
 /*# sourceMappingURL=style.css.map */
