@@ -5,6 +5,9 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="sass/main.js"></script>
 </head>
 <body>
 <div class="wrapper wrapper__top">
@@ -102,9 +105,10 @@
                 <img src="img/service-preventive.jpg" alt="transport image">
                 <figcaption>Preventive Maintence</figcaption>
             </figure>
-            <figure>
+            <figure class="services_add">
                 <img src="img/service-tire.jpg" alt="factory image">
                 <figcaption>Tire & Wheel Services</figcaption>
+                <div class="add_img"></div>
             </figure>
             <figure>
                 <img src="img/service-repair.jpg" alt="pipes image">
@@ -116,29 +120,66 @@
 <div class="banner-news">
     <div class="content">
         <div class="news-block">
+            <h1>Latest News</h1>
             <div class="news">
                 <img src="img/news-1.jpg" alt="news image">
-                <h2>Advanced Machinery Helps Improve Quality</h2>
-                <div><span> by <span class="author"> cmsmasters</span></span> <span>Comments( <span
-                        class="comments">6</span>)</span></div>
-                <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis
-                    commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam
-                    voluptatem.</p>
+                <div class="image_mounth">Jan</div>
+                <div class="image_date">23</div>
+                <article>
+                    <h2>Advanced Machinery Helps Improve Quality</h2>
+                    <div><span> by <span class="author"> cmsmasters</span></span> <span>Comments (<span
+                            class="comments">6</span>)</span></div>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis
+                        commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam
+                        voluptatem.</p>
+                </article>
             </div>
             <div class="news">
                 <img src="img/news-2.jpg" alt="news image">
-                <h2>Powerful Techniques for Advanced Service</h2>
-                <div><span> by <span class="author"> cmsmasters</span></span> <span>Comments( <span
-                        class="comments">3</span>)</span></div>
-                <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis
-                    commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam
-                    voluptatem.</p>
+                <div class="image_mounth">Jan</div>
+                <div class="image_date">21</div>
+                <article>
+                    <h2>Powerful Techniques for Advanced Service</h2>
+                    <div><span> by <span class="author"> cmsmasters</span></span> <span>Comments (<span
+                            class="comments">3</span>)</span></div>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis
+                        commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam
+                        voluptatem.</p>
+                </article>
             </div>
         </div>
-        <div class="banner"></div>
+        <div class="banner">
+            <h1>Banners Place</h1>
+            <div id="accordion" class="banner_accordion">
+                <h3 class="accordion_active">Accordion Panel 1</h3>
+                <div class="accordion_text">
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                    </p>
+                </div>
+                <h3>Accordion Panel 2</h3>
+                <div class="accordion_text">
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                    </p>
+                </div>
+                <h3>Accordion Panel 3</h3>
+                <div class="accordion_text">
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                    </p>
+                </div>
+                <h3>Accordion Panel 4</h3>
+                <div class="accordion_text">
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="logo">
+<div class="partners">
     <div class="content">
         <img src="img/logo-rbp.png" alt="rbp logo">
         <img src="img/logo-moto.png" alt="moto logo">
@@ -192,9 +233,9 @@
     <div class="footer-info">
         <div class="content">
             <div class="footer-info_contact">
-                <span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
-                <span>+123 900 123 456</span>
-                <span>info@buildhome.web</span>
+                <span class="contact_location">BuildHomeLtd.   Street Name 123   23 45 Cityname</span>
+                <span class="contact_phone">+123 900 123 456</span>
+                <span class="contact_email">info@buildhome.web</span>
             </div>
             <div class="footer-info_copyrite">
                 <span>&#169; 2014 Build Home</span>

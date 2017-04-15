@@ -10,7 +10,7 @@
 .content {
   width: 1162px;
   margin: 0 auto;
-  background-color: sandybrown;
+  //background-color: sandybrown;
 }
 
 header {
@@ -60,10 +60,10 @@ nav {
       color: #fff;
       padding-left: 37px;
       padding-right: 41px;
-    }
 
-    &:hover {
-      color: #f4b60d;
+      &:hover {
+        color: #f4b60d;
+      }
     }
 
     .active {
@@ -80,6 +80,10 @@ nav {
       background-color: #35383c;
       margin-top: 8px;
       margin-right: 10px;
+    }
+    input::-webkit-input-placeholder {
+      padding-left: 10px;
+      font-size: 12px;
     }
   }
 }
@@ -173,6 +177,9 @@ nav {
         text-decoration: none;
         margin-left: -3px;
 
+        &:hover {
+          color: #248cec;
+        }
         &:hover:after {
           background-image: url('../img/advantage-arrow_hover.png');
         }
@@ -192,4 +199,331 @@ nav {
 
   }
 
+}
+
+.company-servises {
+  background-color: #2a2d32;
+  border: 1px solid #e3e3e3;
+  margin-top: 84px;
+
+  .content {
+    background-color: #2a2d32;
+
+    h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 24px;
+      color: #fff;
+      padding-top: 44px;
+      padding-left: 1px;
+    }
+
+    figure {
+      display: inline-block;
+      padding-top: 51px;
+      padding-right: 36px;
+      position: relative;
+      padding-bottom: 68px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      figcaption {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        padding-left: 53px;
+        padding-top: 27px;
+      }
+
+      .services_add {
+        position: relative;
+      }
+
+      .add_img {
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        top: 51px;
+        background: url('../img/services-add.png') rgba(46, 140, 227, 0.8) no-repeat center;
+      }
+    }
+  }
+}
+
+.banner-news {
+  padding-bottom: 53px;
+  background-color: #f7f7f7;
+
+  .content {
+    background-color: #f7f7f7;
+    padding-top: 58px;
+  }
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    color: #2a2d32;
+    padding-bottom: 43px;
+  }
+
+  .news-block {
+    display: inline-block;
+    width: 596px;
+
+    .news {
+      position: relative;
+      padding-bottom: 26px;
+      cursor: pointer;
+      img {
+        display: inline-block;
+      }
+      .image_mounth {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: #248cec;
+        top: 12px;
+        left: -17px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        line-height: 42px;
+      }
+      .image_date {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: #f4b60d;
+        top: 52px;
+        left: -17px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        color: #2a2b2e;
+        text-align: center;
+        line-height: 42px;
+      }
+      article {
+        display: inline-block;
+        width: 378px;
+        vertical-align: top;
+        padding-left: 30px;
+        padding-top: 4px;
+
+        h2 {
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 16px;
+          color: #2a2d32;
+        }
+        span {
+          line-height: 29px;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #9d9d9d;
+
+          .author {
+            color: #0187f4;
+            padding-right: 6px;
+          }
+          .comments {
+            color: #0187f4;
+          }
+        }
+        p {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #8a8a8a;
+          padding-top: 18px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  .banner {
+    display: inline-block;
+    width: 562px;
+    vertical-align: top;
+
+    .banner_accordion {
+      h3 {
+        position: relative;
+        display: block;
+        height: 37px;
+        background-color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 13px;
+        color: #2a2d32;
+        line-height: 39px;
+        text-transform: uppercase;
+        padding-left: 50px;
+        border: 1px solid #e8e8e8;
+        margin-bottom: 6px;
+        cursor: pointer;
+        outline: none;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 32px;
+          height: 39px;
+          border-right: 1px solid #e8e8e8;
+          left: 5px;
+          background: url('../img/banner-icon-plus.png') no-repeat 8px;
+        }
+      }
+      .accordion_active {
+        border: 1px solid transparent;
+        background-color: #f4b60d;
+        color: #fff;
+
+        &::after {
+          border-right: 1px solid #f6c53d;
+          background: url("../img/banner-icon-minus.png") no-repeat 8px;
+        }
+      }
+      .accordion_text {
+        padding-bottom: 38px;
+        width: 556px;
+        p {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #8a8a8a;
+          padding-left: 38px;
+          padding-top: 19px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.partners {
+  padding-top: 83px;
+  padding-bottom: 89px;
+
+  img {
+    padding-right: 47px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.footer-menu {
+  background-color: #2a2d32;
+  padding-bottom: 71px;
+
+  .content {
+    background-color: #2a2d32;
+  }
+
+  .footer-menu_block {
+    display: inline-block;
+    padding-top: 59px;
+    margin-left: -1px;
+    margin-right: 35px;
+
+    h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      padding-bottom: 34px;
+    }
+    ul {
+      margin-left: 2px;
+      li {
+        list-style: none;
+        border-bottom: 1px solid #393c40;
+        width: 260px;
+
+        a {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.3);
+          line-height: 35px;
+
+          &:hover {
+            color: #248cec;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  .footer-menu_block:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-info {
+  background-color: #35383c;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.2);
+  padding-top: 22px;
+  //padding-bottom: 20px;
+  min-height: 60px;
+
+  .content {
+    background-color: #35383c;
+  }
+  .footer-info_contact {
+    display: inline-block;
+    padding-left: 25px;
+
+    .contact_location {
+      position: relative;
+      letter-spacing: 0.2px;
+
+      &::after {
+        content: '';
+        background-image: url('../img/footer-icon-location.png');
+        position: absolute;
+        left: -23px;
+        width: 12px;
+        height: 16px;
+      }
+    }
+    .contact_phone {
+      position: relative;
+      padding-left: 51px;
+
+      &::after {
+        content: '';
+        background-image: url('../img/footer-icon-phone.png');
+        position: absolute;
+        left: 32px;
+        width: 10px;
+        height: 16px;
+      }
+    }
+    .contact_email {
+      position: relative;
+      padding-left: 68px;
+
+      &::after {
+        content: '';
+        background-image: url('../img/footer-icon-email.png');
+        position: absolute;
+        left: 38px;
+        top: 2px;
+        width: 16px;
+        height: 12px;
+      }
+    }
+  }
+  .footer-info_copyrite {
+    display: inline-block;
+    float: right;
+    margin-right: 4px;
+  }
 }
