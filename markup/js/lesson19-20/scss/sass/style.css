@@ -15,49 +15,72 @@ header {
     float: left;
     margin-bottom: 33px; }
   header .header_social-network {
-    padding-top: 47px;
+    padding-top: 49px;
     float: right;
     margin-right: 2px; }
     header .header_social-network a {
-      padding-left: 15px; }
+      display: inline-block; }
+    header .header_social-network .social_icon {
+      width: 18px;
+      height: 18px;
+      overflow: hidden;
+      margin-left: 12px; }
+    header .header_social-network .social-network_fb {
+      background: url("../img/social-network/social-icon-sprite.png") no-repeat 0 0; }
+      header .header_social-network .social-network_fb:hover {
+        background: url("../img/social-network/social-icon-sprite.png") no-repeat 0 -20px; }
+    header .header_social-network .social-network_twitter {
+      background: url("../img/social-network/social-icon-sprite.png") no-repeat -18px 0; }
+      header .header_social-network .social-network_twitter:hover {
+        background: url("../img/social-network/social-icon-sprite.png") no-repeat -18px -20px; }
+    header .header_social-network .social-network_rss {
+      background: url("../img/social-network/social-icon-sprite.png") no-repeat -36px 0; }
+      header .header_social-network .social-network_rss:hover {
+        background: url("../img/social-network/social-icon-sprite.png") no-repeat -36px -20px; }
+    header .header_social-network .social-network_linkedin {
+      background: url("../img/social-network/social-icon-sprite.png") no-repeat -54px 0; }
+      header .header_social-network .social-network_linkedin:hover {
+        background: url("../img/social-network/social-icon-sprite.png") no-repeat -54px -20px; }
+    header .header_social-network .social-network_skype {
+      background: url("../img/social-network/social-icon-sprite.png") no-repeat -72px 0; }
+      header .header_social-network .social-network_skype:hover {
+        background: url("../img/social-network/social-icon-sprite.png") no-repeat -72px -20px; }
 
-nav {
+nav.menu {
   clear: both;
   height: 56px;
   background-color: #2a2d32;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 14px;
   text-transform: uppercase; }
-  nav .nav_menu {
+  nav.menu .nav_menu {
     float: left;
     font-size: 0; }
-    nav .nav_menu .menu_item {
+    nav.menu .nav_menu .menu_item {
       display: inline-block;
       height: 36px;
-      border-left: 1px solid #181a1d;
+      border-right: 1px solid #181a1d;
       padding-top: 20px;
       font-size: 14px; }
-    nav .nav_menu .menu_item__last-element {
-      border-right: 1px solid #181a1d; }
-    nav .nav_menu .nav_link {
+    nav.menu .nav_menu .nav_link {
       text-decoration: none;
       color: #fff;
       padding-left: 37px;
       padding-right: 41px; }
-      nav .nav_menu .nav_link:hover {
+      nav.menu .nav_menu .nav_link:hover {
         color: #f4b60d; }
-    nav .nav_menu .active {
+    nav.menu .nav_menu .active {
       background-color: #248cec; }
-  nav .nav_search {
+  nav.menu .nav_search {
     float: right; }
-    nav .nav_search .search_field {
+    nav.menu .nav_search .search_field {
       width: 239px;
       height: 38px;
       border: 1px solid #181a1d;
       background-color: #35383c;
       margin-top: 8px;
       margin-right: 10px; }
-    nav .nav_search input::-webkit-input-placeholder {
+    nav.menu .nav_search input::-webkit-input-placeholder {
       padding-left: 10px;
       font-size: 12px; }
 
@@ -141,42 +164,47 @@ nav {
           right: -19px;
           top: 4px; }
 
-.company-servises {
+.company-services {
   background-color: #2a2d32;
   border: 1px solid #e3e3e3;
   margin-top: 84px; }
-  .company-servises .content {
+  .company-services .content {
     background-color: #2a2d32; }
-    .company-servises .content h1 {
+    .company-services .content h1 {
       font-family: 'Ubuntu', sans-serif;
       font-size: 24px;
       color: #fff;
       padding-top: 44px;
       padding-left: 1px; }
-    .company-servises .content figure {
+    .company-services .content figure {
       display: inline-block;
       padding-top: 51px;
       padding-right: 36px;
       position: relative;
       padding-bottom: 68px; }
-      .company-servises .content figure:last-child {
+      .company-services .content figure:last-child {
         padding-right: 0; }
-      .company-servises .content figure figcaption {
+      .company-services .content figure figcaption {
         font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         color: #fff;
         padding-left: 53px;
-        padding-top: 27px; }
-      .company-servises .content figure .services_add {
-        position: relative; }
-      .company-servises .content figure .add_img {
+        padding-top: 27px;
+        transition: all 0.3s ease-in-out; }
+      .company-services .content figure .add_img {
+        opacity: 0;
         cursor: pointer;
         z-index: 2;
         position: absolute;
         width: 260px;
         height: 260px;
         top: 51px;
-        background: url("../img/services-add.png") rgba(46, 140, 227, 0.8) no-repeat center; }
+        background: url("../img/services-add.png") rgba(46, 140, 227, 0.8) no-repeat center;
+        transition: all 0.3s ease-in-out; }
+      .company-services .content figure:hover .add_img {
+        opacity: 1; }
+      .company-services .content figure:hover figcaption {
+        color: #f4b60d; }
 
 .banner-news {
   padding-bottom: 53px;
@@ -275,11 +303,11 @@ nav {
         border-right: 1px solid #e8e8e8;
         left: 5px;
         background: url("../img/banner-icon-plus.png") no-repeat 8px; }
-    .banner-news .banner .banner_accordion .accordion_active {
+    .banner-news .banner .banner_accordion .ui-state-active {
       border: 1px solid transparent;
       background-color: #f4b60d;
       color: #fff; }
-      .banner-news .banner .banner_accordion .accordion_active::after {
+      .banner-news .banner .banner_accordion .ui-state-active::after {
         border-right: 1px solid #f6c53d;
         background: url("../img/banner-icon-minus.png") no-repeat 8px; }
     .banner-news .banner .banner_accordion .accordion_text {
@@ -383,5 +411,3 @@ nav {
     display: inline-block;
     float: right;
     margin-right: 4px; }
-
-/*# sourceMappingURL=style.css.map */

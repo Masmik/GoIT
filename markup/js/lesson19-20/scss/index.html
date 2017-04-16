@@ -5,9 +5,11 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/unslider.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="sass/main.js"></script>
+    <script src="js/unslider.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="wrapper wrapper__top">
@@ -19,20 +21,14 @@
                 </a>
             </div>
             <div class="header_social-network">
-                <a href="#" class="social-network_fb"><img class="fb_icon" src="img/social-network/fb.png"
-                                                           alt="logo fb"></a>
-                <a href="#" class="social-network_twitter"><img class="twitter_icon"
-                                                                src="img/social-network/twitter.png" alt="logo twitter"></a>
-                <a href="#" class="social-network_rss"><img class="rss_icon" src="img/social-network/rss.png"
-                                                            alt="logo rss"></a>
-                <a href="#" class="social-network_linkedin"><img class="linkedin_icon"
-                                                                 src="img/social-network/linkedin.png"
-                                                                 alt="logo linkedin"></a>
-                <a href="#" class="social-network_skype"><img class="skype_icon" src="img/social-network/skype.png"
-                                                              alt="logo skype"></a>
+                <a href="#" class="social_icon social-network_fb"></a>
+                <a href="#" class="social_icon social-network_twitter"></a>
+                <a href="#" class="social_icon social-network_rss"></a>
+                <a href="#" class="social_icon social-network_linkedin"></a>
+                <a href="#" class="social_icon social-network_skype"></a>
             </div>
         </header>
-        <nav>
+        <nav class="menu">
             <div class="nav_menu">
                 <ul>
                     <li class="menu_item active"><a class="nav_link" href="#">Home</a></li>
@@ -48,13 +44,18 @@
                 </form>
             </div>
         </nav>
-        <div class="slider">
-            <img src="img/banner-1.png" alt="banner">
-            <div class="slider_switch">
-                <div class="switch_button switch_button__first"></div>
-                <div class="switch_button switch_button__second"></div>
-                <div class="switch_button switch_button__third"></div>
-            </div>
+        <div class="slider my-slider">
+            <ul>
+                <li><img src="img/banner-1.png" alt="banner"></li>
+                <li><img src="img/banner-1.png" alt="banner"></li>
+                <li><img src="img/banner-1.png" alt="banner"></li>
+            </ul>
+
+            <!--<div class="slider_switch">-->
+                <!--<div class="switch_button switch_button__first"></div>-->
+                <!--<div class="switch_button switch_button__second"></div>-->
+                <!--<div class="switch_button switch_button__third"></div>-->
+            <!--</div>-->
         </div>
         <div class="company-advantage">
             <div class="company-advantage_advantage company-advantage_advantage__first">
@@ -93,17 +94,19 @@
         </div>
     </div>
 </div>
-<div class="company-servises">
+<div class="company-services">
     <div class="content">
         <h1>Our Services</h1>
         <div class="service">
             <figure>
                 <img src="img/service-schedule.jpg" alt="worker image">
                 <figcaption>Schedule Services</figcaption>
+                <div class="add_img"></div>
             </figure>
             <figure>
                 <img src="img/service-preventive.jpg" alt="transport image">
                 <figcaption>Preventive Maintence</figcaption>
+                <div class="add_img"></div>
             </figure>
             <figure class="services_add">
                 <img src="img/service-tire.jpg" alt="factory image">
@@ -113,6 +116,7 @@
             <figure>
                 <img src="img/service-repair.jpg" alt="pipes image">
                 <figcaption>Repair Services</figcaption>
+                <div class="add_img"></div>
             </figure>
         </div>
     </div>
@@ -151,7 +155,7 @@
         <div class="banner">
             <h1>Banners Place</h1>
             <div id="accordion" class="banner_accordion">
-                <h3 class="accordion_active">Accordion Panel 1</h3>
+                <h3 class="ui-state-active">Accordion Panel 1</h3>
                 <div class="accordion_text">
                     <p>
                         Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
