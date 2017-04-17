@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
     <script src="js/tmpl.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -18,7 +21,11 @@
                 <li class="question"><%= i + 1 %>. <%= question[i]%></li>
                 <ul>
                     <% for ( var k = 0; k < answer[i].length; k++ ) { %>
-                    <li id="d<%=i%><%=k%>" class="answer"><label for="t<%=i%><%=k%>"><input id="t<%=i%><%=k%>" name="question-<%=i%>" type="radio" value="<%=k%>"> <%=answer[i][k]%></label></li>
+                    <li id="d<%=i%><%=k%>" class="answer"><label for="t<%=i%><%=k%>"><input id="t<%=i%><%=k%>"
+                                                                                            name="question-<%=i%>"
+                                                                                            type="radio"
+                                                                                            value="<%=k%>"> <%=answer[i][k]%></label>
+                    </li>
 
                     <% } %>
 
