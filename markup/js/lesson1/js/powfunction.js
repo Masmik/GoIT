@@ -11,7 +11,7 @@ function pow(x, n) {
             result *= x;
         }
         return 1 / result;
-    } else if (n == 0) {
+    } else if (n === 0) {
         return 1;
     } else {
         for (i = 1; i < n; i++) {
@@ -34,3 +34,4 @@ else if (parseInt(n) != n) {
 } else {
     alert(pow(x, n));
 }
+
