@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script data-main="scripts/main.js" src="scripts/require.js"></script>
+    <!--<script src="js/script.js"></script>-->
+</head>
+<body>
+<script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+        <h1>My ToDoList</h1>
+        <ul class="item-list"></ul>
+        <div class="controls">
+            <input type="text" class="item-value">
+            <button class="item-add">Add</button>
+            <div class="modal">
+                <input type="text" class="input-task-edit">
+                <button class="save-changes">Save</button>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="list-template">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <li>
+        <div class="container"><%= data[i] %></div>
+        <div class="inner-controls">
+            <div data-value="<%= i+1 + data[i] %>" class="item-delete"></div>
+            <div data-value="<%= i+1 + data[i] %>" class="item-edit"></div>
+        </div>
+    </li>
+    <% }; %>
+</script>
+
+</body>
+</html>
