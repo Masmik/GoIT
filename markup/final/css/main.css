@@ -1,6 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-  @import url("https://fonts.googleapis.com/css?family=Roboto:300");
   .content {
     width: auto;
     font-family: 'Montserrat', sans-serif;
@@ -30,12 +73,12 @@
     header .header_login {
       padding-top: 9.5%;
       text-align: right;
-      margin-right: 23%; }
+      margin-right: 26.5%; }
       header .header_login a {
         color: #fff;
         font-size: 14px;
         text-decoration: none;
-        padding: 8px 17px; }
+        padding: 7px 16px; }
         header .header_login a:hover {
           border: 2px solid #fff;
           -webkit-border-radius: 22px;
@@ -43,20 +86,19 @@
           -ms-border-radius: 22px;
           border-radius: 22px; }
     header .header_logo {
-      margin-top: 42.4%;
+      margin-top: 40%;
       text-align: center; }
       header .header_logo .logo {
         color: #fff;
         font-size: 20px;
         text-decoration: none;
-        letter-spacing: 1.6px;
-        margin-right: -5%; }
+        letter-spacing: 1px; }
     header .header_banner {
       text-align: center; }
       header .header_banner h1 {
         font-size: 30px;
         text-align: center;
-        padding-top: 10%;
+        padding-top: 9.5%;
         text-transform: uppercase;
         line-height: 36px; }
       header .header_banner .banner_description {
@@ -97,4 +139,4 @@
   .work-principles .principle__three {
     background-image: url("../img/principle-three.jpg"); } }
 
-/*# sourceMappingURL=320px.css.map */
+/*# sourceMappingURL=main.css.map */
