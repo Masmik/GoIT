@@ -1,5 +1,5 @@
 define('controller', [], function () {
-    var controller = function (model, view){
+    var controller = function (model, view) {
         var self = this;
 
         $('.item-value').keypress(function (e) {
@@ -29,33 +29,29 @@ define('controller', [], function () {
 
         function editItem() {
 
-            var self = this;
+            var valueEditTask = $(this).parents('li').children('.container');
+            console.log($(this).parents('li').children('.container').text());
 
-            $('.item-edit').click(function () {
-                var valueEditTask = $(this).parents('li').children('.container');
-                console.log($(this).parents('li').children('.container').text());
-
-                var item = $(this).attr('data-value');
-
-                var indexEdit = parseInt(item);
-                // var editItem = $(this).closest('li').prop("contenteditable", true);
-                $(this).hide();
-                $('.modal').show();
-                var inpurForEdit = $('.input-task-edit').focus();
-                inpurForEdit.val(valueEditTask.text());
-                $('.save-changes').unbind('click');
-                $('.save-changes').click(function () {
-                    if (!inpurForEdit.val()) {
-                        console.log('enter something');
-                        return false;
-                    }
-                    valueEditTask.text(inpurForEdit.val());
-                    $('.item-edit').show();
-                    $('.modal').hide();
-                    model.editItem(indexEdit, valueEditTask);
-                    view.renderList(model.data);
-                });
-            })
+            var item = $(this).attr('data-value');
+            var indexEdit = parseInt(item);
+            // var editItem = $(this).closest('li').prop("contenteditable", true);
+            $(this).hide();
+            $('.modal').show();
+            var inpurForEdit = $('.input-task-edit').focus();
+            inpurForEdit.val(valueEditTask.text());
+            $('.save-changes').unbind('click');
+            $('.save-changes').click(function () {
+                if (!inpurForEdit.val()) {
+                    console.log('enter something');
+                    return false;
+                }
+                valueEditTask.text(inpurForEdit.val());
+                $('.item-edit').show();
+                $('.modal').hide();
+                model.editItem(indexEdit, valueEditTask);
+                console.log(model.data);
+                view.renderList(model.data);
+            });
 
         }
     };

@@ -20,8 +20,10 @@ require(
     ],
 
     function ($, model, view, controller) {
-
-            var model = new model(['learn javascript', 'learn html', 'learn css']);
-            var view = new view(model);
-            var controller = new controller(model, view);
+        var data = window.localStorage.getItem('todo') || [];
+        console.log(data);
+        localStorage.clear();
+        var model = new model(data);
+        var view = new view(model);
+        var controller = new controller(model, view);
     });

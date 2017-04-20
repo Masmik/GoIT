@@ -9,8 +9,13 @@ define('model', [], function () {
                 return;
             }
             self.data.push(item);
+            self.updateLocalStorage();
 
             return self.data;
+        };
+
+        self.updateLocalStorage = function (){
+            window.localStorage.setItem('todo', JSON.stringify(self.data));
         };
 
         self.removeItem = function (item) {
@@ -20,6 +25,7 @@ define('model', [], function () {
                 return;
             }
             self.data.splice(index, 1);
+            self.updateLocalStorage();
 
             return self.data;
         };
@@ -28,7 +34,8 @@ define('model', [], function () {
             if (indexEdit) {
                 var editElem = indexEdit - 1;
                 self.data[editElem] = valueEditTask.text();
-                return this;
+                self.updateLocalStorage();
+                return self.data;
             }
         }
     };
