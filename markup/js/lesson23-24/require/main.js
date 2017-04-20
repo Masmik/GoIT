@@ -20,7 +20,8 @@ require(
     ],
 
     function ($, model, view, controller) {
-        var model = new model(['Learn js', 'learn react', 'do final task']);
+        var data = JSON.parse(window.localStorage.getItem('todo')) || [];
+        var model = new model(data);
         var view = new view(model);
         var controller = new controller(model, view);
     });
