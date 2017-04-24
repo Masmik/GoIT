@@ -15,7 +15,8 @@ define('model', [], function () {
         };
 
         self.removeItem = function (item) {
-            var index = self.data.indexOf(item);
+            var newItem = item.slice(1);
+            var index = self.data.indexOf(newItem);
 
             if (index === -1) {
                 return;

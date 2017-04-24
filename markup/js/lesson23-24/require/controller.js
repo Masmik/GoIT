@@ -22,7 +22,6 @@ define('controller', [], function () {
 
         function removeItem() {
             var item = $(this).attr('data-value');
-
             model.removeItem(item);
             view.renderList(model.data);
         }
