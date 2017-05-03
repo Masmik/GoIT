@@ -7,130 +7,149 @@
     <!--<link rel="stylesheet" href="css/reset.css">-->
     <!--<link rel="stylesheet" href="css/320px.css">-->
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="content">
     <header>
-        <div class="header_login">
-            <a href="#">Log in</a>
-            <a href="#">Sign up</a>
-        </div>
-        <div class="header_logo">
-            <a class="logo" href="#">URLAUBSGLÜCK</a>
-        </div>
-        <div class="header_banner">
-            <h1>Share your holiday drexam</h1>
-            <p class="banner_description">And find the perfect partner
-                to fullfill it</p>
-            <button class="header_button button">Find your holiday partner</button>
+        <div class="wrapper">
+            <div class="header_login">
+                <a href="#">Log in</a>
+                <a href="#">Sign up</a>
+            </div>
+            <div class="header_logo">
+                <a class="logo" href="#">URLAUBSGLÜCK</a>
+            </div>
+            <div class="header_banner">
+                <h1>Share your holiday dreams</h1>
+                <p class="banner_description">And find the perfect partner
+                    to fullfill it</p>
+                <button class="header_button button">Find your holiday partner</button>
+            </div>
         </div>
     </header>
     <div class="work-principles">
-        <h2>How Urlaubsglück works?</h2>
-        <div class="work-principles_principle principle principle__one">
-            <div class="principle_step">step 1</div>
-            <h3>Sed leo enim,condimentum</h3>
-            <p class="principle_description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec
-                rhoncus a leo sit amet facilisis.</p>
-        </div>
-        <div class="work-principles_principle principle principle__two">
-            <div class="principle_step">step 2</div>
-            <h3>Morbi velit risus</h3>
-            <p class="principle_description">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet
-                porttitor est.</p>
-        </div>
-        <div class="work-principles_principle principle principle__three">
-            <div class="principle_step">step 3</div>
-            <h3>Sed leo enim,condimentum</h3>
-            <p class="principle_description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec
-                rhoncus a leo sit amet facilisis.</p>
+        <div class="wrapper">
+            <h2>How Urlaubsglück works?</h2>
+            <div class="work-principles_principle principle principle__one">
+                <div class="principle_step">step 1</div>
+                <h3>Sed leo enim, condimentum</h3>
+                <p class="principle_description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec
+                    rhoncus a leo sit amet facilisis.</p>
+            </div>
+            <div class="work-principles_principle principle principle__two">
+                <div class="principle_step step__two">step 2</div>
+                <h3>Morbi velit risus</h3>
+                <p class="principle_description description__two">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet
+                    porttitor est.</p>
+            </div>
+            <div class="work-principles_principle principle principle__three">
+                <div class="principle_step">step 3</div>
+                <h3>Sed leo enim, condimentum</h3>
+                <p class="principle_description">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec
+                    rhoncus a leo sit amet facilisis.</p>
+            </div>
         </div>
     </div>
     <div class="partners">
-        <h2>Meet a partner for your best holiday</h2>
-        <div class="partners_partner">
-            <figure>
-                <p><img src="img/partner-first.png" alt="partner photo"></p>
-                <figcaption>Bradley Hunter</figcaption>
-            </figure>
-            <p class="partner_description">Based in Chicago. I love playing tennis and loud music.</p>
+        <div class="wrapper">
+            <h2>Meet a partner for your best holiday</h2>
+            <div class="partners_partner partner partner__tv">
+                <figure>
+                    <p class="partner_photo"><img src="img/partner-first.png" alt="partner photo"></p>
+                    <figcaption>Bradley Hunter</figcaption>
+                    <p class="partner_description">Based in Chicago. I love playing tennis and loud music.</p>
+                </figure>
+
+            </div>
+            <div class="partners_partner partner partner__coffe">
+                <figure>
+                    <p class="partner_photo"><img src="img/partner-two.png" alt="partner photo"></p>
+                    <figcaption>Heather Walker</figcaption>
+                    <p class="partner_description">I'm a happy person that loves cats and climbing on mountains.</p>
+                </figure>
+            </div>
+            <div class="partners_partner partner partner__flask">
+                <figure>
+                    <p class="partner_photo"><img src="img/partner-three.png" alt="partner photo"></p>
+                    <figcaption>Lucas Marsha</figcaption>
+                    <p class="partner_description">I get my inspiration from nature and objects around me. I have a passion to
+                        colours, typography and skateboards.
+                    </p>
+                </figure>
+            </div>
+            <div class="partners_partner partner partner__telegram">
+                <figure>
+                    <p class="partner_photo"><img src="img/partner-four.png" alt="partner photo"></p>
+                    <figcaption>Bradley Hunter</figcaption>
+                    <p class="partner_description">Based in Chicago. I love playing tennis and loud music.</p>
+                </figure>
+            </div>
+            <button class="partners_button button">See other partners</button>
         </div>
-        <div class="partners_partner">
-            <figure>
-                <p><img src="img/partner-two.png" alt="partner photo"></p>
-                <figcaption>Lucas Marsha</figcaption>
-            </figure>
-            <p class="partner_description">I get my inspiration from nature and objects around me. I have a passion to
-                colours, typography and skateboards.
-            </p>
-        </div>
-        <div class="partners_partner">
-            <figure>
-                <p><img src="img/partner-three.png" alt="partner photo"></p>
-                <figcaption>Heather Walker</figcaption>
-            </figure>
-            <p class="partner_description">I'm a happy person that loves cats and climbing on mountains.</p>
-        </div>
-        <div class="partners_partner">
-            <figure>
-                <p><img src="img/partner-four.png" alt="partner photo"></p>
-                <figcaption>Bradley Hunter</figcaption>
-            </figure>
-            <p class="partner_description">Based in Chicago. I love playing tennis and loud music.</p>
-        </div>
-        <button class="partners_button button">See other partners</button>
     </div>
     <div class="activity-ideas">
-        <h2>Discover holiday activity ideas</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <p>Sport and Activity</p>
-            </div>
-            <div class="grid-item">
-                <p>Wellnes and Health</p>
-            </div>
-            <div class="grid-item">
-                <p>Extreme Sports and Expeditions</p>
-            </div>
-            <div class="grid-item">
-                <p>Games</p>
-            </div>
-            <div class="grid-item">
-                <p>Culture and Education</p>
-            </div>
-            <div class="grid-item">
-                <p>Relaxation</p>
-            </div>
-            <div class="grid-item">
-                <p>Travelling</p>
+        <div class="wrapper">
+            <h2>Discover holiday activity ideas</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <p>Sport and Activity</p>
+                </div>
+                <div class="grid-item">
+                    <p>Wellnes and Health</p>
+                </div>
+                <div class="grid-item">
+                    <p>Extreme Sports and Expeditions</p>
+                </div>
+                <div class="grid-item">
+                    <p>Games</p>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <p>Culture and Education</p>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <p>Relaxation</p>
+                </div>
+                <div class="grid-item">
+                    <p>Travelling</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="search-partners">
-        <h2>Discover holiday activity ideas</h2>
-        <p>Hi! What are your holiday interests?</p>
-        <form action="#">
-            <input type="text">
-            <button class="search-partners_button button">Search partners</button>
-        </form>
+        <div class="wrapper">
+            <h2>Discover holiday activity ideas</h2>
+            <p>Hi! What are your holiday interests?</p>
+            <form action="#">
+                <input type="text" placeholder="Enter your interests">
+                <button class="search-partners_button button">Search partners</button>
+            </form>
+        </div>
     </div>
     <footer>
-        <div class="footer_logo">
-            <a class="logo" href="#">URLAUBSGLÜCK</a>
-        </div>
-        <div class="footer_menu">
-            <h4>Company</h4>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Contacts</a></p>
-            <p><a href="#">Press</a></p>
-            <p><a href="#">Blog</a></p>
-        </div>
-        <div class="footer_menu">
-            <h4>Partners</h4>
-        </div>
-        <div class="desined-by">
-            <p>Designed by</p>
-            <img src="img/desinedBy-logo.png" alt="areto development">
+        <div class="wrapper">
+            <div class="footer_logo">
+                <a class="logo" href="#">URLAUBSGLÜCK</a>
+            </div>
+            <div class="footer_menu">
+                <h4 class="menu_title-menu">Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer_menu">
+                <h4 class="menu_title-menu title-menu__aligned">Partners</h4>
+            </div>
+            <div class="desined-by">
+                <p>Designed by</p>
+                <img class="desined-by_logo-developer-company logo-developer-company" src="img/desinedBy-logo.png"
+                     alt="areto development">
+            </div>
         </div>
     </footer>
 </div>

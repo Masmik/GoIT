@@ -5,5 +5,10 @@
   border-radius: $radius;
 }
 
+@mixin background-size($size) {
+  -webkit-background-size: $size ;
+  background-size: $size;
+}
+
 $bgc-step: #ff4e50;
 $color-white: #fff;
