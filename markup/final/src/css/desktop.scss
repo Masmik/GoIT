@@ -1,7 +1,4 @@
 @media screen and (min-width: 940px) and (max-width: 1440px) {
-  .content {
-    background-color: palevioletred;
-  }
   .wrapper {
     width: 940px;
     margin: 0 auto;
@@ -15,7 +12,7 @@
     padding-bottom: 16.2%;
     .header_login {
       float: right;
-      margin-right: 1px;
+      //margin-right: 1px;
     }
     .header_logo {
       float: left;
@@ -31,15 +28,15 @@
       }
       .banner_description {
         font-size: 24px;
-        padding-top: 3%;
+        padding-top: 3.1%;
         margin-left: -3px;
       }
       .header_button {
         padding-left: 22px;
         padding-right: 25px;
-        margin-left: 3px;
+        margin-left: 1px;
         padding-top: 3px;
-        margin-top: 4.1%;
+        margin-top: 4%;
         letter-spacing: -0.01em;
       }
     }
@@ -57,8 +54,10 @@
       position: relative;
       width: 32%;
       display: inline-block;
-      margin-top: 2.6%;
+      margin-top: 3.8%;
       margin-right: 1.7%;
+      overflow: hidden;
+      height:400px;
 
       &:last-child {
         margin-right: 0;
@@ -69,7 +68,7 @@
     }
 
     .prev, .next {
-      top: 36.2%;
+      top: 34.3%;
       left: 5px;
     }
 
@@ -80,16 +79,13 @@
       position: relative;
       display: inline-block;
       width: 100%;
-      vertical-align: top;
-      margin-top: 3.8%;
       height: 400px;
       &:last-child {
         margin-right: 0;
       }
     }
     .principle_step {
-      margin-top: 76.3%;
-      margin-left: 7%;
+      margin-left: 7.2%;
     }
 
     h3 {
@@ -97,26 +93,17 @@
       margin-left: 6.3%;
     }
     .principle_description {
-      margin-left: 6.9%;
+      margin-left: 6.6%;
       margin-top: 3.9%;
       line-height: 16px;
       width: 90%;
+      margin-bottom: 6%;
     }
-    .description__two {
-      margin-top: 3.6%;
-      letter-spacing: 0.14px;
-      margin-left: 19px;
-    }
-  }
-  .content .work-principles .principle .step__two {
-    margin-top: 86.3%;
-    padding-right: 10px;
-    padding-left: 14px;
-    margin-left: 20px;
   }
 
+
   .partners {
-    margin-top: 6.9%;
+    margin-top: 6.7%;
     text-align: center;
 
     .partner {
@@ -132,7 +119,7 @@
         position: relative;
         &::after {
           bottom: -3px;
-          right: 45px;
+          right: -4px;
         }
       }
       figcaption {
@@ -154,7 +141,7 @@
 
   .activity-ideas {
     text-align: center;
-    margin-top: 6.9%;
+    margin-top: 4.3%;
     height: 1050px;
 
     .grid {

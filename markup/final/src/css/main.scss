@@ -79,6 +79,9 @@ header {
 
 .work-principles {
   //SLIDER
+  .slider-container{
+    vertical-align: top;
+  }
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -109,7 +112,30 @@ header {
   }
   .principle {
     @include border-radius(4px);
+    position: relative;
+
+    .principle__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      @include border-radius(4px);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0); /* IE6-9 */
+    }
     .principle_step {
+      z-index: 1;
       font-weight: 400;
       line-height: 19px;
       padding-top: 1px;
@@ -124,10 +150,12 @@ header {
       font-size: 10px;
     }
     h3 {
+      z-index: 1;
       font-size: 24px;
       line-height: 29px;
     }
     .principle_description {
+      z-index: 1;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #ccc;
@@ -150,12 +178,14 @@ header {
   .partner {
     figure {
       .partner_photo {
+         position: relative;
+        display: inline-block;
         &::after {
           position: absolute;
           content: '';
           width: 41px;
           height: 41px;
-        }
+       }
       }
       figcaption {
         color: #333;
@@ -205,7 +235,7 @@ header {
   .partners_button {
     line-height: 33px;
     background-color: #fff;
-    display: block;
+    //display: block;
     text-align: center;
     font-size: 14px;
     color: #ff4e50;
