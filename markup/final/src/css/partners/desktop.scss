@@ -1,0 +1,36 @@
+.partners {
+  margin-top: 6.8%;
+  text-align: center;
+
+  .partner {
+    display: inline-block;
+    max-width: 220px;
+    vertical-align: top;
+    margin-right: 1.7%;
+    margin-top: 3.6%;
+    height: 234px;
+    overflow: hidden;
+
+    .partner_photo {
+      position: relative;
+      &::after {
+        bottom: -3px;
+        right: -4px;
+      }
+    }
+    .figcaption {
+      margin-top: 7.7%;
+    }
+    .partner_description {
+      margin-top: 7%;
+    }
+  }
+  .partner__telegram {
+    margin-right: 0;
+  }
+  .partners_button {
+    margin: 4.1% auto;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}

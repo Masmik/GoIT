@@ -52,8 +52,8 @@ table {
     color: #333; }
   header .header_login {
     padding-top: 9.5%;
-    text-align: right;
-    margin-right: 26.5%; }
+    text-align: center;
+    margin-right: 6%; }
   header .header_logo {
     margin-top: 40%;
     text-align: center; }
@@ -79,7 +79,11 @@ table {
     .work-principles h2 {
       padding-top: 11.5%;
       margin-left: -1%;
-      letter-spacing: -0.2px; }
+      letter-spacing: -0.2px;
+      margin-bottom: 5%; }
+    .work-principles .slider-container {
+      width: 300px;
+      margin: 0 auto 10px; }
     .work-principles .prev, .work-principles .next {
       cursor: pointer;
       position: absolute;
@@ -97,36 +101,31 @@ table {
     .work-principles .principle {
       text-align: left;
       display: block;
-      width: 300px;
-      height: 171px;
-      margin: 5% auto 0;
-      padding-top: 21.6%; }
-      .work-principles .principle .principle_step {
+      height: 240px;
+      position: relative; }
+      .work-principles .principle .principle__content {
         margin-left: 7%; }
       .work-principles .principle h3 {
-        padding-top: 4.9%;
-        margin-left: 6.2%;
+        padding-top: 5.6%;
         width: 70%; }
       .work-principles .principle .principle_description {
         padding-top: 4.5%;
         width: 95%;
         line-height: 16px;
-        margin-left: 6%; }
+        padding-bottom: 6%; }
       .work-principles .principle .description__two {
         padding-top: 3.5%;
         margin-left: 6.3%;
         letter-spacing: 0.15px;
         width: 90%; }
-    .work-principles .principle__two {
-      margin-top: 3.2%; }
-      .work-principles .principle__two .principle_step {
-        margin-top: 9.9%;
-        padding-left: 13px;
-        padding-right: 10px; }
+    .work-principles .principle__two .principle_step {
+      margin-top: 9.9%;
+      padding-left: 13px;
+      padding-right: 10px; }
     .work-principles .principle__three {
       margin-top: 3.1%; }
   .partners {
-    padding-top: 11%;
+    padding-top: 8%;
     text-align: center; }
     .partners h2 {
       width: 97%;
@@ -135,55 +134,53 @@ table {
       padding-top: 4.5%; }
       .partners .partner figure .partner_photo::after {
         bottom: -3px;
-        right: 29.9%; }
+        right: -4%; }
       .partners .partner figure figcaption {
         padding-top: 5.4%;
         margin-left: -0.5%; }
       .partners .partner figure .partner_description {
         width: 69%;
         padding-top: 4.8%;
-        margin-left: 15.1%; }
+        margin-left: 15.1%;
+        padding-bottom: 3.2%; }
     .partners .partner__flask {
-      padding-top: 18%;
       margin-left: -1.3%; }
-    .partners .partner__coffe {
-      padding-top: 8%; }
     .partners .partner__telegram {
-      margin-top: -7.7%;
       margin-left: -1.5%; }
     .partners .partners_button {
-      margin-top: 8.1%;
       padding-left: 71px;
       padding-right: 72px;
-      margin-left: 6%; }
+      margin-top: 4.5%; }
   .activity-ideas {
+    text-align: center;
     margin-top: 11%;
     line-height: 26px; }
     .activity-ideas h2 {
       text-align: center;
       margin-bottom: 4%; }
-    .activity-ideas .grid {
-      margin-left: 3%; }
-      .activity-ideas .grid .grid-item {
-        -webkit-background-size: cover;
-        background-size: cover;
-        width: 96.7%;
-        height: 121px;
-        text-align: center;
-        margin-bottom: 3%; }
-        .activity-ideas .grid .grid-item p {
-          padding-top: 15.8%;
-          width: 74%;
-          padding-left: 13%; }
+    .activity-ideas .grid .grid-item {
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 300px;
+      height: 121px;
+      text-align: center;
+      margin-bottom: 3%; }
+      .activity-ideas .grid .grid-item p {
+        line-height: 121px; }
+    .activity-ideas .grid .gutter-sizer {
+      width: 5px; }
+    .activity-ideas .grid .grid-sizer,
+    .activity-ideas .grid .grid-item {
+      width: 300px; }
   .search-partners {
     margin-top: 7.8%;
     text-align: center;
-    padding-bottom: 12.5%; }
+    padding-bottom: 12.4%; }
     .search-partners h2 {
       margin-left: -1%;
       line-height: 26px; }
     .search-partners p {
-      padding-top: 4%;
+      padding-top: 3.7%;
       margin-left: -1.3%; }
     .search-partners form {
       margin-top: 5.4%; }
@@ -196,29 +193,25 @@ table {
         padding-right: 26%;
         margin-left: -1%;
         line-height: 36px; }
-  footer .footer_logo {
-    padding-top: 5.7%;
-    margin-left: 27.2%; }
-  footer .footer_menu {
-    padding-top: 4.5%; }
-    footer .footer_menu h4 {
-      margin-left: 39%; }
-    footer .footer_menu .title-menu__aligned {
-      margin-left: 40.3%; }
-    footer .footer_menu ul {
-      padding-top: 1.5%;
-      margin-left: 19.3%;
-      margin-bottom: 0.2%; }
-      footer .footer_menu ul li {
-        display: inline-block;
-        margin-right: 4%; }
-        footer .footer_menu ul li :last-child {
-          margin-right: 0; }
-  footer .desined-by {
-    margin-top: 5.2%; }
-    footer .desined-by .logo-developer-company {
-      padding-top: 2.6%;
-      margin-left: 32.4%; } }
+  footer {
+    text-align: center; }
+    footer .footer_logo {
+      padding-top: 5.7%; }
+    footer .footer_menu {
+      padding-top: 4.5%; }
+      footer .footer_menu ul {
+        padding-top: 1.5%;
+        margin-bottom: 0.2%; }
+        footer .footer_menu ul li {
+          display: inline-block;
+          margin-right: 3.2%; }
+          footer .footer_menu ul li:last-child {
+            margin-right: 0; }
+    footer .desined-by {
+      margin-top: 5.2%; }
+      footer .desined-by .logo-developer-company {
+        padding-top: 2.5%;
+        margin-left: -2px; } }
 
 @media screen and (min-width: 768px) and (max-width: 939px) {
   .content {
@@ -253,17 +246,20 @@ table {
         padding-top: 3px; }
   .work-principles {
     margin-top: 12.6%;
-    margin-left: 1.3%; }
+    text-align: center; }
     .work-principles h2 {
       font-size: 22px;
-      margin-left: 30.8%;
+      text-align: center;
       letter-spacing: -0.2px;
-      margin-bottom: 4.7%; }
+      margin-left: 0.5%; }
     .work-principles .slider-container {
       position: relative;
       display: inline-block;
-      width: 31.8%;
-      margin-right: 1.5%; }
+      width: 30.8%;
+      overflow: hidden;
+      height: 400px;
+      margin-top: 4.7%;
+      margin-right: 2%; }
       .work-principles .slider-container:last-child {
         margin-right: 0; }
     .work-principles .prev, .work-principles .next {
@@ -289,19 +285,13 @@ table {
       left: 74.5%; }
     .work-principles .principle {
       display: inline-block;
-      vertical-align: top;
-      margin-right: 2.1%;
       min-height: 400px;
-      overflow: hidden; }
+      overflow: hidden;
+      text-align: left; }
       .work-principles .principle:last-child {
         margin-right: 0; }
       .work-principles .principle .principle_step {
-        margin-top: 89.8%;
         margin-left: 8.3%; }
-      .work-principles .principle .step__two {
-        margin-top: 109.6%;
-        margin-left: 8.4%;
-        padding-left: 13px; }
       .work-principles .principle h3 {
         margin-top: 6.5%;
         margin-left: 8%; }
@@ -319,7 +309,7 @@ table {
   .partners {
     max-width: 520px;
     text-align: center;
-    margin: 13.4% auto 10%; }
+    margin: 13% auto 10%; }
     .partners h2 {
       font-size: 22px;
       letter-spacing: 0.09px;
@@ -331,40 +321,35 @@ table {
       display: inline-block;
       width: 246px;
       vertical-align: top;
-      min-height: 228px;
-      margin-bottom: 6%; }
+      min-height: 228px; }
       .partners .partner .partner_photo::after {
         bottom: -3px;
-        right: 59px; }
+        right: -4px; }
     .partners .partner__tv {
       margin-left: 0.5%; }
     .partners .partner__flask {
       margin-left: -0.9%; }
-      .partners .partner__flask figure .partner_photo::after {
-        right: 59px; }
     .partners .partner__coffe {
       margin-left: 1.3%; }
     .partners .partner__telegram figure {
       margin-left: 5%; }
-      .partners .partner__telegram figure .partner_photo::after {
-        right: 52px; }
     .partners .partner__telegram .partner_description {
       margin-left: 6px; }
     .partners figcaption {
       margin-top: 17px;
       margin-left: -2px; }
     .partners .partner_description {
-      margin-top: 15px;
+      margin-top: 14px;
       width: 220px;
       margin-left: 11px;
-      line-height: 17px; }
+      line-height: 17px;
+      padding-bottom: 22.6%; }
     .partners .partners_button {
-      margin-top: 0.8%;
-      margin-left: 31.4%;
+      margin-top: -3.8%;
       padding-left: 27px;
       padding-right: 28px; }
   .activity-ideas {
-    margin-top: 12.8%;
+    margin-top: 12.9%;
     text-align: center; }
     .activity-ideas h2 {
       font-size: 22px;
@@ -398,7 +383,7 @@ table {
       margin-left: -0.5%; }
     .search-partners p {
       font-size: 18px;
-      margin-top: 4.6%;
+      margin-top: 4.5%;
       letter-spacing: 0.005em;
       margin-left: -3px; }
     .search-partners form {
@@ -412,7 +397,7 @@ table {
         padding-right: 22px;
         margin-left: 1.5%; }
   footer {
-    margin-top: 4.9%; }
+    margin-top: 5%; }
     footer .footer_logo {
       float: left;
       margin-left: 5.1%; }
@@ -437,8 +422,6 @@ table {
         margin-top: 7%; } }
 
 @media screen and (min-width: 940px) and (max-width: 1440px) {
-  .content {
-    background-color: palevioletred; }
   .wrapper {
     width: 940px;
     margin: 0 auto; }
@@ -449,8 +432,7 @@ table {
     text-align: center;
     padding-bottom: 16.2%; }
     header .header_login {
-      float: right;
-      margin-right: 1px; }
+      float: right; }
     header .header_logo {
       float: left; }
     header .header_banner {
@@ -463,14 +445,14 @@ table {
         line-height: 63px; }
       header .header_banner .banner_description {
         font-size: 24px;
-        padding-top: 3%;
+        padding-top: 3.1%;
         margin-left: -3px; }
       header .header_banner .header_button {
         padding-left: 22px;
         padding-right: 25px;
-        margin-left: 3px;
+        margin-left: 1px;
         padding-top: 3px;
-        margin-top: 4.1%;
+        margin-top: 4%;
         letter-spacing: -0.01em; }
   .work-principles {
     position: relative; }
@@ -484,14 +466,16 @@ table {
       position: relative;
       width: 32%;
       display: inline-block;
-      margin-top: 2.6%;
-      margin-right: 1.7%; }
+      margin-top: 3.8%;
+      margin-right: 1.7%;
+      overflow: hidden;
+      height: 400px; }
       .work-principles .slider-container:last-child {
         margin-right: 0; }
     .work-principles .slider-container__two {
       margin-right: 1.5%; }
     .work-principles .prev, .work-principles .next {
-      top: 36.2%;
+      top: 34.3%;
       left: 5px; }
     .work-principles .next {
       left: 77.4%; }
@@ -499,33 +483,22 @@ table {
       position: relative;
       display: inline-block;
       width: 100%;
-      vertical-align: top;
-      margin-top: 3.8%;
       height: 400px; }
       .work-principles .principle:last-child {
         margin-right: 0; }
     .work-principles .principle_step {
-      margin-top: 76.3%;
-      margin-left: 7%; }
+      margin-left: 7.2%; }
     .work-principles h3 {
       margin-top: 5.1%;
       margin-left: 6.3%; }
     .work-principles .principle_description {
-      margin-left: 6.9%;
+      margin-left: 6.6%;
       margin-top: 3.9%;
       line-height: 16px;
-      width: 90%; }
-    .work-principles .description__two {
-      margin-top: 3.6%;
-      letter-spacing: 0.14px;
-      margin-left: 19px; }
-  .content .work-principles .principle .step__two {
-    margin-top: 86.3%;
-    padding-right: 10px;
-    padding-left: 14px;
-    margin-left: 20px; }
+      width: 90%;
+      margin-bottom: 6%; }
   .partners {
-    margin-top: 6.9%;
+    margin-top: 6.7%;
     text-align: center; }
     .partners .partner {
       display: inline-block;
@@ -539,7 +512,7 @@ table {
         position: relative; }
         .partners .partner .partner_photo::after {
           bottom: -3px;
-          right: 45px; }
+          right: -4px; }
       .partners .partner figcaption {
         margin-top: 7.5%; }
       .partners .partner .partner_description {
@@ -552,7 +525,7 @@ table {
       padding-left: 28px; }
   .activity-ideas {
     text-align: center;
-    margin-top: 6.9%;
+    margin-top: 4.3%;
     height: 1050px; }
     .activity-ideas .grid {
       margin-top: 3.8%; }
@@ -670,6 +643,9 @@ header {
   header .header_banner .header_button {
     color: #fff; }
 
+.work-principles .slider-container {
+  vertical-align: top; }
+
 .work-principles .prev, .work-principles .next {
   cursor: pointer;
   position: absolute;
@@ -700,8 +676,34 @@ header {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  position: relative; }
+  .work-principles .principle .principle__content {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .work-principles .principle .shadow {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    /* IE6-9 */ }
   .work-principles .principle .principle_step {
+    z-index: 1;
     font-weight: 400;
     line-height: 19px;
     padding-top: 1px;
@@ -718,9 +720,11 @@ header {
     text-transform: uppercase;
     font-size: 10px; }
   .work-principles .principle h3 {
+    z-index: 1;
     font-size: 24px;
     line-height: 29px; }
   .work-principles .principle .principle_description {
+    z-index: 1;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ccc;
@@ -736,7 +740,8 @@ header {
   background: url("../img/principle-three.jpg") no-repeat; }
 
 .partners .partner figure .partner_photo {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .partners .partner figure .partner_photo::after {
     position: absolute;
     content: '';
@@ -761,7 +766,8 @@ header {
   background-image: url("../img/partner-icon-tv.png"); }
 
 .partners .partner__flask .partner_photo::after {
-  background-image: url("../img/partner-icon-flask.png"); }
+  background-image: url("../img/partner-icon-flask.png");
+  background-repeat: no-repeat; }
 
 .partners .partner__coffe .partner_photo::after {
   background-image: url("../img/partner-icon-coffe.png"); }
@@ -772,7 +778,6 @@ header {
 .partners .partners_button {
   line-height: 33px;
   background-color: #fff;
-  display: block;
   text-align: center;
   font-size: 14px;
   color: #ff4e50;

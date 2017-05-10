@@ -1,0 +1,31 @@
+@import "basic.scss";
+@import "header/desktop.scss";
+@import "work-principles/desktop.scss";
+@import "partners/desktop.scss";
+@import "activity-ideas/desktop.scss";
+@import "search-partners/desktop.scss";
+@import "footer/desktop.scss";
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.work-principles .slider-container{
+  width: 31%;
+}
+
+.partners .partner{
+  max-width: 219px;
+}
+
+.button{
+  border-radius: 20px;
+  behavior: url(PIE.htc);
+  position: relative;
+  zoom: 1;
+}

@@ -1,0 +1,100 @@
+@media screen and (min-width: 940px) and (max-width: 1440px) {
+  .partners {
+    margin-top: 6.7%;
+    text-align: center; }
+    .partners .partner {
+      display: inline-block;
+      max-width: 220px;
+      vertical-align: top;
+      margin-right: 1.7%;
+      margin-top: 3.6%;
+      height: 234px;
+      overflow: hidden; }
+      .partners .partner .partner_photo {
+        position: relative; }
+        .partners .partner .partner_photo::after {
+          bottom: -3px;
+          right: -4px; }
+      .partners .partner figcaption {
+        margin-top: 7.5%; }
+      .partners .partner .partner_description {
+        margin-top: 7%; }
+    .partners .partner__telegram {
+      margin-right: 0; }
+    .partners .partners_button {
+      margin: 4% auto;
+      padding-right: 28px;
+      padding-left: 28px; } }
+@media screen and (min-width: 768px) and (max-width: 939px) {
+  .partners {
+    max-width: 520px;
+    text-align: center;
+    margin: 13.3% auto 0; }
+    .partners h2 {
+      font-size: 22px;
+      letter-spacing: 0.09px;
+      margin-top: -0.7%;
+      margin-left: -3px;
+      margin-bottom: 6.4%; }
+    .partners .partner {
+      text-align: center;
+      display: inline-block;
+      width: 246px;
+      vertical-align: top;
+      min-height: 228px; }
+      .partners .partner .partner_photo::after {
+        bottom: -3px;
+        right: -4px; }
+    .partners .partner__tv {
+      margin-left: 0.5%; }
+    .partners .partner__flask {
+      margin-left: -0.9%; }
+    .partners .partner__coffe {
+      margin-left: 1.3%; }
+    .partners .partner__telegram figure {
+      margin-left: 5%; }
+    .partners .partner__telegram .partner_description {
+      margin-left: 6px; }
+    .partners figcaption {
+      margin-top: 17px;
+      margin-left: -2px; }
+    .partners .partner_description {
+      margin-top: 14px;
+      width: 220px;
+      margin-left: 11px;
+      line-height: 17px;
+      padding-bottom: 23%; }
+    .partners .partners_button {
+      margin-top: -3.8%;
+      padding-left: 27px;
+      padding-right: 28px; } }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .partners {
+    padding-top: 8%;
+    text-align: center; }
+    .partners h2 {
+      width: 97%;
+      line-height: 26px; }
+    .partners .partner {
+      padding-top: 4.5%; }
+      .partners .partner figure .partner_photo::after {
+        bottom: -3px;
+        right: -4%; }
+      .partners .partner figure figcaption {
+        padding-top: 5.4%;
+        margin-left: -0.5%; }
+      .partners .partner figure .partner_description {
+        width: 69%;
+        padding-top: 4.8%;
+        margin-left: 15.1%;
+        padding-bottom: 3.2%; }
+    .partners .partner__flask {
+      margin-left: -1.3%; }
+    .partners .partner__telegram {
+      margin-left: -1.5%; }
+    .partners .partners_button {
+      padding-left: 71px;
+      padding-right: 72px;
+      margin-top: 4.5%; } }
+
+/*# sourceMappingURL=partners.css.map */

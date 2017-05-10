@@ -11,13 +11,16 @@ gulp.task('sass', function(){
 });
 
 
-
-gulp.task('default', () =>
-    gulp.src('src/img/*')
+gulp.task('img', function () {
+    return gulp.src("src/img/*")
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
-);
-
-gulp.task('watch', function(){
-    gulp.watch('css/main.scss', ['sass']);
+        .pipe(gulp.dest('dist/img'));
 });
+
+
+gulp.task('watch', function () {
+    gulp.watch("src/css//*.scss", ['sass']);
+    gulp.watch("src/img/*", ['img']);
+});
+
+gulp.task("default", ['img', 'saas', 'watch']);
