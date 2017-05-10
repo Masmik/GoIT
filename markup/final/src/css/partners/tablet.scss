@@ -15,13 +15,6 @@
     width: 246px;
     vertical-align: top;
     min-height: 228px;
-
-    .partner_photo {
-      &::after {
-        bottom: -3px;
-        right: -4px;
-      }
-    }
   }
   .partner__tv {
     margin-left: 0.5%;

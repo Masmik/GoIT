@@ -13,10 +13,6 @@
 
     .partner_photo {
       position: relative;
-      &::after {
-        bottom: -3px;
-        right: -4px;
-      }
     }
     .figcaption {
       margin-top: 7.7%;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import 'sprites.scss';
 @import "reset.scss";
 @import "variables.scss";
 
@@ -185,6 +186,8 @@ h2 {
           content: '';
           width: 41px;
           height: 41px;
+          bottom: -3px;
+          right: -4px;
         }
       }
       .figcaption {
@@ -206,29 +209,28 @@ h2 {
   .partner__tv {
     .partner_photo {
       &::after {
-        background-image: url('../img/partner-icons/partner-icon-tv.png');
+        background: url('../img/spritesheet.png') 0 -41px no-repeat;
       }
     }
   }
   .partner__flask {
     .partner_photo {
       &::after {
-        background-image: url('../img/partner-icons/partner-icon-flask.png');
-        background-repeat: no-repeat;
+        background: url('../img/spritesheet.png') -41px -41px no-repeat;
       }
     }
   }
   .partner__coffe {
     .partner_photo {
       &::after {
-        background-image: url('../img/partner-icons/partner-icon-coffe.png');
+        background: url('../img/spritesheet.png') 0 0 no-repeat;
       }
     }
   }
   .partner__telegram {
     .partner_photo {
       &::after {
-        background-image: url('../img/partner-icons/partner-icon-telegram.png');
+        background: url('../img/spritesheet.png') -41px 0 no-repeat;
       }
     }
   }

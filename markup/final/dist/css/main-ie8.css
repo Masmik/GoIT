@@ -108,6 +108,7 @@ h2 {
 
 .work-principles .slider-container {
   vertical-align: top; }
+
 .work-principles .prev, .work-principles .next {
   cursor: pointer;
   position: absolute;
@@ -115,20 +116,25 @@ h2 {
   padding: 16px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0; }
+
 .work-principles .next {
   border-radius: 3px 0 0 3px; }
+
 .work-principles .prev:hover, .work-principles .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
+
 .work-principles .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
   animation-duration: 1s; }
+
 @keyframes fade {
   0% {
     opacity: 0.4; }
   100% {
     opacity: 1; } }
+
 .work-principles .principle {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -186,10 +192,13 @@ h2 {
     font-weight: 300;
     color: #ccc;
     font-size: 14px; }
+
 .work-principles .principle__one {
   background: url("../img/principle-first.jpg") no-repeat; }
+
 .work-principles .principle__two {
   background: url("../img/principle-two.jpg") no-repeat; }
+
 .work-principles .principle__three {
   background: url("../img/principle-three.jpg") no-repeat; }
 
@@ -203,11 +212,13 @@ h2 {
     height: 41px;
     bottom: -3px;
     right: -4px; }
+
 .partners .partner .figure .figcaption {
   color: #333;
   font-size: 14px;
   letter-spacing: -0.2px;
   word-spacing: 1px; }
+
 .partners .partner .figure .partner_description {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -215,14 +226,19 @@ h2 {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.15px; }
+
 .partners .partner__tv .partner_photo::after {
   background: url("../img/spritesheet.png") 0 -41px no-repeat; }
+
 .partners .partner__flask .partner_photo::after {
   background: url("../img/spritesheet.png") -41px -41px no-repeat; }
+
 .partners .partner__coffe .partner_photo::after {
   background: url("../img/spritesheet.png") 0 0 no-repeat; }
+
 .partners .partner__telegram .partner_photo::after {
   background: url("../img/spritesheet.png") -41px 0 no-repeat; }
+
 .partners .partners_button {
   line-height: 33px;
   background-color: #fff;
@@ -462,5 +478,3 @@ h2 {
   behavior: url(PIE.htc);
   position: relative;
   zoom: 1; }
-
-/*# sourceMappingURL=main-ie8.css.map */

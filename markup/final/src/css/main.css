@@ -200,7 +200,9 @@ h2 {
     position: absolute;
     content: '';
     width: 41px;
-    height: 41px; }
+    height: 41px;
+    bottom: -3px;
+    right: -4px; }
 .partners .partner .figure .figcaption {
   color: #333;
   font-size: 14px;
@@ -214,14 +216,13 @@ h2 {
   line-height: 17px;
   letter-spacing: 0.15px; }
 .partners .partner__tv .partner_photo::after {
-  background-image: url("../img/partner-icons/partner-icon-tv.png"); }
+  background: url("../img/spritesheet.png") 0 -41px no-repeat; }
 .partners .partner__flask .partner_photo::after {
-  background-image: url("../img/partner-icons/partner-icon-flask.png");
-  background-repeat: no-repeat; }
+  background: url("../img/spritesheet.png") -41px -41px no-repeat; }
 .partners .partner__coffe .partner_photo::after {
-  background-image: url("../img/partner-icons/partner-icon-coffe.png"); }
+  background: url("../img/spritesheet.png") 0 0 no-repeat; }
 .partners .partner__telegram .partner_photo::after {
-  background-image: url("../img/partner-icons/partner-icon-telegram.png"); }
+  background: url("../img/spritesheet.png") -41px 0 no-repeat; }
 .partners .partners_button {
   line-height: 33px;
   background-color: #fff;
@@ -542,9 +543,6 @@ h2 {
       overflow: hidden; }
       .partners .partner .partner_photo {
         position: relative; }
-        .partners .partner .partner_photo::after {
-          bottom: -3px;
-          right: -4px; }
       .partners .partner .figcaption {
         margin-top: 7.7%; }
       .partners .partner .partner_description {
@@ -572,9 +570,6 @@ h2 {
       width: 246px;
       vertical-align: top;
       min-height: 228px; }
-      .partners .partner .partner_photo::after {
-        bottom: -3px;
-        right: -4px; }
     .partners .partner__tv {
       margin-left: 0.5%; }
     .partners .partner__flask {
@@ -607,9 +602,6 @@ h2 {
       line-height: 26px; }
     .partners .partner {
       padding-top: 4.5%; }
-      .partners .partner .figure .partner_photo::after {
-        bottom: -3px;
-        right: -4%; }
       .partners .partner .figure .figcaption {
         padding-top: 5.4%;
         margin-left: -0.5%; }
