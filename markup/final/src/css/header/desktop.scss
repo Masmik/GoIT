@@ -20,11 +20,15 @@
       padding-left: 18%;
       width: 64%;
       line-height: 63px;
+      letter-spacing: -0.015em;
+      margin-left: -2px;
+      word-spacing: 1px;
     }
     .banner_description {
       font-size: 24px;
       padding-top: 3.1%;
-      margin-left: -3px;
+      margin-left: 0;
+      letter-spacing: 0.003em;
     }
     .header_button {
       padding-left: 22px;
@@ -32,7 +36,6 @@
       margin-left: 1px;
       padding-top: 3px;
       margin-top: 4%;
-      letter-spacing: -0.01em;
     }
   }
 }

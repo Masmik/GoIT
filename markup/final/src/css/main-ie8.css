@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,7 +46,7 @@ table {
 .content {
   width: auto;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: #fff; }
 
 .button {
@@ -67,7 +67,8 @@ table {
   cursor: pointer; }
 
 h2 {
-  color: #333; }
+  color: #333;
+  font-weight: 600; }
 
 .header {
   background-image: url("../img/header-bg.jpg");
@@ -79,7 +80,9 @@ h2 {
     font-size: 14px;
     text-decoration: none;
     border: 2px solid transparent;
-    padding: 7px 16px; }
+    padding: 7px 17px;
+    letter-spacing: -0.01em;
+    font-weight: 500; }
     .header .header_login a:first-child {
       margin-right: -0.5%; }
     .header .header_login a:hover {
@@ -92,7 +95,8 @@ h2 {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.05em;
+    font-weight: 500; }
   .header .header_banner h1 {
     font-weight: 600;
     text-align: center;
@@ -102,9 +106,12 @@ h2 {
     font-weight: 300;
     text-align: center;
     line-height: 20px;
-    display: block; }
+    display: block;
+    margin-left: 0;
+    letter-spacing: 0.003em; }
   .header .header_banner .header_button {
-    color: #fff; }
+    color: #fff;
+    letter-spacing: -0.01em; }
 
 .work-principles .slider-container {
   vertical-align: top; }
@@ -162,36 +169,46 @@ h2 {
   .work-principles .principle .principle_step {
     z-index: 1;
     font-weight: 400;
-    line-height: 19px;
-    padding-top: 1px;
+    line-height: 20px;
     display: inline-block;
     text-align: center;
-    letter-spacing: 2px;
     padding-left: 15px;
-    padding-right: 12px;
+    padding-right: 11px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     border-radius: 20px;
     background-color: #ff4e50;
     text-transform: uppercase;
-    font-size: 10px; }
+    font-size: 10px;
+    letter-spacing: 0.21em; }
   .work-principles .principle h3 {
     z-index: 1;
     font-size: 24px;
-    line-height: 29px; }
+    line-height: 29px;
+    font-weight: 500; }
   .work-principles .principle .principle_description {
     z-index: 1;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ccc;
-    font-size: 14px; }
+    font-size: 14px;
+    letter-spacing: 0.004em; }
 .work-principles .principle__one {
   background: url("../img/principle-first.jpg") no-repeat; }
 .work-principles .principle__two {
   background: url("../img/principle-two.jpg") no-repeat; }
 .work-principles .principle__three {
   background: url("../img/principle-three.jpg") no-repeat; }
+.work-principles .principle .step__two {
+  padding-left: 13px;
+  padding-right: 11px; }
+.work-principles .principle .step__three {
+  padding-left: 13px; }
+.work-principles .title_two {
+  letter-spacing: 0.01em;
+  margin-left: 6.6%;
+  margin-top: 5%; }
 
 .partners .partner .figure .partner_photo {
   position: relative;
@@ -207,7 +224,8 @@ h2 {
   color: #333;
   font-size: 14px;
   letter-spacing: -0.2px;
-  word-spacing: 1px; }
+  word-spacing: 1px;
+  font-weight: 600; }
 .partners .partner .figure .partner_description {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -236,15 +254,18 @@ h2 {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px; }
-  .activity-ideas .grid .grid-item p {
-    font-size: 22px; }
+  .activity-ideas .grid .grid-item .item__text {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 500; }
 
 .search-partners {
   border-bottom: 4px solid #ff4e50; }
   .search-partners p {
     font-family: Roboto, sans-serif;
     font-size: 18px;
-    color: #333; }
+    color: #333;
+    letter-spacing: 0.004em; }
   .search-partners form input {
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -254,22 +275,24 @@ h2 {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    border-radius: 5px; }
-  .search-partners form input::-webkit-input-placeholder {
+    border-radius: 5px;
     padding-left: 14px; }
 
 .footer {
   font-family: Montserrat, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-bottom: 38px;
+  overflow: auto; }
   .footer .footer_logo .logo {
     color: #ff4e50;
     text-decoration: none;
     letter-spacing: 0.73px;
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: 500; }
   .footer .footer_menu h4 {
-    letter-spacing: -0.2px;
     color: #333;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 500; }
   .footer .footer_menu ul li a {
     text-decoration: none;
     color: #666;
@@ -301,18 +324,21 @@ h2 {
       padding-top: 15.5%;
       padding-left: 18%;
       width: 64%;
-      line-height: 63px; }
+      line-height: 63px;
+      letter-spacing: -0.015em;
+      margin-left: -2px;
+      word-spacing: 1px; }
     .header .header_banner .banner_description {
       font-size: 24px;
       padding-top: 3.1%;
-      margin-left: -3px; }
+      margin-left: 0;
+      letter-spacing: 0.003em; }
     .header .header_banner .header_button {
       padding-left: 22px;
       padding-right: 25px;
       margin-left: 1px;
       padding-top: 3px;
-      margin-top: 4%;
-      letter-spacing: -0.01em; }
+      margin-top: 4%; }
 
 .work-principles {
   position: relative; }
@@ -321,10 +347,10 @@ h2 {
     font-size: 22px;
     margin-top: 10.35%;
     letter-spacing: -0.01em;
-    margin-left: -4px; }
+    margin-left: -5px; }
   .work-principles .slider-container {
     position: relative;
-    width: 32%;
+    width: 31.97%;
     display: inline-block;
     margin-top: 3.8%;
     margin-right: 1.7%;
@@ -333,7 +359,10 @@ h2 {
     .work-principles .slider-container:last-child {
       margin-right: 0; }
   .work-principles .slider-container__two {
-    margin-right: 1.5%; }
+    margin-right: 1.5%;
+    transform: translateX(-1px); }
+  .work-principles .slider-container__three {
+    transform: translateX(1px); }
   .work-principles .prev, .work-principles .next {
     top: 34.3%;
     left: 5px; }
@@ -350,20 +379,25 @@ h2 {
     margin-left: 7.2%; }
   .work-principles h3 {
     margin-top: 5.1%;
-    margin-left: 6.3%; }
+    margin-left: 6.8%;
+    word-spacing: 0.01em; }
   .work-principles .principle_description {
-    margin-left: 6.6%;
+    margin-left: 6.7%;
     margin-top: 3.9%;
     line-height: 16px;
     width: 90%;
     margin-bottom: 6%; }
+  .work-principles .principle .description__two {
+    margin-bottom: 5.7%;
+    margin-left: 6.8%;
+    letter-spacing: 0.01em; }
 
 .partners {
   margin-top: 6.8%;
   text-align: center; }
   .partners .partner {
     display: inline-block;
-    max-width: 220px;
+    max-width: 219px;
     vertical-align: top;
     margin-right: 1.7%;
     margin-top: 3.6%;
@@ -372,7 +406,7 @@ h2 {
     .partners .partner .partner_photo {
       position: relative; }
     .partners .partner .figcaption {
-      margin-top: 7.7%; }
+      margin-top: 8%; }
     .partners .partner .partner_description {
       margin-top: 7%; }
   .partners .partner__telegram {
@@ -381,6 +415,9 @@ h2 {
     margin: 4.1% auto;
     padding-right: 28px;
     padding-left: 28px; }
+  .partners h2 {
+    letter-spacing: 0.001em;
+    margin-left: -1px; }
 
 .activity-ideas {
   text-align: center;
@@ -406,32 +443,36 @@ h2 {
     height: 310px; }
     .activity-ideas .grid-item--width2 .item__text {
       margin-top: 23%; }
+  .activity-ideas h2 {
+    letter-spacing: 0.001em;
+    margin-left: -3px; }
 
 .search-partners {
   text-align: center;
   margin-top: 5.3%;
+  margin-left: -2px;
   padding-bottom: 6.9%; }
   .search-partners p {
     margin-top: 3.8%;
-    margin-left: -3px; }
+    margin-left: -1px; }
   .search-partners form {
     margin-top: 4.1%; }
     .search-partners form input {
-      width: 236px;
-      margin-left: -0.4%; }
+      width: 223px; }
     .search-partners form .search-partners_button {
       padding-left: 22px;
       padding-right: 23px;
-      margin-left: 0.7%; }
+      margin-left: 0.7%;
+      transform: translateX(-1px); }
 
 .footer {
   margin-top: 2.6%; }
   .footer .footer_logo {
     float: left;
-    margin-right: 0.4%; }
+    margin-right: 0.6%; }
   .footer .footer_menu {
     float: left;
-    margin-left: 9.9%; }
+    margin-left: 9.8%; }
     .footer .footer_menu h4 {
       padding-bottom: 17%; }
     .footer .footer_menu ul a {
@@ -454,12 +495,9 @@ h2 {
 .work-principles .slider-container {
   width: 31%; }
 
-.partners .partner {
-  max-width: 219px; }
-
 .button {
   border-radius: 20px;
-  behavior: url(PIE.htc);
+  behavior: url(src/css/PIE.htc);
   position: relative;
   zoom: 1; }
 

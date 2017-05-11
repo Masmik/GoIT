@@ -4,7 +4,7 @@
 
   .partner {
     display: inline-block;
-    max-width: 220px;
+    max-width: 219px;
     vertical-align: top;
     margin-right: 1.7%;
     margin-top: 3.6%;
@@ -15,7 +15,7 @@
       position: relative;
     }
     .figcaption {
-      margin-top: 7.7%;
+      margin-top: 8%;
     }
     .partner_description {
       margin-top: 7%;
@@ -28,5 +28,9 @@
     margin: 4.1% auto;
     padding-right: 28px;
     padding-left: 28px;
+  }
+  h2{
+    letter-spacing: 0.001em;
+    margin-left: -1px;
   }
 }

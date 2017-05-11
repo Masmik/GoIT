@@ -5,11 +5,12 @@
     font-size: 22px;
     margin-top: 10.35%;
     letter-spacing: -0.01em;
-    margin-left: -4px;
+    margin-left: -5px;
+
   }
   .slider-container {
     position: relative;
-    width: 32%;
+    width: 31.97%;
     display: inline-block;
     margin-top: 3.8%;
     margin-right: 1.7%;
@@ -22,6 +23,10 @@
   }
   .slider-container__two {
     margin-right: 1.5%;
+    transform: translateX(-1px);
+  }
+  .slider-container__three {
+    transform: translateX(1px);
   }
 
   .prev, .next {
@@ -47,13 +52,19 @@
 
   h3 {
     margin-top: 5.1%;
-    margin-left: 6.3%;
+    margin-left: 6.8%;
+    word-spacing: 0.01em;
   }
   .principle_description {
-    margin-left: 6.6%;
+    margin-left: 6.7%;
     margin-top: 3.9%;
     line-height: 16px;
     width: 90%;
     margin-bottom: 6%;
+  }
+  .principle .description__two {
+    margin-bottom: 5.7%;
+    margin-left: 6.8%;
+    letter-spacing: 0.01em;
   }
 }

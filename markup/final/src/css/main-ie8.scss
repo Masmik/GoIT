@@ -19,13 +19,10 @@ h2 {
   width: 31%;
 }
 
-.partners .partner{
-  max-width: 219px;
-}
 
 .button{
   border-radius: 20px;
-  behavior: url(PIE.htc);
+  behavior: url(src/css/PIE.htc);
   position: relative;
   zoom: 1;
 }
