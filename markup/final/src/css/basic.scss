@@ -179,11 +179,11 @@ h2 {
   .principle__three {
     background: url('../img/principle-three.jpg') no-repeat;
   }
-  .principle .step__two{
+  .principle .step__two {
     padding-left: 13px;
     padding-right: 11px;
   }
-  .principle .step__three{
+  .principle .step__three {
     padding-left: 13px;
   }
   .title_two {
@@ -200,6 +200,19 @@ h2 {
       .partner_photo {
         position: relative;
         display: inline-block;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+          background-image: url(src/img/spritesheet-2x.png);
+        }
+
+        background-repeat: no-repeat;
+        background-size: 164*($size);
+
         &::after {
           position: absolute;
           content: '';
@@ -229,14 +242,14 @@ h2 {
   .partner__tv {
     .partner_photo {
       &::after {
-        background: url('../img/spritesheet.png') 0 -41px no-repeat;
+        background: url('../img/spritesheet.png') -41*($size) -41*($size) no-repeat;
       }
     }
   }
   .partner__flask {
     .partner_photo {
       &::after {
-        background: url('../img/spritesheet.png') -41px -41px no-repeat;
+        background: url('../img/spritesheet.png') -41*($size) 0 no-repeat;
       }
     }
   }
@@ -250,7 +263,7 @@ h2 {
   .partner__telegram {
     .partner_photo {
       &::after {
-        background: url('../img/spritesheet.png') -41px 0 no-repeat;
+        background: url('../img/spritesheet.png') 0 -41*($size) no-repeat;
       }
     }
   }

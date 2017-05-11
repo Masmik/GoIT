@@ -212,7 +212,12 @@ h2 {
 
 .partners .partner .figure .partner_photo {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 164px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .partners .partner .figure .partner_photo {
+      background-image: url(src/img/spritesheet-2x.png); } }
   .partners .partner .figure .partner_photo::after {
     position: absolute;
     content: '';
@@ -234,13 +239,13 @@ h2 {
   line-height: 17px;
   letter-spacing: 0.15px; }
 .partners .partner__tv .partner_photo::after {
-  background: url("../img/spritesheet.png") 0 -41px no-repeat; }
-.partners .partner__flask .partner_photo::after {
   background: url("../img/spritesheet.png") -41px -41px no-repeat; }
+.partners .partner__flask .partner_photo::after {
+  background: url("../img/spritesheet.png") -41px 0 no-repeat; }
 .partners .partner__coffe .partner_photo::after {
   background: url("../img/spritesheet.png") 0 0 no-repeat; }
 .partners .partner__telegram .partner_photo::after {
-  background: url("../img/spritesheet.png") -41px 0 no-repeat; }
+  background: url("../img/spritesheet.png") 0 -41px no-repeat; }
 .partners .partners_button {
   line-height: 33px;
   background-color: #fff;
