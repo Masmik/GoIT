@@ -310,7 +310,7 @@ h2 {
     text-align: center;
     letter-spacing: 1px; }
 
-@media screen and (min-width: 940px) and (max-width: 1440px) {
+@media screen and (min-width: 940px) {
   .header {
     padding-top: 3.3%;
     text-align: center;
