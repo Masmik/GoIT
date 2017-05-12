@@ -64,7 +64,13 @@ table {
   border-radius: 20px;
   color: #fff;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  opacity: 0.8; }
+
+.button:hover {
+  transform: scale(1.1);
+  opacity: 1; }
 
 h2 {
   color: #333;
@@ -217,7 +223,7 @@ h2 {
   background-size: 164px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .partners .partner .figure .partner_photo {
-      background-image: url(src/img/spritesheet-2x.png); } }
+      background-image: url("src/img/spritesheet-2x.png"); } }
   .partners .partner .figure .partner_photo::after {
     position: absolute;
     content: '';
