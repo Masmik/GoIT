@@ -208,18 +208,6 @@ h2 {
         position: relative;
         display: inline-block;
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (-o-min-device-pixel-ratio: 2/1),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-          background-image: url('src/img/spritesheet-2x.png');
-        }
-
-        background-repeat: no-repeat;
-        background-size: 164*($size);
-
         &::after {
           position: absolute;
           content: '';
@@ -227,6 +215,18 @@ h2 {
           height: 41px;
           bottom: -3px;
           right: -4px;
+
+          @media only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (min--moz-device-pixel-ratio: 2),
+          only screen and (-o-min-device-pixel-ratio: 2/1),
+          only screen and (min-device-pixel-ratio: 2),
+          only screen and (min-resolution: 192dpi),
+          only screen and (min-resolution: 2dppx) {
+            background-image: url('../img/spritesheet-2x.png');
+          }
+
+          background-repeat: no-repeat;
+          background-size: 164*($size)/2;
         }
       }
       .figcaption {

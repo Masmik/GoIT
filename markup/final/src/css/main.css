@@ -218,19 +218,19 @@ h2 {
 
 .partners .partner .figure .partner_photo {
   position: relative;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 164px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .partners .partner .figure .partner_photo {
-      background-image: url("src/img/spritesheet-2x.png"); } }
+  display: inline-block; }
   .partners .partner .figure .partner_photo::after {
     position: absolute;
     content: '';
     width: 41px;
     height: 41px;
     bottom: -3px;
-    right: -4px; }
+    right: -4px;
+    background-repeat: no-repeat;
+    background-size: 82px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .partners .partner .figure .partner_photo::after {
+        background-image: url("../img/spritesheet-2x.png"); } }
 .partners .partner .figure .figcaption {
   color: #333;
   font-size: 14px;
